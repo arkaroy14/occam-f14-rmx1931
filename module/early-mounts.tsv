@@ -1,0 +1,29 @@
+# kind module-relative-source target dir-label file-label
+# One pre-app-start transaction; order preserves the tested effective layering
+# (simple_boot_design_20261106 prototype). Labels reproduce the already-tested
+# scheme: f14-runtime.sh used `chcon -R vendor_file` on vendor64/provider_hw,
+# `chcon -R vendor_configs_file` on camera_config/vendor_camera_data and
+# hal_camera_default_exec on the two provider binaries; access-runtime.sh used
+# vendor_file dirs plus same_process_hal_file files for the RFSA/OpenCL trees.
+# App/permission/ODM-config trees carry no explicit relabel ('-'), identical to
+# the tested rc7 post-fs-data mounts that ran directly after the manager's
+# restorecon pass. The provider_hw row additionally gets the two HAL binaries
+# labeled hal_camera_default_exec inside early-mounts.sh (tested exception).
+# The opencl_runtime row is only valid for an attested overlay GPU layout
+# (a16_cyborg_live/cyborg_phone); post-fs-data.sh refuses a mismatch.
+# replace rows are overlays with an empty bottom layer. A bind of a module
+# directory is an f2fs mount in the userdata peer group, and the camera app
+# namespace drops those two binds while keeping overlay mounts. The empty
+# bottom layer keeps the full-replace view the bind had: ROM-only names stay
+# hidden. This kernel rejects a one-directory lowerdir.
+overlay system/priv-app /system/priv-app - -
+overlay system/etc/permissions /system/etc/permissions - -
+overlay system/etc/default-permissions /product/etc/default-permissions - -
+overlay opencl_runtime /vendor/lib64 u:object_r:vendor_file:s0 u:object_r:same_process_hal_file:s0
+overlay rfsa_runtime /odm/lib/rfsa/adsp u:object_r:vendor_file:s0 u:object_r:same_process_hal_file:s0
+overlay vendor_rfsa_runtime /vendor/lib/rfsa/adsp u:object_r:vendor_file:s0 u:object_r:same_process_hal_file:s0
+overlay f14_runtime/vendor64 /vendor/lib64 u:object_r:vendor_file:s0 u:object_r:vendor_file:s0
+replace f14_runtime/vendor64/camera /vendor/lib64/camera - -
+replace f14_runtime/camera_config /odm/etc/camera u:object_r:vendor_configs_file:s0 u:object_r:vendor_configs_file:s0
+overlay f14_runtime/vendor_camera_data /vendor/etc/camera u:object_r:vendor_configs_file:s0 u:object_r:vendor_configs_file:s0
+overlay f14_runtime/provider_hw /vendor/bin/hw u:object_r:vendor_file:s0 u:object_r:vendor_file:s0

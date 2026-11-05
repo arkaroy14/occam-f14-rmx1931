@@ -39,3 +39,13 @@ source archive. Clean-clone full-package build is a release gate still open.
 Host test source, adapter code and packaging logic should be tagged with every
 release. Source binaries, CI build outputs and signing secrets stay separate.
 Original-code license and proprietary redistribution decision remain pending.
+
+## Root prerequisite helper
+
+Set the same ANDROID_NDK_HOME as above and run `sh scripts/build-root-preflight.sh`. This builds our arm64 root CLI from `native/preflight/root-preflight.c`, linking only libc/libdl. It reads LSPosed SQLite configuration through the ROM system library in read-only mode and queries the eight existing required SELinux permissions without loading policy; it does not change module scope or policy. The compiled helper is a release payload, ignored by Git.
+
+`python3 scripts/test-preflight.py` exercises the unchanged C query against isolated host SQLite fixtures and verifies that prerequisite refusal occurs safely. This does not qualify every LSPosed version or ROM; unsupported configurations fail closed.
+
+## Current lifecycle
+
+Module controls now use sepolicy.rule, post-fs-data early mounts and a read-only health reporter. Action/auto-start/late policy scripts are removed. Test the source contracts with `python3 scripts/test-preflight.py` and `python3 scripts/test-release-controls.py`. The full ZIP still requires the separately supplied proprietary payload; source archives are not flashable. Release assets use the retained built native hook, not a claimed bit-identical clean rebuild.

@@ -1,0 +1,5 @@
+OcCam F14 v0.8.0-rc1 (experimental)
+Install paired hook0.124, enable in LSPosed, select OppoCamera. Install root ZIP in KernelSU. Fresh installs are enabled; an existing disabled update stays disabled until you enable it deliberately. Reboot once and open OppoCamera. No Action or second confirmation.
+Only measured Cyborg Android16/KernelSUNext is accepted. Other profile rows are reference data, not enabled support.
+A startup notification reports active/inactive/unconfirmed and missing hook/scope instructions. It is not a continuous health monitor.
+If startup fails: disable the module. If Android cannot boot, use an already-working recovery that can access /data/adb and create /data/adb/modules/occam_f14_fresh/disable, then boot normally. Do not wipe data. The boot guard cannot protect an early root-manager policy-loader failure. Do not repeatedly reboot a failing setup.

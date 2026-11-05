@@ -1,20 +1,37 @@
 {
-  "tag": "v0.7.0-rc1",
-  "module_version": "0.7.0-rc1",
-  "hook_version": "0.113",
-  "module_runtime_tested": false,
-  "hook_retained_phone_tested": true,
-  "apk_signing": "existing development/debug signature; no new signing identity created",
-  "assets": [
+  "tag": "v0.8.0-rc1",
+  "module_version": "0.8.0-rc1",
+  "hook_version": "0.124-portrait-size-and-pool",
+  "files": [
     {
-      "name": "occam-f14-module-v0.7.0-rc1.zip",
-      "sha256": "0992a35aa8b1506c8513ac7bc8884fad0f1da4f077b9de9a32bb64f8a2c032b7",
-      "bytes": 483829914
+      "name": "occam-f14-module-v0.8.0-rc1.zip",
+      "bytes": 435832276,
+      "sha256": "77b7ca1c5bd033daf7b38c21ee5836f6c3259e6c6413011a16bfb3aecf109109"
     },
     {
-      "name": "occamfresh-hook-v0.113.apk",
-      "sha256": "ab724bfa6c5aaf50ef015e44d2913186178fe653b657e9abefaafd1fd6f3d3db",
-      "bytes": 255974
+      "name": "occam-fresh-hook-v0.124.apk",
+      "bytes": 255982,
+      "sha256": "138ff59f8dd7a852710d2c89ff86083ae5e130bc9684dc6e7e93614f4772585e"
     }
-  ]
+  ],
+  "enabled_profile": "a16_cyborg_live",
+  "root_manager": "KernelSU Next (measured3.3.0)",
+  "reference_profiles": "not enabled; installer refuses",
+  "magisk": "refused/unqualified",
+  "original_payload_files_verified": 418,
+  "test2_automatic_boot_observed": true,
+  "final_zip_fresh_install_reboot_tested": true,
+  "transition_trial": "effects survive switches; original face metadata observed",
+  "retained124_final_smoke": {
+    "status": "pass",
+    "portrait_photo_portrait_night_jpegs": "four fully decode3456x4608",
+    "frontNightFull": "2080x4608 fully decodes",
+    "effects_survive_switches": "user confirmed",
+    "observer_removed": true,
+    "test_marker_required": false
+  },
+  "publication": "GitHub experimental pre-release target: v0.8.0-rc1",
+  "fresh_boot_result": "runtime/Photo/filters pass; first startup unconfirmed because scope not yet set; live checks pass after user scope setup",
+  "subsequent_boot_status": "PASS: automatic active notification and all health checks with scope already configured",
+  "final_zip_configured_scope_reboot_tested": true
 }

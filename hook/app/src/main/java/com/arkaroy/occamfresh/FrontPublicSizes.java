@@ -10,7 +10,7 @@ import android.util.Size;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 
-/** F14 front Photo QCFA output and scoped original Night YUV requests. */
+/** F14 front Photo/Portrait full YUV output and scoped original Night requests. */
 final class FrontPublicSizes {
     static void install(ClassLoader loader, boolean fullSizeOutput, boolean poolSizes,
                         boolean nightFullTrial) throws ClassNotFoundException {
@@ -20,6 +20,20 @@ final class FrontPublicSizes {
             XposedHelpers.findAndHookMethod(stateMachine,"a",String.class,int.class,int.class,
                     int.class,int.class,long.class,new XC_MethodHook(){
                 @Override protected void beforeHookedMethod(MethodHookParam p){
+                    // The four-argument reader hook gives Portrait a full-size
+                    // CPU-readable buffer. Keep the original pool's usage key
+                    // consistent for this exact reader; the original method
+                    // owns replacement/listener detachment/closure on a mode change.
+                    if(fullSizeOutput && "portrait".equals(ObserveHook.currentMode())
+                            && "1".equals(ObserveHook.currentCameraId())
+                            && "type_still_capture_yuv_main".equals(p.args[0])
+                            && (Integer)p.args[1]==4608 && (Integer)p.args[2]==3456
+                            && (Integer)p.args[3]==ImageFormat.YUV_420_888
+                            && (Integer)p.args[4]==20 && (Long)p.args[5]==3L) {
+                        p.args[5]=android.hardware.HardwareBuffer.USAGE_CPU_READ_OFTEN | 0x00100000L;
+                        Log.i("OcFresh","FRONT_PORTRAIT_POOL_USAGE full reader usage; original pool replaces across Photo/Portrait");
+                        return;
+                    }
                     if(!"night".equals(ObserveHook.currentMode()) || !"1".equals(ObserveHook.currentCameraId())
                             || !"type_still_capture_yuv_main".equals(p.args[0])
                             || (Integer)p.args[3]!=ImageFormat.YUV_420_888
@@ -48,18 +62,19 @@ final class FrontPublicSizes {
             @Override protected void beforeHookedMethod(MethodHookParam p) {
                 String mode = ObserveHook.currentMode();
                 if (!"1".equals(ObserveHook.currentCameraId())
-                        || !("common".equals(mode) || "night".equals(mode))
+                        || !("common".equals(mode) || "night".equals(mode) || "portrait".equals(mode))
                         || (Integer) p.args[2] != ImageFormat.YUV_420_888) return;
                 int width = (Integer) p.args[0], height = (Integer) p.args[1];
                 if (!((width == 4608 && (height == 3456 || height == 2592 || height == 2080))
                         || (width == 3456 && height == 3456))) return;
                 boolean fullNight = nightFullTrial && "night".equals(mode)
                         && originalFullSize(width,height) && (Integer)p.args[3]==20;
-                if ((fullSizeOutput && "common".equals(mode)) || fullNight) {
+                boolean fullPortrait = fullSizeOutput && "portrait".equals(mode);
+                if ((fullSizeOutput && "common".equals(mode)) || fullNight || fullPortrait) {
                     ImageReader reader = ImageReader.newInstance(width, height, ImageFormat.YUV_420_888,
                             (Integer) p.args[3], android.hardware.HardwareBuffer.USAGE_CPU_READ_OFTEN | 0x00100000L);
                     p.setResult(reader);
-                    Log.i("OcFresh", (fullNight?"FRONT_NIGHT_FULL_YUV":"FRONT_FULL_SIZE")
+                    Log.i("OcFresh", (fullPortrait?"FRONT_PORTRAIT_FULL_YUV":fullNight?"FRONT_NIGHT_FULL_YUV":"FRONT_FULL_SIZE")
                             + " original" + width + "x" + height + " preserved; no pixel resizing");
                     return;
                 }
@@ -84,7 +99,7 @@ final class FrontPublicSizes {
                     // usage/maxImages. No synthetic metadata or pixel resizing.
                     p.args[0] = target.getWidth();
                     p.args[1] = target.getHeight();
-                    Log.i("OcFresh", "FRONT_PUBLIC_SIZE mode=" + mode + " requested="
+                    Log.i("OcFresh", ("portrait".equals(mode)?"FRONT_PORTRAIT_PUBLIC_SIZE":"FRONT_PUBLIC_SIZE") + " mode=" + mode + " requested="
                             + width + "x" + height + " native=" + target
                             + "; advertised front YUV output, no upscaling");
                 } catch (Throwable unavailable) {
@@ -94,7 +109,7 @@ final class FrontPublicSizes {
                 }
             }
         });
-        Log.i("OcFresh", "FRONT_PUBLIC_SIZE_READY opt-in front1 Photo/Night only; original RAW unchanged");
+        Log.i("OcFresh", "FRONT_PUBLIC_SIZE_READY opt-in front1 Photo/Night/Portrait only; original RAW unchanged");
         if(nightFullTrial)Log.i("OcFresh","FRONT_NIGHT_FULL_YUV_READY front1 Night original four YUV ratios/maxImages20 only; RAW unchanged");
     }
     private static boolean originalFullSize(int width,int height){

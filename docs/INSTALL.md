@@ -1,53 +1,28 @@
-# Installation — experimental testing guide
-
-Read compatibility, feature status and recovery first. The initial 0.7 ZIP is
-**disabled by default** and has not been installed on the development phone.
-Use only on an environment you are prepared to recover. No data wipe is needed
-by design; this is not a guarantee against failures elsewhere in the setup.
+# Installation and update
 
 ## Requirements
 
-- RMX1931, arm64, an exact included Android 14–17 dependency profile.
-- Working KernelSU/KernelSU Next OR Magisk. Do not install both together.
-- Working compatible LSPosed injection for that root manager.
-- The matching root-module ZIP and OcCam Fresh hook APK from one release.
-- A way to disable a module through the manager, root ADB or recovery with /data
-  available. Keep your current module APK/ZIP versions for rollback.
+- realme X2 Pro / RMX1931, arm64, matching measured Cyborg Android 16 profile. Installer checks the complete dependency tuple; a similar ROM name is insufficient.
+- KernelSU Next with working modules and compatible Zygisk/LSPosed. Measured manager: 3.3.0, custom 4.14.357 kernel. Other managers/kernels are not certified.
+- Matching module v0.8.0-rc1 and OcCam Fresh hook 0.124. Verify SHA256SUMS.
+- Enough storage for the downloaded ZIP and expanded payload (roughly 1.3 GiB together, plus working headroom). Do not install with storage nearly full.
+- Know how to disable a module if Android cannot boot; recovery must actually access /data/adb. No wipe is required.
 
-## Before replacing another camera port
+## Fresh installation
 
-Record existing module and LSPosed scope settings. Avoid simultaneous camera
-payload modules or competing hooks. Disable conflicting old ports deliberately;
-do not clear camera data or delete your photos. If a newer OppoCamera data
-update exists, record it and follow maintainer-assisted removal of that update
-while preserving data. A matching APK hash in /data/app still may bypass the
-system-path OEM bootstrap. Do not blindly uninstall the system camera.
+1. Remove conflicting camera modules. Never install an updated OppoCamera over the bundled F.14 APK.
+2. Install OcCam Fresh 0.124 APK. In LSPosed, enable it and select **OppoCamera (`com.oppo.camera`)**, not OcCam Fresh itself. If OppoCamera is not listed yet, complete the next steps and select it after the first boot.
+3. Install the matching root ZIP through KernelSU. Confirm the module is enabled before reboot. An intentionally disabled older installation remains disabled during an update until you enable it.
+4. Reboot once. After Android starts, read the startup notification. Open OppoCamera manually. **No Action button or second activation confirmation exists.** The hook app does not need a superuser grant.
+5. If notification asks for LSPosed setup, enable the paired hook and select OppoCamera, then close/reopen Camera. This changes injection scope, not the runtime mounts. Check the diagnostic log if startup itself also failed.
+6. Take a rear Photo, open its thumbnail and verify that the actual file saves. Test modes you use and report reproducible faults.
 
-## Candidate procedure
+## Updating from an older activation-based module
 
-1. Read the release's paired versions and verify `SHA256SUMS`.
-2. Install the **hook APK** normally, then enable **OcCam Fresh** in LSPosed for
-   `com.oppo.camera` only. Keep obsolete OccamHook/competing camera hooks off.
-3. Install the **root-module ZIP** through the active root manager while Android
-   is booted. Recovery ZIP installation is refused by this candidate.
-4. The candidate includes `disable`. Enabling and the first reboot are explicit
-   test steps, not performed by the installer. Review recovery before enabling.
-   Some manager versions may handle initial disabled state differently; verify
-   it rather than assuming it. Do not replace a working module casually.
-5. After a deliberate test reboot, wait for Android to fully boot. Check LSPosed
-   is active. Run the module's **Action**. On a manager without that button,
-   an authorized root shell can run:
+Disable the old camera module and reboot to the ROM stack before installing this candidate. The installer attests the original ROM dependencies; it must not be bypassed while an older F.14 overlay is active. Install the paired hook/ZIP, explicitly enable the staged update if its disabled state was preserved, then reboot once. Keep Camera data/photos; do not clear them as an update step.
 
-   ```sh
-   sh /data/adb/modules/occam_f14_fresh/action.sh
-   ```
+## Status
 
-6. Action attests the profile, prepares access and manually activates F.14. It
-   should report the 10-camera donor stack. Profile refusal: stop and report;
-   do not bypass it or reboot repeatedly.
-7. Open OppoCamera from its launcher icon. Test ordinary Photo first, then the
-   minimal regression checklist in `TESTING.md`. Share results through Issues.
+The startup notification distinguishes active/inactive/unconfirmed and names a missing hook, stopped LSPosed or missing OppoCamera scope. It reports one startup check, not continuous health or every camera feature. If you add the scope after that check, the earlier notification remains unchanged for that boot; close/reopen Camera to load the hook, and the next boot recomputes startup status. A stale setup notice alone is not a runtime failure. Logs are `/data/adb/occam_f14_fresh_boot.log` and the module's `health.last.log`.
 
-HAL activation is intentionally manual after every boot. Early APK/config
-mounts still occur when enabled; the boot guard does not make them risk-free.
-Never install a different OppoCamera update as a troubleshooting shortcut.
+If it reports failure, preserve logs and disable the module; do not repeatedly reboot a failing setup or bypass profile/policy checks. Do not grant extra broad SELinux rules or swap vendor libraries. See [recovery](RECOVERY.md).

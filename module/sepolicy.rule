@@ -1,0 +1,8 @@
+# OcCam F14 simple-boot — measured a16_cyborg_live profile ONLY (review 20261106).
+# Existing types only, exactly the three measured allows; loaded by the root
+# manager BEFORE module scripts (KernelSU Next v3.3.0 on_post_data_fs order).
+# No permissive/type/typeattribute/xperm/genfscon/star statements; the optional
+# power allow is deliberately absent. Other ROM profiles are not granted anything.
+allow hal_camera_default hal_camera_default_exec file execute_no_trans
+allow priv_app vendor_xdsp_device chr_file { getattr open read ioctl }
+allow priv_app adsprpcd_file file { getattr open read }

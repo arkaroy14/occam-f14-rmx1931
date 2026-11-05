@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-: "ANDROID_NDK_HOME:?Set ANDROID_NDK_HOME to Android NDK r27d}"
+: "${ANDROID_NDK_HOME:?Set ANDROID_NDK_HOME to Android NDK r27d}"
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 HOST_TAG=${ANDROID_NDK_HOST_TAG:-linux-x86_64}
 CXX="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/$HOST_TAG/bin/aarch64-linux-android28-clang++"

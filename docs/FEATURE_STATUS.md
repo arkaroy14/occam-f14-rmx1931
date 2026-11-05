@@ -1,12 +1,11 @@
 # Mode and quality status
 
-Updated2026-11-05. These are results from the **development phone**, not runtime
-qualification of the new0.7 package on all five ROM profiles. Functional pass
-means the stated test passed, not perfect quality or every combination.
-No test images/videos are attached. Raw logs and private images remain local.
+Updated 2026-11-06. Results concern the development phone. Functional passes do not certify every scene, ratio or ROM. Private photos/videos are not release attachments.
 
 | Feature | Status | Evidence/scope | Remaining limit | Checkpoint |
 |---|---|---|---|---|
+| Automatic startup / notification | final rc1 fresh/follow-up boot pass | Early mounts, eight permissions, F14 identity, provider/selector, ten cameras, hook/scope all passed; user reports reboot tests passed | Final rc1 first fresh boot/runtime pass after user scope setup; subsequent configured-scope boot fully active with all health checks passed; other profiles/managers refused | 2026-11-06 |
+| Early first-install saves | Open intermittent report | User saw 1–2 black thumbnails/missing files, then later saves passed | No matching retained capture log; cause not established | rc4 fresh-install report |
 | Rear Photo 1x | Functional pass | New files decoded and user checked | Natural colour/detail not stock-calibrated | 2026-11-05; retained113 |
 | Rear ultra-wide / telephoto Photo | Functional pass | Distinct views and saves; native SAT stack restored | Not every light-dependent handover traced | retained F14 stack |
 | Photo zoom through 20× | Functional pass | 5×/10×/20× and random 8×/16× clean after stock frame-copy fix | Digital zoom; not 20× optical or all-scene detail proof | hook0.31 onward |
@@ -19,7 +18,7 @@ No test images/videos are attached. Raw logs and private images remain local.
 | Front Night brightness | Functional within tested light | Moderately dim V1 brightens; screen light helps dark selfies | Near-black in near-zero light; no front Ultra Dark branch proved | 0.61 onward |
 | Rear Tripod Night | Functional pass | Stationary countdown/processing saved new file | Long-duration/all-scenes quality not measured | 2026-11-02 |
 | Rear Portrait blur | Functional / review | Real person and object/hand checks show blur | Segmentation edges and object consistency need review | user tests; retained |
-| Front Portrait blur | Functional / intermittent issue | Saved minimum/maximum blur difference passed | Rare first-entry frozen preview; resume may recover | 0.59 onward |
+| Front Portrait size / blur | Full-output capture pass | HAL 4608×3456 YUV; two JPEGs decode at 3456×4608; user reports minimum/maximum blur test fixed | Sensor-mode/detail-resolution parity not measured; rare first-entry freeze remains a separate issue; retained124 cold reopen / Photo↔Portrait effects and saves passed | 0.124 retained |
 | Rear video bokeh | Functional pass | Saved person clip blur/playback, transitions passed | Objects/segmentation quality need user review | 0.56;0.112/0.113 |
 | Front video bokeh | Functional pass | Visible saved face-background blur | Not every resolution/ratio/object scenario tested | 0.56 |
 | Photo beauty front | Functional pass | Eye/slim preview and saves across four ratios | Every individual slider not objectively measured | 0.79+ |
@@ -70,3 +69,12 @@ No test images/videos are attached. Raw logs and private images remain local.
 6. Review remaining OEM branches. The census saw 33 sites across 50
    configurations before its budget overflowed. An unanswered read is not
    automatically a broken feature; no blanket OEM spoof was adopted.
+
+
+## Frame controls
+
+Portrait and Expert intentionally offer only standard/4:3; no Frame picker was forced into them. Panorama/video use different sizing behavior. For 64M/Text Scanner/Macro, static inherited ratio lists do not establish final menu visibility. Their Frame UI behavior is unverified and unchanged; this is deferred, not presented as a repaired bug.
+
+## Current packaging limits
+
+The measured Cyborg A16/KernelSU profile is the only enabled target. Magisk and other reference profiles are refused. The earlier optional camera-performance helper is absent; previous performance-vote tests do not certify this package.

@@ -1,55 +1,35 @@
-# OcCam F14 for realme X2 Pro
+# Stock F.14 OPPO Camera for realme X2 Pro — OcCam
 
-Original realme UI 2.0 F.14 OppoCamera, adapted for RMX1931 custom ROMs with
-systemless dependency overlays and scoped LSPosed compatibility hooks.
+Original realme UI 2.0 F.14 OppoCamera for RMX1931 custom ROMs, using systemless dependencies and scoped LSPosed compatibility hooks. Maintained by **Arka Roy Chowdhury**.
 
-**Experimental pre-release candidate.** The retained camera build has been
-tested on one Cyborg-based Android 16 phone. The new root-module package adds
-host-validated profiles for four more supplied ROMs and KSU/Magisk backends;
-those new configurations have not been boot-tested. This is not an official
-realme/OPPO release or a promise of stock-camera quality in every mode.
+**v0.8.0-rc1 is an experimental release candidate.** Pair the root-module ZIP with **OcCam Fresh 0.124**. Install, enable the hook for OppoCamera, reboot and open Camera. There is no Action step, second confirmation or hook-app superuser grant.
 
-The original signed `com.oppo.camera` APK and donor camera ELF files are unchanged
-on disk. Our own hook APK, provider adapters, namespaces and runtime responses
-change compatibility behavior. This is not an untouched stock OS environment.
+This candidate accepts only the measured **Cyborg-based Infinity-X 3.5 / Android 16 / KernelSU Next** dependency profile. Four other Android 14–17 profiles remain reference data; they are not enabled support. Magisk is refused pending qualification. Earlier broad compatibility drafts do not describe this package.
 
-## Start here
+The original signed camera APK and donor camera ELF files are unchanged. Our Java/native hooks and provider adapters change runtime compatibility behavior; this is not an unchanged stock OS or a guarantee of stock image quality.
 
-- [Installation and requirements](docs/INSTALL.md)
-- [ROM and root-manager support](docs/COMPATIBILITY.md)
-- [Mode-by-mode verification and quality limits](docs/FEATURE_STATUS.md)
+## Downloads and setup
+
+Use the matching ZIP and hook APK from [Releases](https://github.com/arkaroy14/occam-f14-rmx1931/releases). GitHub's automatic source ZIP is not installable. Do not install a newer OppoCamera APK over F.14.
+
+- [Install and update](docs/INSTALL.md)
+- [Compatibility](docs/COMPATIBILITY.md)
+- [Feature status and quality limits](docs/FEATURE_STATUS.md)
 - [Recovery and removal](docs/RECOVERY.md)
-- [Report a bug or request a ROM profile](CONTRIBUTING.md)
-- [Credits](CREDITS.md) and [source/binary provenance](docs/PROVENANCE.md)
-- [Source and build notes](docs/BUILD.md)
+- [Release qualification](docs/RELEASE_QUALIFICATION.md)
+- [Build notes](docs/BUILD.md), [provenance](docs/PROVENANCE.md), [credits](CREDITS.md)
+- [Report bugs or request ROM support](CONTRIBUTING.md)
 
-## Downloads
+## What changed
 
-Use the [Releases page](https://github.com/arkaroy14/occam-f14-rmx1931/releases): one matching root-module ZIP and the separate
-**OcCam Fresh LSPosed APK**. The hook APK is our app; the proprietary OppoCamera
-APK is part of the donor payload and retains its original ownership.
-GitHub's automatic **Source code.zip** is not an installable root module.
-Both components are required. Do not install a newer OppoCamera APK over F.14.
+Early module preparation replaces the withdrawn late Action-based activation. Startup reports active, inactive or unconfirmed status, with specific hook/LSPosed scope instructions when needed. The notification is a startup snapshot.
 
-Current candidate: root module `0.7-host-candidate`, hook `0.113-shared-snpe`.
-The pair is explicitly documented in each release; versions are separate.
+The test2 lifecycle booted with all ten cameras and the F.14 stack active. Replacement overlays preserve camera models inside the app namespace. Front Portrait now receives a 4608×3456 YUV stream and two saved upright JPEGs were verified at 3456×4608, instead of square 1728×1728 output. A 16MP file is not independent proof of sensor readout/detail resolution. Retained hook 0.124 passed cold reopen, Portrait ↔ Photo effects/saves and Front Night Full (2080×4608). See qualification notes for the final packaged candidate's test boundary.
 
-## What users can expect
+## Known limits
 
-On the development phone, Photo/lens switching, front capture and ratios,
-64M saving, Night/Ultra Dark colour fixes, face beauty, manual Expert controls,
-portrait/video bokeh, time-lapse and several other paths have functional passes.
-See the table for exact scopes. Native 64M readout proof and perfect high-frame-
-rate delivery remain open. Rare preview/capture stalls still need user review.
+Native 64M full-RDI proof, exact 60fps delivery, 480fps frame gaps, rare preview/capture stalls and broader quality review remain open. EIS strength, segmentation edges, difficult scenes and long-session thermals need user review. Frame controls in additional modes were not forced visible: their original final UI behavior remains unverified.
 
-The compatibility work preserves each ROM's GPU driver files and uses explicit
-identity profiles. A similar ROM may work after verification; the same Android
-version, vendor fingerprint or maintainer name alone is not sufficient.
+Old rc2–rc7 development candidates are withdrawn. An unexpected reset occurred during the former late policy-loading path; its exact kernel cause was not established. Normal early policy loading also precedes the module's guard. Read recovery instructions before testing.
 
-## Development
-
-The repository contains module scripts, the hook app's Java/C++ sources,
-provider adapter sources, profile tables, host tests and packaging recipes.
-It does not provide proprietary OEM camera source code. Firmware blobs, test
-photos/videos, personal logs, firmware archives and signing keys are not source
-repository content. See [license status](LICENSE_STATUS.md).
+The repository contains our sources and module controls, not proprietary OEM camera source, firmware dumps, signing keys or private test media. See [license status](LICENSE_STATUS.md) and [third-party notices](THIRD_PARTY_NOTICES.md).

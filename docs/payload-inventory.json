@@ -1,5 +1,5 @@
 {
-  "scope": "Public release identities; proprietary components retain their owners rights",
+  "scope": "v0.8.0-rc1 staged candidate, proprietary blobs only in release ZIP",
   "files": [
     {
       "path": "LICENSES/Magisk-GPL-3.0.txt",
@@ -27,34 +27,9 @@
       "sha256": "fbe6387ba5f23e5a90202de6ec7bae24ee49168d721d5c0990e50a9012852385"
     },
     {
-      "path": "QUALIFICATION.md",
-      "bytes": 2794,
-      "sha256": "65b177828ef3b07d10fb3ba19502637fe82efa31c833a6f0e390ebaad3a25859"
-    },
-    {
-      "path": "RECOVERY.md",
-      "bytes": 3817,
-      "sha256": "5d6bf8e2d8050eb3bad09e09e3a7c34b67fc5fc32771f1e6202b0283c56b3a0a"
-    },
-    {
-      "path": "access-runtime.sh",
-      "bytes": 6156,
-      "sha256": "76d4bb93297fb577407989ea2ea0cb9cc7db056a27480c5de948b5e0922d35c6"
-    },
-    {
-      "path": "access_files.sha256",
-      "bytes": 732,
-      "sha256": "9495b3f93b6b3ef172faa53be07a4715ce5a27eb33fd8cc34db659f962fb4358"
-    },
-    {
-      "path": "access_manifest.json",
-      "bytes": 1788,
-      "sha256": "06f55a51c315f4c1faf69983efda3ede5fd933919bbe6ebe16acdc0ba2250c9d"
-    },
-    {
-      "path": "action.sh",
-      "bytes": 1741,
-      "sha256": "670a7b7d2f998933a43341350476100667cba130e3c9f9e221d6218e47f86e70"
+      "path": "RECOVERY.txt",
+      "bytes": 883,
+      "sha256": "c847da19cd84f2e9c2cb69578cc21941b213da3572311b95e9c660c95c8aedad"
     },
     {
       "path": "boot-guard.sh",
@@ -62,59 +37,19 @@
       "sha256": "ef13f449177af36ac7dfe5ede33d8fd48b90f492de9cc085de43a8fa889a4eda"
     },
     {
-      "path": "camera-power-runtime.sh",
-      "bytes": 7768,
-      "sha256": "67e4725477d76e9f211a289eae835c38b7cc129cce203efef630c423ef726a3b"
-    },
-    {
-      "path": "camera_power/broker",
-      "bytes": 18512,
-      "sha256": "a9f5bc83226121d7454f0ba86ebdd71ee6102d0f13197a54f25a5f0495ba7a0a"
-    },
-    {
-      "path": "camera_power/payload.sha256",
-      "bytes": 387,
-      "sha256": "17ee9a49935d709e2ed34aca4b179b8b7bf8bbd99cc55750dc50a8d7ee2d2e64"
-    },
-    {
-      "path": "camera_power/pins.env",
-      "bytes": 160,
-      "sha256": "298a734cd4f5387656dd7cbd2f2c8811d9658102aa5f727a9622e8a5f1a379e8"
-    },
-    {
-      "path": "camera_power/powerhint.json",
-      "bytes": 29214,
-      "sha256": "73e09da1286e713deeabbf07fddbd1b69db2f275724ad1b056fabb38e16c3140"
-    },
-    {
-      "path": "camera_power/restore-migration.sh",
-      "bytes": 692,
-      "sha256": "ff5b2b09202b6928b0613a65c7e83a89b23ffb3f7c1d644b38819d33268e4f62"
-    },
-    {
-      "path": "camera_power/vote",
-      "bytes": 9896,
-      "sha256": "9b62ed6a551dfba949a0229379be0a9ca96aefe6c30ec4fc7f84100bdc0d03fd"
-    },
-    {
-      "path": "copy_manifest.json",
-      "bytes": 93214,
-      "sha256": "35691378c223d97848578ee874f80823c07dee1933dc1e48c2afa84d62ba735d"
-    },
-    {
       "path": "customize.sh",
-      "bytes": 1443,
-      "sha256": "e9e256c2327dc92a6532058df56ef4a9086c830b6a6d93475004929adac556e9"
+      "bytes": 8725,
+      "sha256": "e1b1de6b3f5f7fbdf6a50c0f3db73175bf52764a5798562af0056879634b65d3"
     },
     {
-      "path": "disable",
-      "bytes": 69,
-      "sha256": "45767598d893178585c13d7ced34db6d8f2fe979d3d8e8a4735e9a6ce8f59d26"
+      "path": "early-mounts.sh",
+      "bytes": 6960,
+      "sha256": "2fc4cea86ea5f932c6796c1a03e8a77e572dbf001b73264222fcc19413534724"
     },
     {
-      "path": "f14-runtime.sh",
-      "bytes": 12925,
-      "sha256": "1233141dbdfec97e17141de3b80e2e5e0449118287bc51a4f03e4832d928175d"
+      "path": "early-mounts.tsv",
+      "bytes": 2329,
+      "sha256": "b89faf5593500e0994752827177dc847ce0fc1daf046180975e0bca068ae08bf"
     },
     {
       "path": "f14_runtime/camera_config/CameraHWConfiguration.config",
@@ -992,21 +927,6 @@
       "sha256": "2391b14213e6a2d2e2dc6497ed7ccefc6282669521ab7ceb62af709a419f1f40"
     },
     {
-      "path": "f14_runtime/enabled.boot-stall",
-      "bytes": 89,
-      "sha256": "9724e2e6532435a00e20a9d6b235128f6f2ab4bdacaaadd02290e33ed4754681"
-    },
-    {
-      "path": "f14_runtime/files.sha256",
-      "bytes": 30454,
-      "sha256": "9f850fa7660ce509f806850578ebae8db94469b197d9a8e2d5d1befe1949cf60"
-    },
-    {
-      "path": "f14_runtime/manifest.json",
-      "bytes": 50408,
-      "sha256": "f791ef308e4342188bc5da99ea92305fc78ff850547f4876aeff1774e482bedf"
-    },
-    {
       "path": "f14_runtime/provider_hw/android.hardware.camera.provider@2.4-service_64",
       "bytes": 6696,
       "sha256": "93eed868089083679745c9ee82e86d7a6d5bf16efbeae03d74a86b27967212a2"
@@ -1562,794 +1482,29 @@
       "sha256": "9658d7bdb030957f0feaefd03e1cc68bd2a89f133ca10e60b141b209e5642187"
     },
     {
-      "path": "manual-camera-sepolicy.rule",
-      "bytes": 255,
-      "sha256": "881f38510ff55d6cc8d19b4f3964eda7829edd0f3c7372e11a2be25db56983d1"
+      "path": "hook-preflight.sh",
+      "bytes": 2556,
+      "sha256": "0c852f011a77a90af99338f7c2517adc4226ec9ca925f8329ef0aac58201f242"
     },
     {
       "path": "module.prop",
-      "bytes": 322,
-      "sha256": "bc47c2fe14e5fa7e39ee26a1c6064bf07d9a8e547caf58f4238b2495c1e31aef"
+      "bytes": 302,
+      "sha256": "204b7008e4870670a9fd14efe61b154fd6e0d23b3786f531beb8d956a3046f18"
     },
     {
-      "path": "odm_etc_camera/darksight/darksight_main.bin",
-      "bytes": 9556454,
-      "sha256": "a3c6e74c51eb928f19c8a2f975ed44bc94b5ed1fcdf2b8374b1a5cbaa0579abe"
+      "path": "opencl_runtime/libOpenCL_adreno.so",
+      "bytes": 167880,
+      "sha256": "7e4cb7f681bb08d166a68e63af528cf89b39d31654c271bd63f2122409b47c1a"
     },
     {
-      "path": "odm_etc_camera/darksight/darksight_ultrawide.bin",
-      "bytes": 9556458,
-      "sha256": "daa48bb707ef29e52eed3a15196d81e5c6359b4e916b3c87543bcb47dd966fe4"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/000.png",
-      "bytes": 74941,
-      "sha256": "c2b8de2cf16386174940ef07f38789cd5692deaabe56b551394e67bb8b417df0"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/000_pre.bin",
-      "bytes": 814752,
-      "sha256": "7bbb6258dd186c4304e277e973d24f1f81824ab3c3c45b8789ebad705ecd4ab5"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/001.png",
-      "bytes": 87046,
-      "sha256": "fcdcd81f2ac732bbd38a3a75b5b403e062c6e70edef4a316a3039fc562eb634a"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/001_pre.bin",
-      "bytes": 814752,
-      "sha256": "66139d30edd9f8d77c9a2c9a6dc0f37daef6cd85c3945d28f5f6892f7fcc5ac6"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/002.png",
-      "bytes": 58787,
-      "sha256": "5f34c4ae95b29ae4ee4991a0fbf395e057c922e587421b5417d3eca14f9ad46b"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/002_pre.bin",
-      "bytes": 1833192,
-      "sha256": "f1fd0664db1d531140bd62f7a922540cc920c8a10c09b884895cdcee2fbc139c"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/003.png",
-      "bytes": 79836,
-      "sha256": "f3d63cac2e2efa93b324061fcd6e8ed6dc6b702dfa855847b1a42cc50cc94e16"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/003_pre.bin",
-      "bytes": 814752,
-      "sha256": "9328cbac79ae725603bf94038eaa8a7492cd4c4675c8d9175c723c7383c7f775"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/010.png",
-      "bytes": 34277,
-      "sha256": "9af4d79998f38977c73d604eaff08a975c0449df3b30df47d251546f02b518d3"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/010_pre.bin",
-      "bytes": 391920,
-      "sha256": "308758859b4d30d606bdfa6971a357e7a2bd4189f28e89f728ae1c3313a0c271"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/011.png",
-      "bytes": 37780,
-      "sha256": "5dbdde71ffe36889cb6c6d3dc2c4180af21eb40e0c6744a27e20af65fe1afc00"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/011_pre.bin",
-      "bytes": 391920,
-      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/012.png",
-      "bytes": 56376,
-      "sha256": "dfbd0bf4ba8d3e22b5d11b02136e016ed2758f9e47c61153c13d1dae99425825"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/012_pre.bin",
-      "bytes": 1396280,
-      "sha256": "f0fdd456e7cce477c31e2e10bcafe8e6f98c12d65c1fc554ffd802f79c3932d5"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/013.png",
-      "bytes": 48982,
-      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/100.png",
-      "bytes": 42741,
-      "sha256": "cdb208a50e832be04b2d39c154e018aaf571ecf4ba2897d7956c727a95609f5c"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/100_pre.bin",
-      "bytes": 814752,
-      "sha256": "323a366b4bd6444451d7728e10b8f4fd3c40a1e64617ca082803c7e1a68df292"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/101.png",
-      "bytes": 62089,
-      "sha256": "aa485e4b919751d4dee2b9c283e04ede31e7444015498a0c468d32e9b706a8b7"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/101_pre.bin",
-      "bytes": 814752,
-      "sha256": "77b17beb11002cf524302970cf906f11c5d63e33adad4b82c4506589d9625c6a"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/102.png",
-      "bytes": 58049,
-      "sha256": "7a26c126e1acf504856d02f5dcb4608f67db5fceadd8b4e03c0c19ed13ad7060"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/102_pre.bin",
-      "bytes": 1833192,
-      "sha256": "b4c3fda61c913d8dd2e7b9b8bf0606ae52fe8913c67b2cabcdd92fa078b624cb"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/103.png",
-      "bytes": 101187,
-      "sha256": "b7cf2ee52f9bbf24c7102f4ad82fb09838d1ebf23484762426353e32c1340c2f"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/103_pre.bin",
-      "bytes": 814752,
-      "sha256": "e927c8d49f18f93025387ae207592104ef4ebcb464a75741d2452346b20f543b"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/110.png",
-      "bytes": 84987,
-      "sha256": "c815edd77f99541b121802e6159967884be31f25ef4aa56c7bfbbe49cc8a7ebc"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/110_pre.bin",
-      "bytes": 391920,
-      "sha256": "c98a27436a9da6ea8e88d82c55309fee7cefa5e673bb42bb18ba36af1dd21483"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/111.png",
-      "bytes": 81405,
-      "sha256": "ecb40f6acabd8329f6f74b3f2ad1866ed53270df66d1a345f8c669cad9eeea09"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/111_pre.bin",
-      "bytes": 391920,
-      "sha256": "8f6c895a5ba934d73742e2e5e27c7d740219787cb6c691f400d6d1759bc39d83"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/112.png",
-      "bytes": 54464,
-      "sha256": "42febcfbf511034c84c04ed0ce978ad72d1492e1a4287e9b397e37d83784448f"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/112_pre.bin",
-      "bytes": 1396280,
-      "sha256": "232755a679e229654526fa2e53c6813b5398ac2e13d6ec708d7075e3f8f7c248"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/113.png",
-      "bytes": 48982,
-      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/200.png",
-      "bytes": 37870,
-      "sha256": "088c6b08358a81f85019d068dc418873129ded2ab771d904c998597b82e697f0"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/200_pre.bin",
-      "bytes": 814752,
-      "sha256": "3e946f66324a30a6d289713e9d90cbad78534c81e8f84e9541523b56e0245cbd"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/201.png",
-      "bytes": 56896,
-      "sha256": "a1c5dd1378217f7dff7fb12c75db9c3cb86b2b55153b1bd6c3a8085d1003a7d5"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/201_pre.bin",
-      "bytes": 814752,
-      "sha256": "c4efa43178ec8ff444fe6447dcd4f2ae87142d3cc412121ea8537e0ca2d14566"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/202.png",
-      "bytes": 48982,
-      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/202_pre.bin",
-      "bytes": 12800,
-      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/203.png",
-      "bytes": 67888,
-      "sha256": "495fbf6fd65b6cee894ffce7c55df89c36a711062689c604dbf01ebf345434ce"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/203_pre.bin",
-      "bytes": 814752,
-      "sha256": "8babd32d776ea6355a83b060a304c64c28c212a8602f339856baf1709d7b0662"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/210.png",
-      "bytes": 36664,
-      "sha256": "0610becbee17ff7b0e16c8c87407b70a13967ce5cc84b36ba5e290eb292e3125"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/210_pre.bin",
-      "bytes": 391920,
-      "sha256": "9abd4714c7ec32b7ba5c4e9706c0eebbbf360cd491b78de48beeb61c94cb3a91"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/211.png",
-      "bytes": 37780,
-      "sha256": "3b7312baed801a6e31a4672a88066e28df6a116d8f8170a15352781c9433076c"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/211_pre.bin",
-      "bytes": 391920,
-      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/212.png",
-      "bytes": 48982,
-      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/212_pre.bin",
-      "bytes": 12800,
-      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/213.png",
-      "bytes": 48982,
-      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/eyeBright.png",
-      "bytes": 802044,
-      "sha256": "d1ae5e00f07055748be0c1733024c1d79103f9bfba1d6a05802c092e9499a921"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs00.bin",
-      "bytes": 1048576,
-      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs01.bin",
-      "bytes": 1048576,
-      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs02.bin",
-      "bytes": 1048576,
-      "sha256": "a67c13505dda1011c962502e72ce7608e99c5932a5ee69e53270598ebf887722"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs03.bin",
-      "bytes": 1048576,
-      "sha256": "976d8d83deb75ade099c291edfe2616b81f39ff3ec518ca9b9790b27a75c2196"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs10.bin",
-      "bytes": 1048576,
-      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs11.bin",
-      "bytes": 1048576,
-      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs12.bin",
-      "bytes": 1048576,
-      "sha256": "abb61eea5383e1471b1cbceb5d6a7b9c98ef028c7b0e33eb82abab1164aff9b2"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs13.bin",
-      "bytes": 1048576,
-      "sha256": "644e922cbac2f1bd71fe706a0c9c6fb0adf4b0f9e011795f56aa5a68f84f8dae"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_00.bin",
-      "bytes": 12288,
-      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_01.bin",
-      "bytes": 12288,
-      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_02.bin",
-      "bytes": 12288,
-      "sha256": "12041427cd8f10e3f242a07851f36a43ae6229d103084bb80c5ccd394430c5e2"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_03.bin",
-      "bytes": 12288,
-      "sha256": "b64f7eaea1c63e75a8a755245ac3a0dd95f93fc4617dfe7ff7e17d9441e40d93"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_10.bin",
-      "bytes": 12288,
-      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_11.bin",
-      "bytes": 12288,
-      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_12.bin",
-      "bytes": 12288,
-      "sha256": "9a925511f388c9ada58950ffec9ff73bfe9026789607b2034e32897e5d768e2e"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_13.bin",
-      "bytes": 12288,
-      "sha256": "1c33848e69f149f4ccfa096f9f6dfe5bedae1fec18deb3239360736c05a69db8"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinmask.bin",
-      "bytes": 1830708,
-      "sha256": "819570de9f98c6fc240335021c342da114554301dd9cb9b99ef1c721687c250b"
-    },
-    {
-      "path": "odm_etc_camera/fb_model/skinmask.png",
-      "bytes": 194643,
-      "sha256": "137b80407541e158e33b92f8d9976178b7e203ca9ed6f32ab4ebf63eff67ca10"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/B1VLf4peM",
-      "bytes": 16384,
-      "sha256": "008a2f13ce73b09b5faab9d79055da5af0c441b72193bb6e3fdae78de477a4e2"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/B1aMqioxf",
-      "bytes": 16384,
-      "sha256": "54a3b8f18f9a91b996c45cf39dcbdb6097a4264f4a8c71d93b8dcd8033a337e2"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/B1nmcmWbG",
-      "bytes": 16384,
-      "sha256": "bcfa3e068bddba599bb497771dea15405b2816b2e8671c00b288dce966b36b1b"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/B1si_XbZz",
-      "bytes": 16384,
-      "sha256": "dbe8be4b16409a6024f205edf2cb5bcd01f65773ce2c500b0457bd643f6d626d"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/BJJAwoigM",
-      "bytes": 16384,
-      "sha256": "ee14299322d559af62b9f1818ab8b02303c39d5434027ffca2335956a78a4df0"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/BJyKIwqxz",
-      "bytes": 16384,
-      "sha256": "0ecad59310e9397c8dfae2a97b313706abb51151d129a4db6309b0e7de81ff37"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/ByW7g4bbf",
-      "bytes": 16384,
-      "sha256": "01593dcfe75b88d489ac14ed496498ae97a1895ecac6802601b1f6f55f6f1db1"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/ByYo3If",
-      "bytes": 16384,
-      "sha256": "151ebc062272682e44a3ba5faa777832d5ab272d841ed61d5e493142ec3ae246"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/BycYf7WWz",
-      "bytes": 16384,
-      "sha256": "c9f46acdc7c7ba37cf993231facdef3c239dab1977ae7a22ef033ac90316474d"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/EyxRbD2UCe",
-      "bytes": 16384,
-      "sha256": "7a44e1790fd67b4c9896c1d9385ca4c71b5f856672fd442e666562363d411af2"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/SJ3mbr6ef",
-      "bytes": 16384,
-      "sha256": "e962b8bdf4e030cf20a5a859cc82f81907a6b283011095daa5b4854692aca066"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/SkpZ8ebbz",
-      "bytes": 16384,
-      "sha256": "204ad70254e6f32307a887ae2ade86cf9012cf08767a80a5f4c17f3bec1c5166"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/Sy4uLSTgf",
-      "bytes": 16384,
-      "sha256": "b3fc1bfd49f785fed32ab4aff3b0d9b17737b14fddec5aca52ba599069d1e0c9"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/Syt2KeZZf",
-      "bytes": 16384,
-      "sha256": "b5dc55ef5f9ad5bef435ddf1d8eb7fcbac78958b44329ea2733216b40bffbaec"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/black_gold.bin",
-      "bytes": 131072,
-      "sha256": "2c8eefcd095de75c2d95d0e4840b8c70d63c90d39daef9c7618d14139d54a630"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/bowu-2.1.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "caf40c1aebb599ab2dff4a5c4c3ffa0a7948277a23202fee6e3b495e2ce96dcf"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/bright_coloured.bin",
-      "bytes": 131072,
-      "sha256": "8a5224ca09a8fa364810286923b269664dd148bfe361dcb952e309d1a275ea02"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/default",
-      "bytes": 16384,
-      "sha256": "183c650c4e53cc204ecdc71d539c85a60dbaaeff7dd862377f815234b28bb242"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/f_bin_hideaki",
-      "bytes": 16384,
-      "sha256": "ee3cd64495b7c707e0f2dbc010ce9598ab95aecf7d55eef1b096d6f15c9df3f9"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/f_candy_water_weak.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "064976e28ec9ef7d3e19ad7ab953852e74c51a84e9cf4d90ca772b9aafdf42ee"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/f_contrast_gray_face_dark",
-      "bytes": 16384,
-      "sha256": "785174d33b1fe122210d3ca9ed785b6013dab1263022730ed2d65f9d7b6a22b2"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/f_fuji_strong.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "fcf6aa9fe39893cab4393c79b726334f15240c6d6b94781cd6e110989072f003"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/f_japan_strong.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "72cff04c649933151969a0841ffcc889e4b63fe7e24e1b275cd9ff89bd17122c"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/interstellar_space.bin",
-      "bytes": 131072,
-      "sha256": "5aa396c6015bd639c426b99bd18ebffb614b05dd36ac53810f319dd571cb832c"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/jiari-2.0.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "d1b948679c1870dbfde65489913cec2a666ad052ca93a8cf051d2fd0ea5ed9ee"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/lvtu-2.0.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "9fd8c97b95c88576d7918683b767c572cdc77eb3689dbc752937b0b7446ff3d2"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/meiwei-2.2.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "67e6ed974425af74dd95f48141f0009f5c95cb5507812ecc0d2317e640899e49"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/neon-2020.cube.rgb.bin",
-      "bytes": 131072,
-      "sha256": "9fd03293c34501721c1df182d0f2a6915d0c74fc9e911313be5dd0871a0f80b1"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_black_and_white",
-      "bytes": 131072,
-      "sha256": "9c27c5a89b1384214396c9d472e163f4fe9fe7c091a00d494ee8fddaf54100de"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_highlight",
-      "bytes": 131072,
-      "sha256": "ad7e2a5add832b0fcc87f895956ba41757894402c44005545c0776382fe862ae"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_ins",
-      "bytes": 131072,
-      "sha256": "68919926f51cb0190c30494fef0e03b01f29781f55f7b48c2c9c3522bf3440dc"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_natal",
-      "bytes": 131072,
-      "sha256": "b945436d0e72d5b0d8f0d4ef4bf54d10791067af1c49d97234562407cb5ed75b"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_olympus",
-      "bytes": 131072,
-      "sha256": "e7c0ed099f5b90a31b9eb46113058e9d3001aaea3cc73017e9736def44eaf868"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_plain",
-      "bytes": 131072,
-      "sha256": "1ca0f86be2a460f30d0e089f5b71df97375b42fc6f9c8747ee4bf3340446e090"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_show",
-      "bytes": 131072,
-      "sha256": "8670f15da479e74ae93a261236108131501e1f59a703c6b86c7dbef111b79d73"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_solar",
-      "bytes": 131072,
-      "sha256": "97360d78d59b164102f134d270a459853172807cf4d2bb3cfc50f96a9321e522"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_strong",
-      "bytes": 131072,
-      "sha256": "0ad3ffe5aeb99dbadd473c918339d67dd6fe371d9714e039d45bba86c8f504d5"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/oppo_video_filter_west",
-      "bytes": 131072,
-      "sha256": "7221db8750a2a76a20d7fb9e8048b12c4d3b5a0c9bc446bbdb09c61aaa4b7d6e"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/p4_1.cube.rgb.bin",
-      "bytes": 143748,
-      "sha256": "f99efa8a1f119f944db9e5271342771416f8d3ba4da13ca225f81f83f19d4725"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/p4_2.cube.rgb.bin",
-      "bytes": 143748,
-      "sha256": "cd96d842280e0bdb23ef84dc280f56fe624966c5ba8c152f763777140f9ae46d"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/p4_3.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "78edef26c50d28b3e74fa6689ebe1488fdd00a498cd39059bb9181d3ad60e2de"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/p4_4.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "bced47204bb85c71d8bcb8f9a6eea35e2f6511b9862da2373b7ac33347124319"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/qiuri-2.0.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "d3d42833b4e33adddba1cc40cb28ca47283ed6f805bd9c02e70bfe7a6eb1056f"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/r1JaFSZZG",
-      "bytes": 16384,
-      "sha256": "dc79ac8377682045cd9864ea92d569d5202d97331c215ccc6386c16d646d0e5b"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/r1PrfoolG",
-      "bytes": 16384,
-      "sha256": "5a3e2fe11b6b1b23596df069a5a3a1df39891dd8c322723e8fffd73a12e66e6e"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/rJ5g5vPWG",
-      "bytes": 16384,
-      "sha256": "8568b09464357acf53f03f6e82674f176179010c53c44976f0589dece00e0141"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/rJxJtmaez",
-      "bytes": 16384,
-      "sha256": "3b21001417d88f32119f17bfd7d1a9b4436395a63d72c960976f2faf6086c2fb"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin",
-      "bytes": 131072,
-      "sha256": "50ce7a1edbec29a5cee3fdc548485bb20d0d704afdde8f9d334c14b9414cb0b8"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin",
-      "bytes": 131072,
-      "sha256": "4b5a7570af8dbbd72b505f4a3deb4267d22c14825bd0964cbd7e14f50c4df734"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin",
-      "bytes": 131072,
-      "sha256": "9317da5ed6c4f7965dcfeaa9f56059063c9e4b69b7508cafabd8a8f6dd985339"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/red-red.cube.rgb.bin",
-      "bytes": 131072,
-      "sha256": "ccc0e432e2c99ea530d4c1e3277832e784d7e0ad694898cc8f1d4ec94c7576cc"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/rkMhq4ZWf",
-      "bytes": 16384,
-      "sha256": "7edc2959549f11ff225ec2d821d42186000fd438138164cb36d3c09c54459a52"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/rkx5u4Zbf",
-      "bytes": 16384,
-      "sha256": "f2222ae873ae360dc55e0a80b37c3d52f8dc9ebfd27604a4b46e27dc6739de34"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/senlin-2.0.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "03089393fef488c2f1b7330510f56859b7c98d914e8da66afa9c061956fb3f12"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/sky-blue.cube.rgb.bin",
-      "bytes": 131072,
-      "sha256": "d972b5e95efbca7bf524f7a9f0bc9fa5c3eaa70da69067f5ac8401c75d44554b"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/tree-green.cube.rgb.bin",
-      "bytes": 131072,
-      "sha256": "5e35d46ecd10e00478b5d2686197bef1e11a57e4b0cbef9fed08a9d37ef2972b"
-    },
-    {
-      "path": "odm_etc_camera/filters_lut/yuanqi-2.2s.cube.rgb.bin",
-      "bytes": 16384,
-      "sha256": "9454a3100b053b545065899754920b861957eeb4c3eab12c578efd782055f32f"
-    },
-    {
-      "path": "odm_etc_camera/filters_res/film_grain_small.bin",
-      "bytes": 4194304,
-      "sha256": "6a204d90ffab5084da4631cee1321503ebbef61dad626e1b0707c96e9b8dfc70"
-    },
-    {
-      "path": "odm_etc_camera/filters_res/lut_all_points.png",
-      "bytes": 7278,
-      "sha256": "56245105fd79a43cca5e5eff5485b16aa663119c6963d503bc320180847ac2fd"
-    },
-    {
-      "path": "odm_etc_camera/filters_res/overlay_p4_3_weak.png",
-      "bytes": 329494,
-      "sha256": "03e5cf16e847de37660f9b58dff62261ce440bfad5674c29f51b3257de9c56bf"
-    },
-    {
-      "path": "odm_etc_camera/megvii/merged_model",
-      "bytes": 4148886,
-      "sha256": "a73e846e120805cf1364577bafb6aa984a6d23dc58382cf6993e86eb29aab6ca"
-    },
-    {
-      "path": "odm_etc_camera/megvii/merged_model_post",
-      "bytes": 16284526,
-      "sha256": "8dbd83b050cf174b7059570926463874171a56d5c243206ee6828417e23849f5"
-    },
-    {
-      "path": "odm_etc_camera/singleblur/license_release.license",
-      "bytes": 2110,
-      "sha256": "ae1582f6503a4e24cbe2122acaca2e5570893b7d438113ff51233cd41084475e"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_0",
-      "bytes": 1024,
-      "sha256": "04441b72253f49384e853fb46a81657e5e28187f02187a47713eb9cd482f9a17"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_1",
-      "bytes": 1024,
-      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_10",
-      "bytes": 1024,
-      "sha256": "7464111e259f83f5cad87bf2691a592fd8fe45928f03d30b60be0c41ed3b1bab"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_2",
-      "bytes": 1024,
-      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_3",
-      "bytes": 1024,
-      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_4",
-      "bytes": 1024,
-      "sha256": "6e1268245021736c5432705fbe4d17d232d860bec972051ad46687ba1a043ced"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_5",
-      "bytes": 1024,
-      "sha256": "f559331e21a8ecb2796188eb68e0da983a26ea2c08cc042e35db9d30847a2728"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_6",
-      "bytes": 1024,
-      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_7",
-      "bytes": 1024,
-      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_8",
-      "bytes": 1024,
-      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/curve_lut_9",
-      "bytes": 1024,
-      "sha256": "86838b0266af6cbbe7b5b3a604580283638539daf7c33af5b45ba6558df810bd"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/list.txt",
-      "bytes": 1232,
-      "sha256": "e388302a0a29305a9671c7b0d2b3aeda399b52fe13b8c2f01ea3582ff39d6aff"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/s_curve_lut",
-      "bytes": 1024,
-      "sha256": "d5aa511adaf689d0340232b5d3c8be7a7874c280ae5563bc8c8b23c7c64b2006"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_0",
-      "bytes": 49152,
-      "sha256": "1338654ffd974f472902a8fa3141817ba8c67239cc71222571790104e1fce41b"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_1",
-      "bytes": 49152,
-      "sha256": "2431d07993f20f3ddb4a1255557714ac08cb799dcdb9d6faab5c0bbed6961bc2"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_10",
-      "bytes": 49152,
-      "sha256": "6a205d18096d3ba5642ba45992cc7497c8755d3ddad3c83df18fb53c216f8c14"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_2",
-      "bytes": 49152,
-      "sha256": "380da3a69f0809c32eeb15b63eb6707049e95f05c5046f1ba6784a6014b72ac6"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_3",
-      "bytes": 49152,
-      "sha256": "57d2d1e545450ce70d4fd53077d4b7e42fe99aef1d13ef0b0e30364f1aaa96c0"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_4",
-      "bytes": 49152,
-      "sha256": "dcd3c3b664a5e53de1ddc9be3d850f704e1f83884c47ccfa23f9beb5dbebfbb4"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_5",
-      "bytes": 49152,
-      "sha256": "6d685fdeb242fd6f121b8e5bf0a1675e6f7961e7b45f1057c8c28d2491217c23"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_6",
-      "bytes": 49152,
-      "sha256": "bc2b7fc8d40d8093cc711aee980d72c1313091fc3afa2f0392e78aab255a3d79"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_7",
-      "bytes": 49152,
-      "sha256": "f408accf0cf29a79fca08fe9fead1eedd3dbb8f86395d66bbe8d43ee3670f9f7"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_8",
-      "bytes": 49152,
-      "sha256": "93caa54a83475487834fcc6a48f6e1a6ad3a16d31699ff339b58680497014844"
-    },
-    {
-      "path": "odm_etc_camera/tonemap/tonemap_lut_9",
-      "bytes": 49152,
-      "sha256": "2391b14213e6a2d2e2dc6497ed7ccefc6282669521ab7ceb62af709a419f1f40"
-    },
-    {
-      "path": "payload.sha256",
-      "bytes": 70347,
-      "sha256": "5d63ce10b5e89c88a29dbf8cc22340d8c9b79ff8300f671fc104cdfdac6036a8"
+      "path": "policy-preflight.sh",
+      "bytes": 632,
+      "sha256": "86c1334fa600676eca0c9dcefb166da1ff5e9aeb0af3e30d84992271feb850c7"
     },
     {
       "path": "post-fs-data.sh",
-      "bytes": 1530,
-      "sha256": "a545286d15e658b8eaa2de8ed1589a8ee278ea2362467fd7e447328bd848abe2"
-    },
-    {
-      "path": "provider-runtime.sh",
-      "bytes": 1887,
-      "sha256": "fa00e5a5ba5ccc9597c5f820df9145a0e01f6a71d475d9b5e10d6e45d4827580"
+      "bytes": 3506,
+      "sha256": "c9bcf3db71e474d5dcee0d630cc4f7bd0baf2bc71774764de4040c6664353240"
     },
     {
       "path": "rfsa_runtime/libarcsoft_hdrplus_hvx_5221_skel.so",
@@ -2368,13 +1523,23 @@
     },
     {
       "path": "root-policy.sh",
-      "bytes": 1490,
-      "sha256": "417af9172bfbccb679c1196d8a5bc5ea81d6f8b556ea58fda23c45f9194e8bb2"
+      "bytes": 208,
+      "sha256": "ba63046fde7765657b2882176570855bc8159c9ca484d861c6fe4e52f206415c"
+    },
+    {
+      "path": "root-preflight",
+      "bytes": 10248,
+      "sha256": "978f80838fe68ef0f7c5c176f17fb91ab602736c8f46c31e5d3f708d991b0af0"
+    },
+    {
+      "path": "sepolicy.rule",
+      "bytes": 601,
+      "sha256": "fc93f06ec1f47c32a72179d3c90f77dab21b72b029f18466adf8d7853cc5a61d"
     },
     {
       "path": "service.sh",
-      "bytes": 532,
-      "sha256": "008ff7bb7d1c6f285e00879274adbd53233135f8d9e053404bbb2d35dfa4c9b2"
+      "bytes": 10195,
+      "sha256": "5a4ba2b00ca6f1c469e31c777b50b40175ee7302c67b1a3334bad57911520d08"
     },
     {
       "path": "skip_mount",
@@ -2490,6 +1655,11 @@
       "path": "system/priv-app/OppoCamera/fresh_native/vendor/lib64/libarcsoft_dualcam_refocus_right.so",
       "bytes": 21192216,
       "sha256": "18af618a23bcf892423d595db04d18d7d92cbd22b33b34f4e64e9f90b052da05"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/active_hal_profile.json",
+      "bytes": 176,
+      "sha256": "f81ef59b5b8947006e3c15175aa2c9122c91ca51e56dfaed1f43d2ae4bd25a14"
     },
     {
       "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/coloros-support-wrapper.jar",
@@ -3027,6 +2197,11 @@
       "sha256": "4d3a7422285d52437e871c9ace60f880ad34be749915dd523a4fb902e73ad35e"
     },
     {
+      "path": "uninstall.sh",
+      "bytes": 439,
+      "sha256": "016e0b39d62b46a2eb40555a72ea942a9996de41242960ae61b4e99f0e26fb49"
+    },
+    {
       "path": "vendor_rfsa_runtime/libapps_mem_heap.so",
       "bytes": 50248,
       "sha256": "bb722da5c9293b9ff1736332a5d0fab66907844023aaa4b95d5e26a22df916de"
@@ -3040,11 +2215,6 @@
       "path": "vendor_rfsa_runtime/libfastcvadsp.so",
       "bytes": 1489308,
       "sha256": "e6d57c195330cfd061570e7f07720b5b9d4cdef15053b9a8760e185eb6b6bf08"
-    },
-    {
-      "path": "verify-hal-profile.sh",
-      "bytes": 831,
-      "sha256": "ad73470991e90d5164d95bb8af19f647246916aeb0c43feadb8fa585958065f9"
     }
   ]
 }

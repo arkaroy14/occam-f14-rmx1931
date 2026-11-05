@@ -1,6 +1,6 @@
 id=occam_f14_fresh
-name=OcCam F14 compatibility candidate (DISABLED)
-version=0.7.0-rc1
-versionCode=7
+name=OcCam F14 - Stock OPPO Camera for realme X2 Pro
+version=0.8.0-rc1
+versionCode=8003
 author=Arka Roy Chowdhury
-description=Experimental five-profile KSU/Magisk package. Requires OcCam Fresh 0.113. Unbooted profiles remain unqualified. https://github.com/arkaroy14/occam-f14-rmx1931 Manual HAL Action only.
+description=Experimental automatic F14 runtime. Measured Cyborg Android 16 + KernelSU Next only. Pair with OcCam Fresh 0.124 in LSPosed scoped to OppoCamera. No Action.

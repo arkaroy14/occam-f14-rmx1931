@@ -7,8 +7,8 @@ android {
         applicationId = "com.arkaroy.occamfresh"
         minSdk = 28
         targetSdk = 36
-        versionCode = 113
-        versionName = "0.113-shared-snpe"
+        versionCode = 124
+        versionName = "0.124-portrait-size-and-pool"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
