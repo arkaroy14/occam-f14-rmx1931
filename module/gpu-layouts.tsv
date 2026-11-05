@@ -1,0 +1,18 @@
+# layout action path sha256
+# keep: ROM file stays in place. overlay: copy that exact ROM file and merge it
+# over its own path so the module can set same_process_hal_file. One overlay max.
+# UNRESOLVED_* is not a valid hash and must fail closed.
+cyborg_phone overlay /vendor/lib64/libOpenCL_adreno.so 7e4cb7f681bb08d166a68e63af528cf89b39d31654c271bd63f2122409b47c1a
+a15_cyborg overlay /vendor/lib64/libOpenCL_adreno.so 7e4cb7f681bb08d166a68e63af528cf89b39d31654c271bd63f2122409b47c1a
+a15_cyborg keep /vendor/lib64/libOpenCL.so 0d78755b26b30b31841e41008722aa5622bd134dfac946326e54b772e83504aa
+a15_cyborg keep /vendor/lib64/libCB.so 76e33865a3c4a0cea7989fa87db108eb4db8a2e48dba7e8a91af35b9e8eb9bcf
+a15_cyborg keep /vendor/lib64/libgsl.so c8fc82e7ae91144eb3e3b0e23fa3f8b03a016bb9df8754d57f7bc6fcab0eafef
+a15_cyborg keep /vendor/lib64/libllvm-qcom.so d5d8834af1daafa0cece16adf3b69adc742695bc001c0423066d1202b36139ef
+a14_stock keep /vendor/lib64/libOpenCL.so f64d432f19fd3f2732cd95050b47328e0c84837b7b60376d55fd7a73a6e9dc8c
+a14_stock keep /vendor/lib64/libCB.so 2e0605904e8c18c72349c4513751e43ed5bdf8af3d8ca065485f2c3057045f91
+a14_stock keep /vendor/lib64/libgsl.so 39abd031001814cc7a3d0b2911a68684eb5dcd7298c96ebf55152d915d11ff3e
+a14_stock keep /vendor/lib64/libllvm-qcom.so bff016d5326a0610228da1a9627120151f0dd62d1c6d2f17fbd3350e65c0cde5
+nayem_stock keep /vendor/lib64/libOpenCL.so 60c51ce8802fc4793b0dbaa491808e3ff46e8d399c010a6b3e9ba4bd0d1008f6
+nayem_stock keep /vendor/lib64/libCB.so e3f96d2c286fff3e76fdd7d15b2168b7740a406dc8b22177dc9ddd898b09fb40
+nayem_stock keep /vendor/lib64/libgsl.so 24acda32d84debd36b6164f3d2e70188a1d7ef5927054b5d6a6beb0057188919
+nayem_stock keep /vendor/lib64/libllvm-qcom.so 34451443c064a29a2832a5bd54150602107c52cd32d69653d629c4987e780824

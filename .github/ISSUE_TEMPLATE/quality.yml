@@ -1,0 +1,18 @@
+name: Quality review or improvement
+description: Report image quality, stabilization, depth edges or measured timing
+title: "[Review] "
+labels: [quality-review]
+body:
+  - type: textarea
+    id: setup
+    attributes:
+      label: Versions, ROM, mode, lens, lighting and relevant settings
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observation and comparison method
+      description: Describe what changes with the same scene/settings. Distinguish UI labels from measured output. Photos/video optional and privacy-sensitive.
+    validations:
+      required: true

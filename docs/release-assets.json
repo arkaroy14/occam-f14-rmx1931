@@ -1,0 +1,20 @@
+{
+  "tag": "v0.7.0-rc1",
+  "module_version": "0.7.0-rc1",
+  "hook_version": "0.113",
+  "module_runtime_tested": false,
+  "hook_retained_phone_tested": true,
+  "apk_signing": "existing development/debug signature; no new signing identity created",
+  "assets": [
+    {
+      "name": "occam-f14-module-v0.7.0-rc1.zip",
+      "sha256": "0992a35aa8b1506c8513ac7bc8884fad0f1da4f077b9de9a32bb64f8a2c032b7",
+      "bytes": 483829914
+    },
+    {
+      "name": "occamfresh-hook-v0.113.apk",
+      "sha256": "ab724bfa6c5aaf50ef015e44d2913186178fe653b657e9abefaafd1fd6f3d3db",
+      "bytes": 255974
+    }
+  ]
+}

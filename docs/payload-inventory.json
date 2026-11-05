@@ -1,0 +1,3050 @@
+{
+  "scope": "Public release identities; proprietary components retain their owners rights",
+  "files": [
+    {
+      "path": "LICENSES/Magisk-GPL-3.0.txt",
+      "bytes": 35141,
+      "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2"
+    },
+    {
+      "path": "LICENSES/module_installer.source.sh",
+      "bytes": 612,
+      "sha256": "bcf4b1d9913f3af17755569c853e0b5a75b8005f6a18eb3f86dadcc0e968c29d"
+    },
+    {
+      "path": "META-INF/com/google/android/update-binary",
+      "bytes": 612,
+      "sha256": "bcf4b1d9913f3af17755569c853e0b5a75b8005f6a18eb3f86dadcc0e968c29d"
+    },
+    {
+      "path": "META-INF/com/google/android/updater-script",
+      "bytes": 8,
+      "sha256": "d2b8203193a083e43ad076fde01b9c7821e0aa521e1f8077b8628fb1cdb70c60"
+    },
+    {
+      "path": "NOTICE.txt",
+      "bytes": 387,
+      "sha256": "fbe6387ba5f23e5a90202de6ec7bae24ee49168d721d5c0990e50a9012852385"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 2794,
+      "sha256": "65b177828ef3b07d10fb3ba19502637fe82efa31c833a6f0e390ebaad3a25859"
+    },
+    {
+      "path": "RECOVERY.md",
+      "bytes": 3817,
+      "sha256": "5d6bf8e2d8050eb3bad09e09e3a7c34b67fc5fc32771f1e6202b0283c56b3a0a"
+    },
+    {
+      "path": "access-runtime.sh",
+      "bytes": 6156,
+      "sha256": "76d4bb93297fb577407989ea2ea0cb9cc7db056a27480c5de948b5e0922d35c6"
+    },
+    {
+      "path": "access_files.sha256",
+      "bytes": 732,
+      "sha256": "9495b3f93b6b3ef172faa53be07a4715ce5a27eb33fd8cc34db659f962fb4358"
+    },
+    {
+      "path": "access_manifest.json",
+      "bytes": 1788,
+      "sha256": "06f55a51c315f4c1faf69983efda3ede5fd933919bbe6ebe16acdc0ba2250c9d"
+    },
+    {
+      "path": "action.sh",
+      "bytes": 1741,
+      "sha256": "670a7b7d2f998933a43341350476100667cba130e3c9f9e221d6218e47f86e70"
+    },
+    {
+      "path": "boot-guard.sh",
+      "bytes": 987,
+      "sha256": "ef13f449177af36ac7dfe5ede33d8fd48b90f492de9cc085de43a8fa889a4eda"
+    },
+    {
+      "path": "camera-power-runtime.sh",
+      "bytes": 7768,
+      "sha256": "67e4725477d76e9f211a289eae835c38b7cc129cce203efef630c423ef726a3b"
+    },
+    {
+      "path": "camera_power/broker",
+      "bytes": 18512,
+      "sha256": "a9f5bc83226121d7454f0ba86ebdd71ee6102d0f13197a54f25a5f0495ba7a0a"
+    },
+    {
+      "path": "camera_power/payload.sha256",
+      "bytes": 387,
+      "sha256": "17ee9a49935d709e2ed34aca4b179b8b7bf8bbd99cc55750dc50a8d7ee2d2e64"
+    },
+    {
+      "path": "camera_power/pins.env",
+      "bytes": 160,
+      "sha256": "298a734cd4f5387656dd7cbd2f2c8811d9658102aa5f727a9622e8a5f1a379e8"
+    },
+    {
+      "path": "camera_power/powerhint.json",
+      "bytes": 29214,
+      "sha256": "73e09da1286e713deeabbf07fddbd1b69db2f275724ad1b056fabb38e16c3140"
+    },
+    {
+      "path": "camera_power/restore-migration.sh",
+      "bytes": 692,
+      "sha256": "ff5b2b09202b6928b0613a65c7e83a89b23ffb3f7c1d644b38819d33268e4f62"
+    },
+    {
+      "path": "camera_power/vote",
+      "bytes": 9896,
+      "sha256": "9b62ed6a551dfba949a0229379be0a9ca96aefe6c30ec4fc7f84100bdc0d03fd"
+    },
+    {
+      "path": "copy_manifest.json",
+      "bytes": 93214,
+      "sha256": "35691378c223d97848578ee874f80823c07dee1933dc1e48c2afa84d62ba735d"
+    },
+    {
+      "path": "customize.sh",
+      "bytes": 1443,
+      "sha256": "e9e256c2327dc92a6532058df56ef4a9086c830b6a6d93475004929adac556e9"
+    },
+    {
+      "path": "disable",
+      "bytes": 69,
+      "sha256": "45767598d893178585c13d7ced34db6d8f2fe979d3d8e8a4735e9a6ce8f59d26"
+    },
+    {
+      "path": "f14-runtime.sh",
+      "bytes": 12925,
+      "sha256": "1233141dbdfec97e17141de3b80e2e5e0449118287bc51a4f03e4832d928175d"
+    },
+    {
+      "path": "f14_runtime/camera_config/CameraHWConfiguration.config",
+      "bytes": 1043,
+      "sha256": "b7893142c2e30015d5a26ac8b0cf54bc58e2697bdbc025741dfdfbc8599a67b8"
+    },
+    {
+      "path": "f14_runtime/camera_config/FusionBin.dat",
+      "bytes": 210752,
+      "sha256": "2bca0f6564e896f8a071131015a4f2bef1677d4f2c75acddf042834129829989"
+    },
+    {
+      "path": "f14_runtime/camera_config/anc_cl_kernel.cache",
+      "bytes": 439056,
+      "sha256": "a691758cdd070533552fef59f8975a911a320423d2b0aaf46e2f834a7c79796c"
+    },
+    {
+      "path": "f14_runtime/camera_config/asd/class.dlc",
+      "bytes": 2359885,
+      "sha256": "960f2d121e67954b160cd69accf5a0a49d28d4012a22952646e16fe89e938f11"
+    },
+    {
+      "path": "f14_runtime/camera_config/asd/detect.dlc",
+      "bytes": 5718693,
+      "sha256": "032970bdc15ad990db57adbac848ba6737b6290d9bcfb95fbd3b23129c0ef9d3"
+    },
+    {
+      "path": "f14_runtime/camera_config/ashdr/ncf_pack.ncf",
+      "bytes": 65984,
+      "sha256": "d174dce2f1c88fa173e3393989be9c8ba4029223cc53348d723e58eefbc40c95"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/imx319",
+      "bytes": 68786,
+      "sha256": "0ad191f2db5e0efe68493182d4edceb4e7b9868ea9cbb8b3070f894597c96d87"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/imx471",
+      "bytes": 42435,
+      "sha256": "07261186beabe3a4dc11d2e75dc0cc078e8e99d4f2af014e3bb731036c1f81f4"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/oplus_camera_algo_switch_config",
+      "bytes": 17521,
+      "sha256": "4b43c5d7889e923c66252c283e8ce80064bf06fa85041a9ec0d5a983dc9ff8eb"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/oplus_camera_aps_config",
+      "bytes": 75599,
+      "sha256": "9c9a418f33bce4a662a6a14889e712bfb5f5d0fb89fd093512eb32f4f39e79a6"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/oplus_camera_config",
+      "bytes": 16033,
+      "sha256": "216049b0e37d5407c2a2c8081870648795aefb9e157016588665e7c822687f90"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/ov02a1b",
+      "bytes": 19965,
+      "sha256": "e68eef17b4a950710f57c32b0cccb0623ac439d51db12e1f13e1377e0605ee9a"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/s5k3m5sx",
+      "bytes": 112452,
+      "sha256": "8b7f6f2caa94a85dff07ed68b46fd8c6b6ae83325dc50cbbf2ff5fc9a3f94df2"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/s5kgw1",
+      "bytes": 118702,
+      "sha256": "b4d3e2ee5b36fb69fc74f84b3bcf9e0b1eccbd6492faa2427751a7d4b0c1872f"
+    },
+    {
+      "path": "f14_runtime/camera_config/config/video_beauty_default_config",
+      "bytes": 312,
+      "sha256": "11eeb7206e509031061d274c51998eac323606f023a60142982d1a7f37a37ade"
+    },
+    {
+      "path": "f14_runtime/camera_config/darksight/darksight_main.bin",
+      "bytes": 9556454,
+      "sha256": "a3c6e74c51eb928f19c8a2f975ed44bc94b5ed1fcdf2b8374b1a5cbaa0579abe"
+    },
+    {
+      "path": "f14_runtime/camera_config/darksight/darksight_ultrawide.bin",
+      "bytes": 9556458,
+      "sha256": "daa48bb707ef29e52eed3a15196d81e5c6359b4e916b3c87543bcb47dd966fe4"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_default",
+      "bytes": 23735,
+      "sha256": "79809c742cbc76bd88575be98bdab1f5f44dc491c53e8238ae934bd24d9caa5e"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/000.png",
+      "bytes": 74941,
+      "sha256": "c2b8de2cf16386174940ef07f38789cd5692deaabe56b551394e67bb8b417df0"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/000_pre.bin",
+      "bytes": 814752,
+      "sha256": "7bbb6258dd186c4304e277e973d24f1f81824ab3c3c45b8789ebad705ecd4ab5"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/001.png",
+      "bytes": 87046,
+      "sha256": "fcdcd81f2ac732bbd38a3a75b5b403e062c6e70edef4a316a3039fc562eb634a"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/001_pre.bin",
+      "bytes": 814752,
+      "sha256": "66139d30edd9f8d77c9a2c9a6dc0f37daef6cd85c3945d28f5f6892f7fcc5ac6"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/002.png",
+      "bytes": 58787,
+      "sha256": "5f34c4ae95b29ae4ee4991a0fbf395e057c922e587421b5417d3eca14f9ad46b"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/002_pre.bin",
+      "bytes": 1833192,
+      "sha256": "f1fd0664db1d531140bd62f7a922540cc920c8a10c09b884895cdcee2fbc139c"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/003.png",
+      "bytes": 79836,
+      "sha256": "f3d63cac2e2efa93b324061fcd6e8ed6dc6b702dfa855847b1a42cc50cc94e16"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/003_pre.bin",
+      "bytes": 814752,
+      "sha256": "9328cbac79ae725603bf94038eaa8a7492cd4c4675c8d9175c723c7383c7f775"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/010.png",
+      "bytes": 34277,
+      "sha256": "9af4d79998f38977c73d604eaff08a975c0449df3b30df47d251546f02b518d3"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/010_pre.bin",
+      "bytes": 391920,
+      "sha256": "308758859b4d30d606bdfa6971a357e7a2bd4189f28e89f728ae1c3313a0c271"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/011.png",
+      "bytes": 37780,
+      "sha256": "5dbdde71ffe36889cb6c6d3dc2c4180af21eb40e0c6744a27e20af65fe1afc00"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/011_pre.bin",
+      "bytes": 391920,
+      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/012.png",
+      "bytes": 56376,
+      "sha256": "dfbd0bf4ba8d3e22b5d11b02136e016ed2758f9e47c61153c13d1dae99425825"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/012_pre.bin",
+      "bytes": 1396280,
+      "sha256": "f0fdd456e7cce477c31e2e10bcafe8e6f98c12d65c1fc554ffd802f79c3932d5"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/013.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/100.png",
+      "bytes": 42741,
+      "sha256": "cdb208a50e832be04b2d39c154e018aaf571ecf4ba2897d7956c727a95609f5c"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/100_pre.bin",
+      "bytes": 814752,
+      "sha256": "323a366b4bd6444451d7728e10b8f4fd3c40a1e64617ca082803c7e1a68df292"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/101.png",
+      "bytes": 62089,
+      "sha256": "aa485e4b919751d4dee2b9c283e04ede31e7444015498a0c468d32e9b706a8b7"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/101_pre.bin",
+      "bytes": 814752,
+      "sha256": "77b17beb11002cf524302970cf906f11c5d63e33adad4b82c4506589d9625c6a"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/102.png",
+      "bytes": 58049,
+      "sha256": "7a26c126e1acf504856d02f5dcb4608f67db5fceadd8b4e03c0c19ed13ad7060"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/102_pre.bin",
+      "bytes": 1833192,
+      "sha256": "b4c3fda61c913d8dd2e7b9b8bf0606ae52fe8913c67b2cabcdd92fa078b624cb"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/103.png",
+      "bytes": 101187,
+      "sha256": "b7cf2ee52f9bbf24c7102f4ad82fb09838d1ebf23484762426353e32c1340c2f"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/103_pre.bin",
+      "bytes": 814752,
+      "sha256": "e927c8d49f18f93025387ae207592104ef4ebcb464a75741d2452346b20f543b"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/110.png",
+      "bytes": 84987,
+      "sha256": "c815edd77f99541b121802e6159967884be31f25ef4aa56c7bfbbe49cc8a7ebc"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/110_pre.bin",
+      "bytes": 391920,
+      "sha256": "c98a27436a9da6ea8e88d82c55309fee7cefa5e673bb42bb18ba36af1dd21483"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/111.png",
+      "bytes": 81405,
+      "sha256": "ecb40f6acabd8329f6f74b3f2ad1866ed53270df66d1a345f8c669cad9eeea09"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/111_pre.bin",
+      "bytes": 391920,
+      "sha256": "8f6c895a5ba934d73742e2e5e27c7d740219787cb6c691f400d6d1759bc39d83"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/112.png",
+      "bytes": 54464,
+      "sha256": "42febcfbf511034c84c04ed0ce978ad72d1492e1a4287e9b397e37d83784448f"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/112_pre.bin",
+      "bytes": 1396280,
+      "sha256": "232755a679e229654526fa2e53c6813b5398ac2e13d6ec708d7075e3f8f7c248"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/113.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/200.png",
+      "bytes": 37870,
+      "sha256": "088c6b08358a81f85019d068dc418873129ded2ab771d904c998597b82e697f0"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/200_pre.bin",
+      "bytes": 814752,
+      "sha256": "3e946f66324a30a6d289713e9d90cbad78534c81e8f84e9541523b56e0245cbd"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/201.png",
+      "bytes": 56896,
+      "sha256": "a1c5dd1378217f7dff7fb12c75db9c3cb86b2b55153b1bd6c3a8085d1003a7d5"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/201_pre.bin",
+      "bytes": 814752,
+      "sha256": "c4efa43178ec8ff444fe6447dcd4f2ae87142d3cc412121ea8537e0ca2d14566"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/202.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/202_pre.bin",
+      "bytes": 12800,
+      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/203.png",
+      "bytes": 67888,
+      "sha256": "495fbf6fd65b6cee894ffce7c55df89c36a711062689c604dbf01ebf345434ce"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/203_pre.bin",
+      "bytes": 814752,
+      "sha256": "8babd32d776ea6355a83b060a304c64c28c212a8602f339856baf1709d7b0662"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/210.png",
+      "bytes": 36664,
+      "sha256": "0610becbee17ff7b0e16c8c87407b70a13967ce5cc84b36ba5e290eb292e3125"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/210_pre.bin",
+      "bytes": 391920,
+      "sha256": "9abd4714c7ec32b7ba5c4e9706c0eebbbf360cd491b78de48beeb61c94cb3a91"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/211.png",
+      "bytes": 37780,
+      "sha256": "3b7312baed801a6e31a4672a88066e28df6a116d8f8170a15352781c9433076c"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/211_pre.bin",
+      "bytes": 391920,
+      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/212.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/212_pre.bin",
+      "bytes": 12800,
+      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/213.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/eyeBright.png",
+      "bytes": 802044,
+      "sha256": "d1ae5e00f07055748be0c1733024c1d79103f9bfba1d6a05802c092e9499a921"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs00.bin",
+      "bytes": 1048576,
+      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs01.bin",
+      "bytes": 1048576,
+      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs02.bin",
+      "bytes": 1048576,
+      "sha256": "a67c13505dda1011c962502e72ce7608e99c5932a5ee69e53270598ebf887722"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs03.bin",
+      "bytes": 1048576,
+      "sha256": "976d8d83deb75ade099c291edfe2616b81f39ff3ec518ca9b9790b27a75c2196"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs10.bin",
+      "bytes": 1048576,
+      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs11.bin",
+      "bytes": 1048576,
+      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs12.bin",
+      "bytes": 1048576,
+      "sha256": "abb61eea5383e1471b1cbceb5d6a7b9c98ef028c7b0e33eb82abab1164aff9b2"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs13.bin",
+      "bytes": 1048576,
+      "sha256": "644e922cbac2f1bd71fe706a0c9c6fb0adf4b0f9e011795f56aa5a68f84f8dae"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_00.bin",
+      "bytes": 12288,
+      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_01.bin",
+      "bytes": 12288,
+      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_02.bin",
+      "bytes": 12288,
+      "sha256": "12041427cd8f10e3f242a07851f36a43ae6229d103084bb80c5ccd394430c5e2"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_03.bin",
+      "bytes": 12288,
+      "sha256": "b64f7eaea1c63e75a8a755245ac3a0dd95f93fc4617dfe7ff7e17d9441e40d93"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_10.bin",
+      "bytes": 12288,
+      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_11.bin",
+      "bytes": 12288,
+      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_12.bin",
+      "bytes": 12288,
+      "sha256": "9a925511f388c9ada58950ffec9ff73bfe9026789607b2034e32897e5d768e2e"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinLUTs_yuv16_13.bin",
+      "bytes": 12288,
+      "sha256": "1c33848e69f149f4ccfa096f9f6dfe5bedae1fec18deb3239360736c05a69db8"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinmask.bin",
+      "bytes": 1830708,
+      "sha256": "819570de9f98c6fc240335021c342da114554301dd9cb9b99ef1c721687c250b"
+    },
+    {
+      "path": "f14_runtime/camera_config/fb_model/skinmask.png",
+      "bytes": 194643,
+      "sha256": "137b80407541e158e33b92f8d9976178b7e203ca9ed6f32ab4ebf63eff67ca10"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/B1VLf4peM",
+      "bytes": 16384,
+      "sha256": "008a2f13ce73b09b5faab9d79055da5af0c441b72193bb6e3fdae78de477a4e2"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/B1aMqioxf",
+      "bytes": 16384,
+      "sha256": "54a3b8f18f9a91b996c45cf39dcbdb6097a4264f4a8c71d93b8dcd8033a337e2"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/B1nmcmWbG",
+      "bytes": 16384,
+      "sha256": "bcfa3e068bddba599bb497771dea15405b2816b2e8671c00b288dce966b36b1b"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/B1si_XbZz",
+      "bytes": 16384,
+      "sha256": "dbe8be4b16409a6024f205edf2cb5bcd01f65773ce2c500b0457bd643f6d626d"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/BJJAwoigM",
+      "bytes": 16384,
+      "sha256": "ee14299322d559af62b9f1818ab8b02303c39d5434027ffca2335956a78a4df0"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/BJyKIwqxz",
+      "bytes": 16384,
+      "sha256": "0ecad59310e9397c8dfae2a97b313706abb51151d129a4db6309b0e7de81ff37"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/ByW7g4bbf",
+      "bytes": 16384,
+      "sha256": "01593dcfe75b88d489ac14ed496498ae97a1895ecac6802601b1f6f55f6f1db1"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/ByYo3If",
+      "bytes": 16384,
+      "sha256": "151ebc062272682e44a3ba5faa777832d5ab272d841ed61d5e493142ec3ae246"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/BycYf7WWz",
+      "bytes": 16384,
+      "sha256": "c9f46acdc7c7ba37cf993231facdef3c239dab1977ae7a22ef033ac90316474d"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/EyxRbD2UCe",
+      "bytes": 16384,
+      "sha256": "7a44e1790fd67b4c9896c1d9385ca4c71b5f856672fd442e666562363d411af2"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/SJ3mbr6ef",
+      "bytes": 16384,
+      "sha256": "e962b8bdf4e030cf20a5a859cc82f81907a6b283011095daa5b4854692aca066"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/SkpZ8ebbz",
+      "bytes": 16384,
+      "sha256": "204ad70254e6f32307a887ae2ade86cf9012cf08767a80a5f4c17f3bec1c5166"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/Sy4uLSTgf",
+      "bytes": 16384,
+      "sha256": "b3fc1bfd49f785fed32ab4aff3b0d9b17737b14fddec5aca52ba599069d1e0c9"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/Syt2KeZZf",
+      "bytes": 16384,
+      "sha256": "b5dc55ef5f9ad5bef435ddf1d8eb7fcbac78958b44329ea2733216b40bffbaec"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/black_gold.bin",
+      "bytes": 131072,
+      "sha256": "2c8eefcd095de75c2d95d0e4840b8c70d63c90d39daef9c7618d14139d54a630"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/bowu-2.1.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "caf40c1aebb599ab2dff4a5c4c3ffa0a7948277a23202fee6e3b495e2ce96dcf"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/bright_coloured.bin",
+      "bytes": 131072,
+      "sha256": "8a5224ca09a8fa364810286923b269664dd148bfe361dcb952e309d1a275ea02"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/default",
+      "bytes": 16384,
+      "sha256": "183c650c4e53cc204ecdc71d539c85a60dbaaeff7dd862377f815234b28bb242"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/f_bin_hideaki",
+      "bytes": 16384,
+      "sha256": "ee3cd64495b7c707e0f2dbc010ce9598ab95aecf7d55eef1b096d6f15c9df3f9"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/f_candy_water_weak.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "064976e28ec9ef7d3e19ad7ab953852e74c51a84e9cf4d90ca772b9aafdf42ee"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/f_contrast_gray_face_dark",
+      "bytes": 16384,
+      "sha256": "785174d33b1fe122210d3ca9ed785b6013dab1263022730ed2d65f9d7b6a22b2"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/f_fuji_strong.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "fcf6aa9fe39893cab4393c79b726334f15240c6d6b94781cd6e110989072f003"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/f_japan_strong.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "72cff04c649933151969a0841ffcc889e4b63fe7e24e1b275cd9ff89bd17122c"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/interstellar_space.bin",
+      "bytes": 131072,
+      "sha256": "5aa396c6015bd639c426b99bd18ebffb614b05dd36ac53810f319dd571cb832c"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/jiari-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "d1b948679c1870dbfde65489913cec2a666ad052ca93a8cf051d2fd0ea5ed9ee"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/lvtu-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "9fd8c97b95c88576d7918683b767c572cdc77eb3689dbc752937b0b7446ff3d2"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/meiwei-2.2.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "67e6ed974425af74dd95f48141f0009f5c95cb5507812ecc0d2317e640899e49"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/neon-2020.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "9fd03293c34501721c1df182d0f2a6915d0c74fc9e911313be5dd0871a0f80b1"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_black_and_white",
+      "bytes": 131072,
+      "sha256": "9c27c5a89b1384214396c9d472e163f4fe9fe7c091a00d494ee8fddaf54100de"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_highlight",
+      "bytes": 131072,
+      "sha256": "ad7e2a5add832b0fcc87f895956ba41757894402c44005545c0776382fe862ae"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_ins",
+      "bytes": 131072,
+      "sha256": "68919926f51cb0190c30494fef0e03b01f29781f55f7b48c2c9c3522bf3440dc"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_natal",
+      "bytes": 131072,
+      "sha256": "b945436d0e72d5b0d8f0d4ef4bf54d10791067af1c49d97234562407cb5ed75b"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_olympus",
+      "bytes": 131072,
+      "sha256": "e7c0ed099f5b90a31b9eb46113058e9d3001aaea3cc73017e9736def44eaf868"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_plain",
+      "bytes": 131072,
+      "sha256": "1ca0f86be2a460f30d0e089f5b71df97375b42fc6f9c8747ee4bf3340446e090"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_show",
+      "bytes": 131072,
+      "sha256": "8670f15da479e74ae93a261236108131501e1f59a703c6b86c7dbef111b79d73"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_solar",
+      "bytes": 131072,
+      "sha256": "97360d78d59b164102f134d270a459853172807cf4d2bb3cfc50f96a9321e522"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_strong",
+      "bytes": 131072,
+      "sha256": "0ad3ffe5aeb99dbadd473c918339d67dd6fe371d9714e039d45bba86c8f504d5"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/oppo_video_filter_west",
+      "bytes": 131072,
+      "sha256": "7221db8750a2a76a20d7fb9e8048b12c4d3b5a0c9bc446bbdb09c61aaa4b7d6e"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/p4_1.cube.rgb.bin",
+      "bytes": 143748,
+      "sha256": "f99efa8a1f119f944db9e5271342771416f8d3ba4da13ca225f81f83f19d4725"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/p4_2.cube.rgb.bin",
+      "bytes": 143748,
+      "sha256": "cd96d842280e0bdb23ef84dc280f56fe624966c5ba8c152f763777140f9ae46d"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/p4_3.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "78edef26c50d28b3e74fa6689ebe1488fdd00a498cd39059bb9181d3ad60e2de"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/p4_4.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "bced47204bb85c71d8bcb8f9a6eea35e2f6511b9862da2373b7ac33347124319"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/qiuri-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "d3d42833b4e33adddba1cc40cb28ca47283ed6f805bd9c02e70bfe7a6eb1056f"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/r1JaFSZZG",
+      "bytes": 16384,
+      "sha256": "dc79ac8377682045cd9864ea92d569d5202d97331c215ccc6386c16d646d0e5b"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/r1PrfoolG",
+      "bytes": 16384,
+      "sha256": "5a3e2fe11b6b1b23596df069a5a3a1df39891dd8c322723e8fffd73a12e66e6e"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/rJ5g5vPWG",
+      "bytes": 16384,
+      "sha256": "8568b09464357acf53f03f6e82674f176179010c53c44976f0589dece00e0141"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/rJxJtmaez",
+      "bytes": 16384,
+      "sha256": "3b21001417d88f32119f17bfd7d1a9b4436395a63d72c960976f2faf6086c2fb"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "50ce7a1edbec29a5cee3fdc548485bb20d0d704afdde8f9d334c14b9414cb0b8"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "4b5a7570af8dbbd72b505f4a3deb4267d22c14825bd0964cbd7e14f50c4df734"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/realme-infra-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "9317da5ed6c4f7965dcfeaa9f56059063c9e4b69b7508cafabd8a8f6dd985339"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/red-red.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "ccc0e432e2c99ea530d4c1e3277832e784d7e0ad694898cc8f1d4ec94c7576cc"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/rkMhq4ZWf",
+      "bytes": 16384,
+      "sha256": "7edc2959549f11ff225ec2d821d42186000fd438138164cb36d3c09c54459a52"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/rkx5u4Zbf",
+      "bytes": 16384,
+      "sha256": "f2222ae873ae360dc55e0a80b37c3d52f8dc9ebfd27604a4b46e27dc6739de34"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/senlin-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "03089393fef488c2f1b7330510f56859b7c98d914e8da66afa9c061956fb3f12"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/sky-blue.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "d972b5e95efbca7bf524f7a9f0bc9fa5c3eaa70da69067f5ac8401c75d44554b"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/tree-green.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "5e35d46ecd10e00478b5d2686197bef1e11a57e4b0cbef9fed08a9d37ef2972b"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_lut/yuanqi-2.2s.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "9454a3100b053b545065899754920b861957eeb4c3eab12c578efd782055f32f"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_res/film_grain_small.bin",
+      "bytes": 4194304,
+      "sha256": "6a204d90ffab5084da4631cee1321503ebbef61dad626e1b0707c96e9b8dfc70"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_res/lut_all_points.png",
+      "bytes": 7278,
+      "sha256": "56245105fd79a43cca5e5eff5485b16aa663119c6963d503bc320180847ac2fd"
+    },
+    {
+      "path": "f14_runtime/camera_config/filters_res/overlay_p4_3_weak.png",
+      "bytes": 329494,
+      "sha256": "03e5cf16e847de37660f9b58dff62261ce440bfad5674c29f51b3257de9c56bf"
+    },
+    {
+      "path": "f14_runtime/camera_config/gasryuv_1.2_wp.model",
+      "bytes": 11182352,
+      "sha256": "166cdae5420ffa3b1cff7d936bebb6634edcd00e40026c88d7363bed93d8e289"
+    },
+    {
+      "path": "f14_runtime/camera_config/license_release_fdc.lic",
+      "bytes": 2110,
+      "sha256": "7f5e9ba9a4413c211466fd1eb383c48c5c36c2c72bcb46383bb0479b1b3129e1"
+    },
+    {
+      "path": "f14_runtime/camera_config/megvii/merged_model",
+      "bytes": 4148886,
+      "sha256": "a73e846e120805cf1364577bafb6aa984a6d23dc58382cf6993e86eb29aab6ca"
+    },
+    {
+      "path": "f14_runtime/camera_config/megvii/merged_model_post",
+      "bytes": 16284526,
+      "sha256": "8dbd83b050cf174b7059570926463874171a56d5c243206ee6828417e23849f5"
+    },
+    {
+      "path": "f14_runtime/camera_config/model/DocDetectV15.xbin",
+      "bytes": 1040816,
+      "sha256": "d4cfaa8887eb23fee2b059c4f9fa94dfe5965234ba6b698dc8266e6067896183"
+    },
+    {
+      "path": "f14_runtime/camera_config/model/license.lic",
+      "bytes": 912,
+      "sha256": "445171928581b780a2d77e95e511cf6d5cffe7f72ff961df643a3d7c5a70bbea"
+    },
+    {
+      "path": "f14_runtime/camera_config/model_fdc.data",
+      "bytes": 16954709,
+      "sha256": "8b56879a9bbec60f38d839fa7258058181520f6988bf1eb11aefdce82678adc4"
+    },
+    {
+      "path": "f14_runtime/camera_config/settings_fdc.txt",
+      "bytes": 9445,
+      "sha256": "049508caa4ac78a695b08be890b85521512f8a052f487c45a04d0f835d8c2bb1"
+    },
+    {
+      "path": "f14_runtime/camera_config/singleblur/license_release.license",
+      "bytes": 2110,
+      "sha256": "ae1582f6503a4e24cbe2122acaca2e5570893b7d438113ff51233cd41084475e"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_0",
+      "bytes": 1024,
+      "sha256": "04441b72253f49384e853fb46a81657e5e28187f02187a47713eb9cd482f9a17"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_1",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_10",
+      "bytes": 1024,
+      "sha256": "7464111e259f83f5cad87bf2691a592fd8fe45928f03d30b60be0c41ed3b1bab"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_2",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_3",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_4",
+      "bytes": 1024,
+      "sha256": "6e1268245021736c5432705fbe4d17d232d860bec972051ad46687ba1a043ced"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_5",
+      "bytes": 1024,
+      "sha256": "f559331e21a8ecb2796188eb68e0da983a26ea2c08cc042e35db9d30847a2728"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_6",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_7",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_8",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/curve_lut_9",
+      "bytes": 1024,
+      "sha256": "86838b0266af6cbbe7b5b3a604580283638539daf7c33af5b45ba6558df810bd"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/list.txt",
+      "bytes": 1232,
+      "sha256": "e388302a0a29305a9671c7b0d2b3aeda399b52fe13b8c2f01ea3582ff39d6aff"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/s_curve_lut",
+      "bytes": 1024,
+      "sha256": "d5aa511adaf689d0340232b5d3c8be7a7874c280ae5563bc8c8b23c7c64b2006"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_0",
+      "bytes": 49152,
+      "sha256": "1338654ffd974f472902a8fa3141817ba8c67239cc71222571790104e1fce41b"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_1",
+      "bytes": 49152,
+      "sha256": "2431d07993f20f3ddb4a1255557714ac08cb799dcdb9d6faab5c0bbed6961bc2"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_10",
+      "bytes": 49152,
+      "sha256": "6a205d18096d3ba5642ba45992cc7497c8755d3ddad3c83df18fb53c216f8c14"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_2",
+      "bytes": 49152,
+      "sha256": "380da3a69f0809c32eeb15b63eb6707049e95f05c5046f1ba6784a6014b72ac6"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_3",
+      "bytes": 49152,
+      "sha256": "57d2d1e545450ce70d4fd53077d4b7e42fe99aef1d13ef0b0e30364f1aaa96c0"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_4",
+      "bytes": 49152,
+      "sha256": "dcd3c3b664a5e53de1ddc9be3d850f704e1f83884c47ccfa23f9beb5dbebfbb4"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_5",
+      "bytes": 49152,
+      "sha256": "6d685fdeb242fd6f121b8e5bf0a1675e6f7961e7b45f1057c8c28d2491217c23"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_6",
+      "bytes": 49152,
+      "sha256": "bc2b7fc8d40d8093cc711aee980d72c1313091fc3afa2f0392e78aab255a3d79"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_7",
+      "bytes": 49152,
+      "sha256": "f408accf0cf29a79fca08fe9fead1eedd3dbb8f86395d66bbe8d43ee3670f9f7"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_8",
+      "bytes": 49152,
+      "sha256": "93caa54a83475487834fcc6a48f6e1a6ad3a16d31699ff339b58680497014844"
+    },
+    {
+      "path": "f14_runtime/camera_config/tonemap/tonemap_lut_9",
+      "bytes": 49152,
+      "sha256": "2391b14213e6a2d2e2dc6497ed7ccefc6282669521ab7ceb62af709a419f1f40"
+    },
+    {
+      "path": "f14_runtime/enabled.boot-stall",
+      "bytes": 89,
+      "sha256": "9724e2e6532435a00e20a9d6b235128f6f2ab4bdacaaadd02290e33ed4754681"
+    },
+    {
+      "path": "f14_runtime/files.sha256",
+      "bytes": 30454,
+      "sha256": "9f850fa7660ce509f806850578ebae8db94469b197d9a8e2d5d1befe1949cf60"
+    },
+    {
+      "path": "f14_runtime/manifest.json",
+      "bytes": 50408,
+      "sha256": "f791ef308e4342188bc5da99ea92305fc78ff850547f4876aeff1774e482bedf"
+    },
+    {
+      "path": "f14_runtime/provider_hw/android.hardware.camera.provider@2.4-service_64",
+      "bytes": 6696,
+      "sha256": "93eed868089083679745c9ee82e86d7a6d5bf16efbeae03d74a86b27967212a2"
+    },
+    {
+      "path": "f14_runtime/provider_hw/occam_f14_stack/liboc_f14_selector.so",
+      "bytes": 41120,
+      "sha256": "3eb0986349165e98c855c712efe6445b84515b0f1eaea4f752dd954ac2d928bd"
+    },
+    {
+      "path": "f14_runtime/provider_hw/occam_f14_stack/provider.real",
+      "bytes": 14544,
+      "sha256": "eda177878d768e2810fb5583cb5d2a777584a2f1c22aa808b51f67be2c0634e3"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.imx319.so",
+      "bytes": 11104,
+      "sha256": "5d138fe33649321539213b6e585689d1f3bf97298cb0b4766e036e5b6ee3d7ef"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.imx471.so",
+      "bytes": 15192,
+      "sha256": "2669733258c7369af0c346f0b4d40a671fe4ca60e6f57df7b91292478292e3e6"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.imx586.so",
+      "bytes": 15344,
+      "sha256": "9ea257c178c9df5fb8ada95f59ce746cadc2cb182549852bf64d29a00712e295"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.ov02a1b.so",
+      "bytes": 11040,
+      "sha256": "65fdf54fea112d349b34704576787ac58956b0c21b4623bf86f605429b2032ca"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.s5k3m5sx.so",
+      "bytes": 11168,
+      "sha256": "d052710b51f5519a89d77a1b85888c401a0c7ea195b615d4a5a20fb87c37a5bd"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensor.s5kgw1.so",
+      "bytes": 15448,
+      "sha256": "8ae0967706ffb50d112017fc9d577efea7bb053ec6eb9a503e0164e376e6ed4e"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.qtech_s5k3m5sx.bin",
+      "bytes": 383800,
+      "sha256": "823404fcc1d9cf3afa4fa126ecfa456d160188e594a9defd0bf519786988bc77"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.qtech_s5kgw1.bin",
+      "bytes": 2984352,
+      "sha256": "50e046c9acf8d7d1ce3e26c7283fb43db591b76c2f348b0173f52446488b88d3"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.shine_ov02a1b.bin",
+      "bytes": 37480,
+      "sha256": "63e2122a9b0003ed8af6eade006e3a5ef7c40beb530fa0d5a6069836e9b3b5fa"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.sunny_imx319.bin",
+      "bytes": 352952,
+      "sha256": "e2d68359e85af97dbc686d63ca140ae2af87542023245c7307a57d3aeba21704"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.sunny_imx471.bin",
+      "bytes": 118056,
+      "sha256": "ebefe240c1475ee06a03c2771d1b6af39136935f9e3e0d75c887af11b63fbd79"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.sensormodule.sunny_s5kgw1.bin",
+      "bytes": 2983720,
+      "sha256": "2e2f8e1f4d0ea46115cf86e9264e91a6e565c08c109575596637c481a1acafb7"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.default.bin",
+      "bytes": 5695184,
+      "sha256": "aa86b71d90ac7f9a113eabad4f1daf0900954612b1d5327cddaf4883cda11df7"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.qtech_s5k3m5sx.bin",
+      "bytes": 26248608,
+      "sha256": "3270fd32b88a4a31c8a7ee108adb34913c7f47d2ccc4ecc64ce31e32b189840d"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.qtech_s5kgw1.bin",
+      "bytes": 44093416,
+      "sha256": "106156576487c2853fd4b0809f1c347918f686527f9b432c318e06645c078a4e"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.shine_ov02a1b.bin",
+      "bytes": 10624552,
+      "sha256": "b61098c8d4d762076a7a78aa3d76a3a102c6afa750e97f0383d940ba727af1c8"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.sunny_imx319.bin",
+      "bytes": 15389568,
+      "sha256": "64cc7dd2bd73e86b16d80cb067a4c50f3e6f443cb0e4094b387359cc97a1e34f"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.sunny_imx471.bin",
+      "bytes": 11309056,
+      "sha256": "d67cebec296fe22570e0a6deb3fee10d39db634ec94f904a9ee8e9b35675d1f7"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/com.qti.tuned.sunny_s5kgw1.bin",
+      "bytes": 41200768,
+      "sha256": "12beab81c5f9c17b2552e1b188a7cb86c4085d3c6afb6a3846905ee4d031122e"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.arcsoft.node.ozeis.so",
+      "bytes": 49736,
+      "sha256": "876ebb2a307ebef492f7003406d49c48343ef18a933f6958ef6acad798640bef"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.drawafinfo.so",
+      "bytes": 126568,
+      "sha256": "607c0eed07f6af7521c7b5a60566b9d3041492bd5c7cd4498681bf8216aa0d42"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.oppoengmode.so",
+      "bytes": 45016,
+      "sha256": "576eea2259627fda3a096c982756232e5b85aae3e3beaa8a9839fa05cc7520e0"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.preview.so",
+      "bytes": 130256,
+      "sha256": "39fd11521326ab6905fa712b2e1df70c594f00a0f1dfdfa175b0925470eb745f"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.rtb.so",
+      "bytes": 83848,
+      "sha256": "f571947a05d4a6c4ae45d0d0d7df4164a756a82d2a2479d60a8f6b428a541ac6"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.sat.so",
+      "bytes": 185904,
+      "sha256": "24e7ca515593578c46a495c03cee255e2e6fb3cc87e95ae08f4f4a340f17c63a"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.sstabdefer.so",
+      "bytes": 99248,
+      "sha256": "6349fcb4284bcfce86f05b7dba43d5f7894f19d7623cc8711df0dd005078d670"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.sstabrealt.so",
+      "bytes": 94712,
+      "sha256": "7eb5d8a6eae03472cfb4e5de7897e9e667884a5ddad0cd83be373af536a3558c"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.oppo.node.watermark.so",
+      "bytes": 20352,
+      "sha256": "02b29a34e0fce64bed47bfff33417c1f33d3d927dacfa54b43c65fdf40f0d04d"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.camx.chiiqutils.so",
+      "bytes": 28552,
+      "sha256": "62cfce3522064362e5223e06e5cb9d5f7a0380c7baf45265d80ca356c466391b"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.eisv2.so",
+      "bytes": 135408,
+      "sha256": "f1af9fd3f1f7ee9fc84efc417cbe8f4c69ce320d7ddf9e92b4b9540fe7dd68a5"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.eisv3.so",
+      "bytes": 267728,
+      "sha256": "9b866abb354a3e804e73d3722ccf76ac777e4577d1207764129d5b3c19d8a8c1"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.hvx.addconstant.so",
+      "bytes": 11224,
+      "sha256": "4fd74ca56356a002265c97c54643d01a3114d807c13b4436211eb511b884f499"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.hvx.binning.so",
+      "bytes": 11200,
+      "sha256": "98101d6231de6cfe2d1e38bbed291bbb1b473c6a3f09c143010035a8f32fdf77"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.depth.so",
+      "bytes": 19712,
+      "sha256": "91e3104243f6677a083ad61586d6a60864dd5f4fbcf00d3bfc1e192e96d1711a"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.dummyrtb.so",
+      "bytes": 11704,
+      "sha256": "089ef1dc9c6aff23897478acd0c401481d594a2f1355ccb277541681ef65fbc2"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.dummysat.so",
+      "bytes": 19920,
+      "sha256": "1622621a02a109a49aa288427373a744a9ae3e8a8cacafeea262a07b6f0677bd"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.eisv2.so",
+      "bytes": 45504,
+      "sha256": "a4bd46e2ff4277274f74e2c669be75408117823303f88b2eff42617ab1db4762"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.eisv3.so",
+      "bytes": 49784,
+      "sha256": "02adfa534a2425eb730e385a7ffdc283508765f60f446033eb7b6e1725cd02c4"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.fcv.so",
+      "bytes": 19976,
+      "sha256": "61bb8225ba637da42813a849d8114d7facc8f7b72a725d84251e63a254a465a2"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.gpu.so",
+      "bytes": 57592,
+      "sha256": "1bbf8ff539c95940afd7beafcd96bedd9e43ecff28183f742fb4198344f82ebe"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.memcpy.so",
+      "bytes": 15896,
+      "sha256": "3c5066bc11827311186c6ae0e7aba0bcf317bc39fc34e577600fe3ca253dea18"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.remosaic.so",
+      "bytes": 20232,
+      "sha256": "ee37cb5191f693def346aa6afa42b743c44f579c8abd8404036c186d340cee5a"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.stich.so",
+      "bytes": 11720,
+      "sha256": "b925132b821e1cabeedc21d59ea18a17c8b677f5446f2dd70bd10aca9d92ec7c"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.node.swregistration.so",
+      "bytes": 11456,
+      "sha256": "7161f16f15f088ab22248692d315a8af86cd1211fa5cdff3ab98e44616f8dc5d"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.aec.so",
+      "bytes": 382672,
+      "sha256": "c825b294e739d077f0dcf5871cd7a5c63925c90dacb50a2a9e55f13d517edb74"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.aecwrapper.so",
+      "bytes": 11472,
+      "sha256": "485e860a300f1f62886e842c6fd6553c0036891512f3829786c6758506a75a31"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.af.so",
+      "bytes": 216888,
+      "sha256": "8fa9993d81312634a0e92266f7abd6473dd5241a87aa4e4e06e42710fda4cbee"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.afd.so",
+      "bytes": 135176,
+      "sha256": "43cc0f32af815475d7c8ab65c25502838e5c492d07fe22135d8634bf391ff1ed"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.afwrapper.so",
+      "bytes": 11464,
+      "sha256": "8eb6033aea00385f211785c6a8662db9bf71b52d552ea4fa40f47667de1db19c"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.asd.so",
+      "bytes": 69664,
+      "sha256": "1d81f72391fee984c91a49f657b6351d42a3280dd43d9995648598d757fa8261"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.awb.so",
+      "bytes": 338864,
+      "sha256": "f1ca21304b2e05ff8bb554fec21b123d11697566b44e9902266a4c90d0b2629e"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.awbwrapper.so",
+      "bytes": 19848,
+      "sha256": "0e331c60b697c65705056be8ed5bf8da77f535d47df8439fef5f6feb1b6e56c8"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.haf.so",
+      "bytes": 334424,
+      "sha256": "6184d936a07ab3b3df3e234274b9ddbf64b16e2d99d0cc7c0cf783a18f5ad7af"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.hafoverride.so",
+      "bytes": 15712,
+      "sha256": "1637d8ccacbf61f21b1dd864e195654f2c8901345d28924321066c752f8ebc04"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.localhistogram.so",
+      "bytes": 69408,
+      "sha256": "da1f9f51c0ae6d1cc7e499c0e34fef43afec68a650f87e1b65000161853517e7"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.pdlib.so",
+      "bytes": 729208,
+      "sha256": "548f145d9314ce06ea27bb02be7efd97a836a442098a4dfc35ef693ca9ca360e"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.pdlibsony.so",
+      "bytes": 69664,
+      "sha256": "9e5bdb7e3af9b10b89eef764408ad7677b4b6d3e024bcf45477251b49c418278"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qti.stats.pdlibwrapper.so",
+      "bytes": 69224,
+      "sha256": "cf2d436a43cd51c1a35e5ebdbdfc3bd24c3c68052457cd5fd938cd0f45826d75"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qtistatic.stats.aec.so",
+      "bytes": 15888,
+      "sha256": "f4e85619608ed3adfe292750de3a693a7b5658dbf578c7bad3eedca8f8232fb6"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qtistatic.stats.af.so",
+      "bytes": 11968,
+      "sha256": "22a24fb5276daef7a26c2a10d9580d9d51082a6cfb8ea47426980d329150d539"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qtistatic.stats.awb.so",
+      "bytes": 20008,
+      "sha256": "22e90412c0a7f365a0e2b3b0eb58089a350f449a5365bcf98f8cf085e12d18a2"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/com.qtistatic.stats.pdlib.so",
+      "bytes": 11848,
+      "sha256": "70ba6d7556363d9b8066202eb4b8be8010530284eed7d2cc22b65d2274da3e8f"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/components/libdepthmapwrapper.so",
+      "bytes": 10952,
+      "sha256": "9b2bbaa757127f55a4e687d7d1d6626637910eda87a92293245394641be354f9"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/fdconfigpreview.bin",
+      "bytes": 1440,
+      "sha256": "19a1a6722d177f9a22edf2426fb5a1a3812ba93782b35b844711daf99f78aa01"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/fdconfigpreviewlite.bin",
+      "bytes": 1440,
+      "sha256": "19a1a6722d177f9a22edf2426fb5a1a3812ba93782b35b844711daf99f78aa01"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/fdconfigvideo.bin",
+      "bytes": 1440,
+      "sha256": "19a1a6722d177f9a22edf2426fb5a1a3812ba93782b35b844711daf99f78aa01"
+    },
+    {
+      "path": "f14_runtime/vendor64/camera/fdconfigvideolite.bin",
+      "bytes": 1440,
+      "sha256": "19a1a6722d177f9a22edf2426fb5a1a3812ba93782b35b844711daf99f78aa01"
+    },
+    {
+      "path": "f14_runtime/vendor64/hw/camera.qcom.so",
+      "bytes": 6088096,
+      "sha256": "847b1f9e19ef20e58cdf7ac42b0d3ed2c026b1e1b343be28471019c5de8e4ac0"
+    },
+    {
+      "path": "f14_runtime/vendor64/hw/com.qti.chi.override.so",
+      "bytes": 2201936,
+      "sha256": "a0836c593f66580a7faef35463abf7bd5a049b0acb91b72a6ef16a6fbd397fce"
+    },
+    {
+      "path": "f14_runtime/vendor64/libCOppLceTonemapAPI.so",
+      "bytes": 42688,
+      "sha256": "5d98a2758414352c6672176f7d77acc7767a5f3b14d8e7dee5f664f9bdea8453"
+    },
+    {
+      "path": "f14_runtime/vendor64/libDeVIS.so",
+      "bytes": 75384,
+      "sha256": "c48c7fa16256473b25c86de4013243682ff3ae2febeef0725f0bfc45df4748c6"
+    },
+    {
+      "path": "f14_runtime/vendor64/libEIS.so",
+      "bytes": 284408,
+      "sha256": "069bdfeb25700fe659d8ec2d94781789939b544070194226044722c8c28efea9"
+    },
+    {
+      "path": "f14_runtime/vendor64/libOGLManager.so",
+      "bytes": 38448,
+      "sha256": "0d8d2f45c879823fb1abfb7a0a742627401919a1c0cad1d2f4528c34fd25a4fd"
+    },
+    {
+      "path": "f14_runtime/vendor64/libOPPORectify.so",
+      "bytes": 3788568,
+      "sha256": "b281b9a466a3c2c5b94193b8ef77745fbdd15636d6b7cccaead87155a7ed2516"
+    },
+    {
+      "path": "f14_runtime/vendor64/libSonyIMX471RmscLibrary.so",
+      "bytes": 85896,
+      "sha256": "867cf918f14e0efc26a7dff84e6dc3b789458972bd3942f304f0df69e3c1d607"
+    },
+    {
+      "path": "f14_runtime/vendor64/libWaterMark.so",
+      "bytes": 1525960,
+      "sha256": "c81326ff25fb166af291bba26573d8db5e2ca13bbba56e2c13d7d7ff52f21dff"
+    },
+    {
+      "path": "f14_runtime/vendor64/libarcsoft_time_convert.so",
+      "bytes": 10480,
+      "sha256": "f3d6e1f0f9f700f0ed9400d1edd6154c0ec531f5b1fd424ed901e9a193480bc0"
+    },
+    {
+      "path": "f14_runtime/vendor64/libcamera_core_hwi.so",
+      "bytes": 145912,
+      "sha256": "f97952c334e5646097cdefab203840bcbd9b0bf8475c6046cc2ac6d5db72f23a"
+    },
+    {
+      "path": "f14_runtime/vendor64/libcom.qti.chinodeutils.so",
+      "bytes": 19456,
+      "sha256": "eab1402e0cb905e5a283ae7b458ac9beb6802f9c462a3b1e3206ae8c3b9d3407"
+    },
+    {
+      "path": "f14_runtime/vendor64/libocam_common.so",
+      "bytes": 184248,
+      "sha256": "3eb1d703f4d97dd9818784aa04831b886280cf01a17cdde1d0e2e327385c2ad8"
+    },
+    {
+      "path": "f14_runtime/vendor64/liboppo_platform_hwi.so",
+      "bytes": 24232,
+      "sha256": "554a2775d46d166ef7b4b528f405e959faf826605ae85fc846f177fdf9c2c287"
+    },
+    {
+      "path": "f14_runtime/vendor64/libstdc++.so",
+      "bytes": 15080,
+      "sha256": "6e775773ae5116e949f92c71891563f72a7c6bdd49662b609c9c21097b96c1af"
+    },
+    {
+      "path": "f14_runtime/vendor64/qcom.camera.log.so",
+      "bytes": 1069064,
+      "sha256": "7ecc356072c84d83d6d738c8c78722e184cdd9327119b4530fd900ee3a105cf3"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_0",
+      "bytes": 1024,
+      "sha256": "04441b72253f49384e853fb46a81657e5e28187f02187a47713eb9cd482f9a17"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_1",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_10",
+      "bytes": 1024,
+      "sha256": "7464111e259f83f5cad87bf2691a592fd8fe45928f03d30b60be0c41ed3b1bab"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_2",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_3",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_4",
+      "bytes": 1024,
+      "sha256": "6e1268245021736c5432705fbe4d17d232d860bec972051ad46687ba1a043ced"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_5",
+      "bytes": 1024,
+      "sha256": "f559331e21a8ecb2796188eb68e0da983a26ea2c08cc042e35db9d30847a2728"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_6",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_7",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_8",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/curve_lut_9",
+      "bytes": 1024,
+      "sha256": "86838b0266af6cbbe7b5b3a604580283638539daf7c33af5b45ba6558df810bd"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/list.txt",
+      "bytes": 1232,
+      "sha256": "e388302a0a29305a9671c7b0d2b3aeda399b52fe13b8c2f01ea3582ff39d6aff"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/s_curve_lut",
+      "bytes": 1024,
+      "sha256": "d5aa511adaf689d0340232b5d3c8be7a7874c280ae5563bc8c8b23c7c64b2006"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_0",
+      "bytes": 49152,
+      "sha256": "1338654ffd974f472902a8fa3141817ba8c67239cc71222571790104e1fce41b"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_1",
+      "bytes": 49152,
+      "sha256": "2431d07993f20f3ddb4a1255557714ac08cb799dcdb9d6faab5c0bbed6961bc2"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_10",
+      "bytes": 49152,
+      "sha256": "6a205d18096d3ba5642ba45992cc7497c8755d3ddad3c83df18fb53c216f8c14"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_2",
+      "bytes": 49152,
+      "sha256": "380da3a69f0809c32eeb15b63eb6707049e95f05c5046f1ba6784a6014b72ac6"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_3",
+      "bytes": 49152,
+      "sha256": "57d2d1e545450ce70d4fd53077d4b7e42fe99aef1d13ef0b0e30364f1aaa96c0"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_4",
+      "bytes": 49152,
+      "sha256": "dcd3c3b664a5e53de1ddc9be3d850f704e1f83884c47ccfa23f9beb5dbebfbb4"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_5",
+      "bytes": 49152,
+      "sha256": "6d685fdeb242fd6f121b8e5bf0a1675e6f7961e7b45f1057c8c28d2491217c23"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_6",
+      "bytes": 49152,
+      "sha256": "bc2b7fc8d40d8093cc711aee980d72c1313091fc3afa2f0392e78aab255a3d79"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_7",
+      "bytes": 49152,
+      "sha256": "f408accf0cf29a79fca08fe9fead1eedd3dbb8f86395d66bbe8d43ee3670f9f7"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_8",
+      "bytes": 49152,
+      "sha256": "93caa54a83475487834fcc6a48f6e1a6ad3a16d31699ff339b58680497014844"
+    },
+    {
+      "path": "f14_runtime/vendor_camera_data/tonemap/tonemap_lut_9",
+      "bytes": 49152,
+      "sha256": "2391b14213e6a2d2e2dc6497ed7ccefc6282669521ab7ceb62af709a419f1f40"
+    },
+    {
+      "path": "gpu-layouts.tsv",
+      "bytes": 1769,
+      "sha256": "9658d7bdb030957f0feaefd03e1cc68bd2a89f133ca10e60b141b209e5642187"
+    },
+    {
+      "path": "manual-camera-sepolicy.rule",
+      "bytes": 255,
+      "sha256": "881f38510ff55d6cc8d19b4f3964eda7829edd0f3c7372e11a2be25db56983d1"
+    },
+    {
+      "path": "module.prop",
+      "bytes": 322,
+      "sha256": "bc47c2fe14e5fa7e39ee26a1c6064bf07d9a8e547caf58f4238b2495c1e31aef"
+    },
+    {
+      "path": "odm_etc_camera/darksight/darksight_main.bin",
+      "bytes": 9556454,
+      "sha256": "a3c6e74c51eb928f19c8a2f975ed44bc94b5ed1fcdf2b8374b1a5cbaa0579abe"
+    },
+    {
+      "path": "odm_etc_camera/darksight/darksight_ultrawide.bin",
+      "bytes": 9556458,
+      "sha256": "daa48bb707ef29e52eed3a15196d81e5c6359b4e916b3c87543bcb47dd966fe4"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/000.png",
+      "bytes": 74941,
+      "sha256": "c2b8de2cf16386174940ef07f38789cd5692deaabe56b551394e67bb8b417df0"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/000_pre.bin",
+      "bytes": 814752,
+      "sha256": "7bbb6258dd186c4304e277e973d24f1f81824ab3c3c45b8789ebad705ecd4ab5"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/001.png",
+      "bytes": 87046,
+      "sha256": "fcdcd81f2ac732bbd38a3a75b5b403e062c6e70edef4a316a3039fc562eb634a"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/001_pre.bin",
+      "bytes": 814752,
+      "sha256": "66139d30edd9f8d77c9a2c9a6dc0f37daef6cd85c3945d28f5f6892f7fcc5ac6"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/002.png",
+      "bytes": 58787,
+      "sha256": "5f34c4ae95b29ae4ee4991a0fbf395e057c922e587421b5417d3eca14f9ad46b"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/002_pre.bin",
+      "bytes": 1833192,
+      "sha256": "f1fd0664db1d531140bd62f7a922540cc920c8a10c09b884895cdcee2fbc139c"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/003.png",
+      "bytes": 79836,
+      "sha256": "f3d63cac2e2efa93b324061fcd6e8ed6dc6b702dfa855847b1a42cc50cc94e16"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/003_pre.bin",
+      "bytes": 814752,
+      "sha256": "9328cbac79ae725603bf94038eaa8a7492cd4c4675c8d9175c723c7383c7f775"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/010.png",
+      "bytes": 34277,
+      "sha256": "9af4d79998f38977c73d604eaff08a975c0449df3b30df47d251546f02b518d3"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/010_pre.bin",
+      "bytes": 391920,
+      "sha256": "308758859b4d30d606bdfa6971a357e7a2bd4189f28e89f728ae1c3313a0c271"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/011.png",
+      "bytes": 37780,
+      "sha256": "5dbdde71ffe36889cb6c6d3dc2c4180af21eb40e0c6744a27e20af65fe1afc00"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/011_pre.bin",
+      "bytes": 391920,
+      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/012.png",
+      "bytes": 56376,
+      "sha256": "dfbd0bf4ba8d3e22b5d11b02136e016ed2758f9e47c61153c13d1dae99425825"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/012_pre.bin",
+      "bytes": 1396280,
+      "sha256": "f0fdd456e7cce477c31e2e10bcafe8e6f98c12d65c1fc554ffd802f79c3932d5"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/013.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/100.png",
+      "bytes": 42741,
+      "sha256": "cdb208a50e832be04b2d39c154e018aaf571ecf4ba2897d7956c727a95609f5c"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/100_pre.bin",
+      "bytes": 814752,
+      "sha256": "323a366b4bd6444451d7728e10b8f4fd3c40a1e64617ca082803c7e1a68df292"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/101.png",
+      "bytes": 62089,
+      "sha256": "aa485e4b919751d4dee2b9c283e04ede31e7444015498a0c468d32e9b706a8b7"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/101_pre.bin",
+      "bytes": 814752,
+      "sha256": "77b17beb11002cf524302970cf906f11c5d63e33adad4b82c4506589d9625c6a"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/102.png",
+      "bytes": 58049,
+      "sha256": "7a26c126e1acf504856d02f5dcb4608f67db5fceadd8b4e03c0c19ed13ad7060"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/102_pre.bin",
+      "bytes": 1833192,
+      "sha256": "b4c3fda61c913d8dd2e7b9b8bf0606ae52fe8913c67b2cabcdd92fa078b624cb"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/103.png",
+      "bytes": 101187,
+      "sha256": "b7cf2ee52f9bbf24c7102f4ad82fb09838d1ebf23484762426353e32c1340c2f"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/103_pre.bin",
+      "bytes": 814752,
+      "sha256": "e927c8d49f18f93025387ae207592104ef4ebcb464a75741d2452346b20f543b"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/110.png",
+      "bytes": 84987,
+      "sha256": "c815edd77f99541b121802e6159967884be31f25ef4aa56c7bfbbe49cc8a7ebc"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/110_pre.bin",
+      "bytes": 391920,
+      "sha256": "c98a27436a9da6ea8e88d82c55309fee7cefa5e673bb42bb18ba36af1dd21483"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/111.png",
+      "bytes": 81405,
+      "sha256": "ecb40f6acabd8329f6f74b3f2ad1866ed53270df66d1a345f8c669cad9eeea09"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/111_pre.bin",
+      "bytes": 391920,
+      "sha256": "8f6c895a5ba934d73742e2e5e27c7d740219787cb6c691f400d6d1759bc39d83"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/112.png",
+      "bytes": 54464,
+      "sha256": "42febcfbf511034c84c04ed0ce978ad72d1492e1a4287e9b397e37d83784448f"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/112_pre.bin",
+      "bytes": 1396280,
+      "sha256": "232755a679e229654526fa2e53c6813b5398ac2e13d6ec708d7075e3f8f7c248"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/113.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/200.png",
+      "bytes": 37870,
+      "sha256": "088c6b08358a81f85019d068dc418873129ded2ab771d904c998597b82e697f0"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/200_pre.bin",
+      "bytes": 814752,
+      "sha256": "3e946f66324a30a6d289713e9d90cbad78534c81e8f84e9541523b56e0245cbd"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/201.png",
+      "bytes": 56896,
+      "sha256": "a1c5dd1378217f7dff7fb12c75db9c3cb86b2b55153b1bd6c3a8085d1003a7d5"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/201_pre.bin",
+      "bytes": 814752,
+      "sha256": "c4efa43178ec8ff444fe6447dcd4f2ae87142d3cc412121ea8537e0ca2d14566"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/202.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/202_pre.bin",
+      "bytes": 12800,
+      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/203.png",
+      "bytes": 67888,
+      "sha256": "495fbf6fd65b6cee894ffce7c55df89c36a711062689c604dbf01ebf345434ce"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/203_pre.bin",
+      "bytes": 814752,
+      "sha256": "8babd32d776ea6355a83b060a304c64c28c212a8602f339856baf1709d7b0662"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/210.png",
+      "bytes": 36664,
+      "sha256": "0610becbee17ff7b0e16c8c87407b70a13967ce5cc84b36ba5e290eb292e3125"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/210_pre.bin",
+      "bytes": 391920,
+      "sha256": "9abd4714c7ec32b7ba5c4e9706c0eebbbf360cd491b78de48beeb61c94cb3a91"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/211.png",
+      "bytes": 37780,
+      "sha256": "3b7312baed801a6e31a4672a88066e28df6a116d8f8170a15352781c9433076c"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/211_pre.bin",
+      "bytes": 391920,
+      "sha256": "81a9ce10298074778421f0171dbaee5c1ae933a71308754e50eb2bdca789be7b"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/212.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/212_pre.bin",
+      "bytes": 12800,
+      "sha256": "4a4a6781aab3ea42359117fc97bc4361f15e16b2c3b66ab8de55e3f4b536c03e"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/213.png",
+      "bytes": 48982,
+      "sha256": "39726c549f53291839615b58ff19564ca2f802b10ecfb5d41c9fb67464fba429"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/eyeBright.png",
+      "bytes": 802044,
+      "sha256": "d1ae5e00f07055748be0c1733024c1d79103f9bfba1d6a05802c092e9499a921"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs00.bin",
+      "bytes": 1048576,
+      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs01.bin",
+      "bytes": 1048576,
+      "sha256": "9c55188539ab7f7ada3d6f57c2258b75d7f0b041ab500d64fdc0d5e0d0ef7eba"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs02.bin",
+      "bytes": 1048576,
+      "sha256": "a67c13505dda1011c962502e72ce7608e99c5932a5ee69e53270598ebf887722"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs03.bin",
+      "bytes": 1048576,
+      "sha256": "976d8d83deb75ade099c291edfe2616b81f39ff3ec518ca9b9790b27a75c2196"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs10.bin",
+      "bytes": 1048576,
+      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs11.bin",
+      "bytes": 1048576,
+      "sha256": "d28e0126323c0a6e1ae0e3f785574f0871b35b7ecadf2958bd9b0f3c90b264f4"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs12.bin",
+      "bytes": 1048576,
+      "sha256": "abb61eea5383e1471b1cbceb5d6a7b9c98ef028c7b0e33eb82abab1164aff9b2"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs13.bin",
+      "bytes": 1048576,
+      "sha256": "644e922cbac2f1bd71fe706a0c9c6fb0adf4b0f9e011795f56aa5a68f84f8dae"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_00.bin",
+      "bytes": 12288,
+      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_01.bin",
+      "bytes": 12288,
+      "sha256": "772ffd1d39c8837641eede2234fe014a7df7c26ecaf08ea8b183dae7a8973b9d"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_02.bin",
+      "bytes": 12288,
+      "sha256": "12041427cd8f10e3f242a07851f36a43ae6229d103084bb80c5ccd394430c5e2"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_03.bin",
+      "bytes": 12288,
+      "sha256": "b64f7eaea1c63e75a8a755245ac3a0dd95f93fc4617dfe7ff7e17d9441e40d93"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_10.bin",
+      "bytes": 12288,
+      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_11.bin",
+      "bytes": 12288,
+      "sha256": "7d3d61e2c4179da05c25f3cab5d3e1d2f5247fd9eff9b8e4f3b44b1395ad4a0c"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_12.bin",
+      "bytes": 12288,
+      "sha256": "9a925511f388c9ada58950ffec9ff73bfe9026789607b2034e32897e5d768e2e"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinLUTs_yuv16_13.bin",
+      "bytes": 12288,
+      "sha256": "1c33848e69f149f4ccfa096f9f6dfe5bedae1fec18deb3239360736c05a69db8"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinmask.bin",
+      "bytes": 1830708,
+      "sha256": "819570de9f98c6fc240335021c342da114554301dd9cb9b99ef1c721687c250b"
+    },
+    {
+      "path": "odm_etc_camera/fb_model/skinmask.png",
+      "bytes": 194643,
+      "sha256": "137b80407541e158e33b92f8d9976178b7e203ca9ed6f32ab4ebf63eff67ca10"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/B1VLf4peM",
+      "bytes": 16384,
+      "sha256": "008a2f13ce73b09b5faab9d79055da5af0c441b72193bb6e3fdae78de477a4e2"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/B1aMqioxf",
+      "bytes": 16384,
+      "sha256": "54a3b8f18f9a91b996c45cf39dcbdb6097a4264f4a8c71d93b8dcd8033a337e2"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/B1nmcmWbG",
+      "bytes": 16384,
+      "sha256": "bcfa3e068bddba599bb497771dea15405b2816b2e8671c00b288dce966b36b1b"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/B1si_XbZz",
+      "bytes": 16384,
+      "sha256": "dbe8be4b16409a6024f205edf2cb5bcd01f65773ce2c500b0457bd643f6d626d"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/BJJAwoigM",
+      "bytes": 16384,
+      "sha256": "ee14299322d559af62b9f1818ab8b02303c39d5434027ffca2335956a78a4df0"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/BJyKIwqxz",
+      "bytes": 16384,
+      "sha256": "0ecad59310e9397c8dfae2a97b313706abb51151d129a4db6309b0e7de81ff37"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/ByW7g4bbf",
+      "bytes": 16384,
+      "sha256": "01593dcfe75b88d489ac14ed496498ae97a1895ecac6802601b1f6f55f6f1db1"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/ByYo3If",
+      "bytes": 16384,
+      "sha256": "151ebc062272682e44a3ba5faa777832d5ab272d841ed61d5e493142ec3ae246"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/BycYf7WWz",
+      "bytes": 16384,
+      "sha256": "c9f46acdc7c7ba37cf993231facdef3c239dab1977ae7a22ef033ac90316474d"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/EyxRbD2UCe",
+      "bytes": 16384,
+      "sha256": "7a44e1790fd67b4c9896c1d9385ca4c71b5f856672fd442e666562363d411af2"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/SJ3mbr6ef",
+      "bytes": 16384,
+      "sha256": "e962b8bdf4e030cf20a5a859cc82f81907a6b283011095daa5b4854692aca066"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/SkpZ8ebbz",
+      "bytes": 16384,
+      "sha256": "204ad70254e6f32307a887ae2ade86cf9012cf08767a80a5f4c17f3bec1c5166"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/Sy4uLSTgf",
+      "bytes": 16384,
+      "sha256": "b3fc1bfd49f785fed32ab4aff3b0d9b17737b14fddec5aca52ba599069d1e0c9"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/Syt2KeZZf",
+      "bytes": 16384,
+      "sha256": "b5dc55ef5f9ad5bef435ddf1d8eb7fcbac78958b44329ea2733216b40bffbaec"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/black_gold.bin",
+      "bytes": 131072,
+      "sha256": "2c8eefcd095de75c2d95d0e4840b8c70d63c90d39daef9c7618d14139d54a630"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/bowu-2.1.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "caf40c1aebb599ab2dff4a5c4c3ffa0a7948277a23202fee6e3b495e2ce96dcf"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/bright_coloured.bin",
+      "bytes": 131072,
+      "sha256": "8a5224ca09a8fa364810286923b269664dd148bfe361dcb952e309d1a275ea02"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/default",
+      "bytes": 16384,
+      "sha256": "183c650c4e53cc204ecdc71d539c85a60dbaaeff7dd862377f815234b28bb242"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/f_bin_hideaki",
+      "bytes": 16384,
+      "sha256": "ee3cd64495b7c707e0f2dbc010ce9598ab95aecf7d55eef1b096d6f15c9df3f9"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/f_candy_water_weak.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "064976e28ec9ef7d3e19ad7ab953852e74c51a84e9cf4d90ca772b9aafdf42ee"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/f_contrast_gray_face_dark",
+      "bytes": 16384,
+      "sha256": "785174d33b1fe122210d3ca9ed785b6013dab1263022730ed2d65f9d7b6a22b2"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/f_fuji_strong.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "fcf6aa9fe39893cab4393c79b726334f15240c6d6b94781cd6e110989072f003"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/f_japan_strong.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "72cff04c649933151969a0841ffcc889e4b63fe7e24e1b275cd9ff89bd17122c"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/interstellar_space.bin",
+      "bytes": 131072,
+      "sha256": "5aa396c6015bd639c426b99bd18ebffb614b05dd36ac53810f319dd571cb832c"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/jiari-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "d1b948679c1870dbfde65489913cec2a666ad052ca93a8cf051d2fd0ea5ed9ee"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/lvtu-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "9fd8c97b95c88576d7918683b767c572cdc77eb3689dbc752937b0b7446ff3d2"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/meiwei-2.2.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "67e6ed974425af74dd95f48141f0009f5c95cb5507812ecc0d2317e640899e49"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/neon-2020.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "9fd03293c34501721c1df182d0f2a6915d0c74fc9e911313be5dd0871a0f80b1"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_black_and_white",
+      "bytes": 131072,
+      "sha256": "9c27c5a89b1384214396c9d472e163f4fe9fe7c091a00d494ee8fddaf54100de"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_highlight",
+      "bytes": 131072,
+      "sha256": "ad7e2a5add832b0fcc87f895956ba41757894402c44005545c0776382fe862ae"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_ins",
+      "bytes": 131072,
+      "sha256": "68919926f51cb0190c30494fef0e03b01f29781f55f7b48c2c9c3522bf3440dc"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_natal",
+      "bytes": 131072,
+      "sha256": "b945436d0e72d5b0d8f0d4ef4bf54d10791067af1c49d97234562407cb5ed75b"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_olympus",
+      "bytes": 131072,
+      "sha256": "e7c0ed099f5b90a31b9eb46113058e9d3001aaea3cc73017e9736def44eaf868"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_plain",
+      "bytes": 131072,
+      "sha256": "1ca0f86be2a460f30d0e089f5b71df97375b42fc6f9c8747ee4bf3340446e090"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_show",
+      "bytes": 131072,
+      "sha256": "8670f15da479e74ae93a261236108131501e1f59a703c6b86c7dbef111b79d73"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_solar",
+      "bytes": 131072,
+      "sha256": "97360d78d59b164102f134d270a459853172807cf4d2bb3cfc50f96a9321e522"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_strong",
+      "bytes": 131072,
+      "sha256": "0ad3ffe5aeb99dbadd473c918339d67dd6fe371d9714e039d45bba86c8f504d5"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/oppo_video_filter_west",
+      "bytes": 131072,
+      "sha256": "7221db8750a2a76a20d7fb9e8048b12c4d3b5a0c9bc446bbdb09c61aaa4b7d6e"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/p4_1.cube.rgb.bin",
+      "bytes": 143748,
+      "sha256": "f99efa8a1f119f944db9e5271342771416f8d3ba4da13ca225f81f83f19d4725"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/p4_2.cube.rgb.bin",
+      "bytes": 143748,
+      "sha256": "cd96d842280e0bdb23ef84dc280f56fe624966c5ba8c152f763777140f9ae46d"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/p4_3.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "78edef26c50d28b3e74fa6689ebe1488fdd00a498cd39059bb9181d3ad60e2de"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/p4_4.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "bced47204bb85c71d8bcb8f9a6eea35e2f6511b9862da2373b7ac33347124319"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/qiuri-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "d3d42833b4e33adddba1cc40cb28ca47283ed6f805bd9c02e70bfe7a6eb1056f"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/r1JaFSZZG",
+      "bytes": 16384,
+      "sha256": "dc79ac8377682045cd9864ea92d569d5202d97331c215ccc6386c16d646d0e5b"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/r1PrfoolG",
+      "bytes": 16384,
+      "sha256": "5a3e2fe11b6b1b23596df069a5a3a1df39891dd8c322723e8fffd73a12e66e6e"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/rJ5g5vPWG",
+      "bytes": 16384,
+      "sha256": "8568b09464357acf53f03f6e82674f176179010c53c44976f0589dece00e0141"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/rJxJtmaez",
+      "bytes": 16384,
+      "sha256": "3b21001417d88f32119f17bfd7d1a9b4436395a63d72c960976f2faf6086c2fb"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/realme-black-gold-1.1-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "50ce7a1edbec29a5cee3fdc548485bb20d0d704afdde8f9d334c14b9414cb0b8"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/realme-cyberpunk-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "4b5a7570af8dbbd72b505f4a3deb4267d22c14825bd0964cbd7e14f50c4df734"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/realme-infra-RGB.CUBE.rgb.bin",
+      "bytes": 131072,
+      "sha256": "9317da5ed6c4f7965dcfeaa9f56059063c9e4b69b7508cafabd8a8f6dd985339"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/red-red.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "ccc0e432e2c99ea530d4c1e3277832e784d7e0ad694898cc8f1d4ec94c7576cc"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/rkMhq4ZWf",
+      "bytes": 16384,
+      "sha256": "7edc2959549f11ff225ec2d821d42186000fd438138164cb36d3c09c54459a52"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/rkx5u4Zbf",
+      "bytes": 16384,
+      "sha256": "f2222ae873ae360dc55e0a80b37c3d52f8dc9ebfd27604a4b46e27dc6739de34"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/senlin-2.0.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "03089393fef488c2f1b7330510f56859b7c98d914e8da66afa9c061956fb3f12"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/sky-blue.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "d972b5e95efbca7bf524f7a9f0bc9fa5c3eaa70da69067f5ac8401c75d44554b"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/tree-green.cube.rgb.bin",
+      "bytes": 131072,
+      "sha256": "5e35d46ecd10e00478b5d2686197bef1e11a57e4b0cbef9fed08a9d37ef2972b"
+    },
+    {
+      "path": "odm_etc_camera/filters_lut/yuanqi-2.2s.cube.rgb.bin",
+      "bytes": 16384,
+      "sha256": "9454a3100b053b545065899754920b861957eeb4c3eab12c578efd782055f32f"
+    },
+    {
+      "path": "odm_etc_camera/filters_res/film_grain_small.bin",
+      "bytes": 4194304,
+      "sha256": "6a204d90ffab5084da4631cee1321503ebbef61dad626e1b0707c96e9b8dfc70"
+    },
+    {
+      "path": "odm_etc_camera/filters_res/lut_all_points.png",
+      "bytes": 7278,
+      "sha256": "56245105fd79a43cca5e5eff5485b16aa663119c6963d503bc320180847ac2fd"
+    },
+    {
+      "path": "odm_etc_camera/filters_res/overlay_p4_3_weak.png",
+      "bytes": 329494,
+      "sha256": "03e5cf16e847de37660f9b58dff62261ce440bfad5674c29f51b3257de9c56bf"
+    },
+    {
+      "path": "odm_etc_camera/megvii/merged_model",
+      "bytes": 4148886,
+      "sha256": "a73e846e120805cf1364577bafb6aa984a6d23dc58382cf6993e86eb29aab6ca"
+    },
+    {
+      "path": "odm_etc_camera/megvii/merged_model_post",
+      "bytes": 16284526,
+      "sha256": "8dbd83b050cf174b7059570926463874171a56d5c243206ee6828417e23849f5"
+    },
+    {
+      "path": "odm_etc_camera/singleblur/license_release.license",
+      "bytes": 2110,
+      "sha256": "ae1582f6503a4e24cbe2122acaca2e5570893b7d438113ff51233cd41084475e"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_0",
+      "bytes": 1024,
+      "sha256": "04441b72253f49384e853fb46a81657e5e28187f02187a47713eb9cd482f9a17"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_1",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_10",
+      "bytes": 1024,
+      "sha256": "7464111e259f83f5cad87bf2691a592fd8fe45928f03d30b60be0c41ed3b1bab"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_2",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_3",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_4",
+      "bytes": 1024,
+      "sha256": "6e1268245021736c5432705fbe4d17d232d860bec972051ad46687ba1a043ced"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_5",
+      "bytes": 1024,
+      "sha256": "f559331e21a8ecb2796188eb68e0da983a26ea2c08cc042e35db9d30847a2728"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_6",
+      "bytes": 1024,
+      "sha256": "1f57127caae98bc4df7e9966c9236a0776b5f748e203b49a62761bb191118ac8"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_7",
+      "bytes": 1024,
+      "sha256": "0d1caff343eea02236feda71ff73a76d3ead8acf22800405d3550979a352cd55"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_8",
+      "bytes": 1024,
+      "sha256": "b48444064aef820b6d24737c4d86a4e9cca4a2eeae186c27e3b0f3cb16e44366"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/curve_lut_9",
+      "bytes": 1024,
+      "sha256": "86838b0266af6cbbe7b5b3a604580283638539daf7c33af5b45ba6558df810bd"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/list.txt",
+      "bytes": 1232,
+      "sha256": "e388302a0a29305a9671c7b0d2b3aeda399b52fe13b8c2f01ea3582ff39d6aff"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/s_curve_lut",
+      "bytes": 1024,
+      "sha256": "d5aa511adaf689d0340232b5d3c8be7a7874c280ae5563bc8c8b23c7c64b2006"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_0",
+      "bytes": 49152,
+      "sha256": "1338654ffd974f472902a8fa3141817ba8c67239cc71222571790104e1fce41b"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_1",
+      "bytes": 49152,
+      "sha256": "2431d07993f20f3ddb4a1255557714ac08cb799dcdb9d6faab5c0bbed6961bc2"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_10",
+      "bytes": 49152,
+      "sha256": "6a205d18096d3ba5642ba45992cc7497c8755d3ddad3c83df18fb53c216f8c14"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_2",
+      "bytes": 49152,
+      "sha256": "380da3a69f0809c32eeb15b63eb6707049e95f05c5046f1ba6784a6014b72ac6"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_3",
+      "bytes": 49152,
+      "sha256": "57d2d1e545450ce70d4fd53077d4b7e42fe99aef1d13ef0b0e30364f1aaa96c0"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_4",
+      "bytes": 49152,
+      "sha256": "dcd3c3b664a5e53de1ddc9be3d850f704e1f83884c47ccfa23f9beb5dbebfbb4"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_5",
+      "bytes": 49152,
+      "sha256": "6d685fdeb242fd6f121b8e5bf0a1675e6f7961e7b45f1057c8c28d2491217c23"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_6",
+      "bytes": 49152,
+      "sha256": "bc2b7fc8d40d8093cc711aee980d72c1313091fc3afa2f0392e78aab255a3d79"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_7",
+      "bytes": 49152,
+      "sha256": "f408accf0cf29a79fca08fe9fead1eedd3dbb8f86395d66bbe8d43ee3670f9f7"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_8",
+      "bytes": 49152,
+      "sha256": "93caa54a83475487834fcc6a48f6e1a6ad3a16d31699ff339b58680497014844"
+    },
+    {
+      "path": "odm_etc_camera/tonemap/tonemap_lut_9",
+      "bytes": 49152,
+      "sha256": "2391b14213e6a2d2e2dc6497ed7ccefc6282669521ab7ceb62af709a419f1f40"
+    },
+    {
+      "path": "payload.sha256",
+      "bytes": 70347,
+      "sha256": "5d63ce10b5e89c88a29dbf8cc22340d8c9b79ff8300f671fc104cdfdac6036a8"
+    },
+    {
+      "path": "post-fs-data.sh",
+      "bytes": 1530,
+      "sha256": "a545286d15e658b8eaa2de8ed1589a8ee278ea2362467fd7e447328bd848abe2"
+    },
+    {
+      "path": "provider-runtime.sh",
+      "bytes": 1887,
+      "sha256": "fa00e5a5ba5ccc9597c5f820df9145a0e01f6a71d475d9b5e10d6e45d4827580"
+    },
+    {
+      "path": "rfsa_runtime/libarcsoft_hdrplus_hvx_5221_skel.so",
+      "bytes": 513304,
+      "sha256": "539c222e1222ce0756e615d46a5de43dc85c92e69cc90ccc5181618e9c2fba70"
+    },
+    {
+      "path": "rom-profile.sh",
+      "bytes": 2088,
+      "sha256": "5090117acfaaa8ae4e113f7ba2c069f8809d9e7bf265076dc174dae8f5050d4b"
+    },
+    {
+      "path": "rom-profiles.tsv",
+      "bytes": 1843,
+      "sha256": "788629015598ad648181801dedf2935e797b7c9cf329af2b5f1fc57f8daf6da7"
+    },
+    {
+      "path": "root-policy.sh",
+      "bytes": 1490,
+      "sha256": "417af9172bfbccb679c1196d8a5bc5ea81d6f8b556ea58fda23c45f9194e8bb2"
+    },
+    {
+      "path": "service.sh",
+      "bytes": 532,
+      "sha256": "008ff7bb7d1c6f285e00879274adbd53233135f8d9e053404bbb2d35dfa4c9b2"
+    },
+    {
+      "path": "skip_mount",
+      "bytes": 71,
+      "sha256": "3eb1607fea75c0d1377b803159f9854697aaa3315d5a49fb2c269df1d4b7a286"
+    },
+    {
+      "path": "system/etc/default-permissions/default-permissions-oppocamera.xml",
+      "bytes": 659,
+      "sha256": "aa209ffa6a7186da79bee1e8649106d1bc8ef7742c76d708fa9916f7147965a1"
+    },
+    {
+      "path": "system/etc/permissions/privapp-permissions-oppocamera.xml",
+      "bytes": 453,
+      "sha256": "d93550f2ca8055bdb6b1d5ea6b8684ae6c1ddd872a78d7d540b77d335cad964b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/OppoCamera.apk",
+      "bytes": 93938754,
+      "sha256": "3b299c9c0f2d790038f7ea52e10f5bae424e096b339502f6c2c1bb4a3831acd5"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/anc_snpe/lib64/libSNPE.so",
+      "bytes": 7919568,
+      "sha256": "96c21bf93895afb1ba62416c4b7341439aeec679bfd81567bf8464ec5b5758fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/anc_snpe/lib64/libc++_shared.so",
+      "bytes": 1055016,
+      "sha256": "cbf48c05fd429d280da9947a3e59623bc2918a4522e47335330b3fac8bc4c4e1"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/anc_snpe/lib64/libsnpe_loader.so",
+      "bytes": 47232,
+      "sha256": "33268cc7f16f2604eb6317a083b287a6d87c49eedae7e0c66af8040c2997ffe3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/anc_snpe/lib64/libsymphony-cpu.so",
+      "bytes": 563320,
+      "sha256": "42af709f7e21aae6611142feed95abbc4a8a1bf0791208a1b9648a53c162f8fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_f14_gpu/lib64/libCB.so",
+      "bytes": 3149680,
+      "sha256": "887bde34357c80962a68b790d09256d12180b42530dae77103e3a257ce878c14"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_f14_gpu/lib64/libOpenCL.so",
+      "bytes": 115112,
+      "sha256": "e31334eef9202b9c569c053b2afc110ff488a53f17eb300fc140915c337c18b8"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_f14_gpu/lib64/libgsl.so",
+      "bytes": 2129952,
+      "sha256": "7c1e1722353260b7357eef8d98e30176049b30a9c3b4a6b26e8f3bfb9ad84105"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_f14_gpu/lib64/libllvm-qcom.so",
+      "bytes": 30043560,
+      "sha256": "3e13dc328a3bc8a4138ecdac760d502afb74f5014a4c301b93fad87389b4066c"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libSNPE.so",
+      "bytes": 7919568,
+      "sha256": "96c21bf93895afb1ba62416c4b7341439aeec679bfd81567bf8464ec5b5758fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libSNPE_G.so",
+      "bytes": 5899744,
+      "sha256": "3f0b4c279dac32e750a84a488e85d2d2e7137cac0939aba80dde927d64037e97"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libaps_frame_registration.so",
+      "bytes": 229176,
+      "sha256": "eb628e48fb1679819aed0f6b012192c80556e2119685997caaf66ec598b10308"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libapsdarksight.so",
+      "bytes": 174616,
+      "sha256": "278ab9d17214e33381d1c79f3651b684d16b1eca2dd945b256f643e05399e999"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libc++_shared.so",
+      "bytes": 1055016,
+      "sha256": "cbf48c05fd429d280da9947a3e59623bc2918a4522e47335330b3fac8bc4c4e1"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libstdc++.so",
+      "bytes": 15448,
+      "sha256": "8ad3d3cb63b65a79f0c17cf1bdef6bda2d7ebc06a00c56500fcf0f47e8030ae4"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/darksight_rom/lib64/libsymphony-cpu.so",
+      "bytes": 563320,
+      "sha256": "42af709f7e21aae6611142feed95abbc4a8a1bf0791208a1b9648a53c162f8fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/front_night_dsp/libarcsoft_psn_hvx_5221_skel.so",
+      "bytes": 455448,
+      "sha256": "09d0c7ce51b929749b799f06c8a2eca9f75419b3cfd861696c6b4276eca503ed"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/vendor/lib64/libarcsoft_dualcam_refocus_left.so",
+      "bytes": 21188120,
+      "sha256": "b456df1dc7b6826596b4ea38d4a5c7958b7a8bc1abe2ba29bdc1096651220531"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/vendor/lib64/libarcsoft_dualcam_refocus_preview.so",
+      "bytes": 2402784,
+      "sha256": "bd0ec3229db51fe8d70550890b9ab2396bc1e6e0df0c5884cebddb6e32677790"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_native/vendor/lib64/libarcsoft_dualcam_refocus_right.so",
+      "bytes": 21192216,
+      "sha256": "18af618a23bcf892423d595db04d18d7d92cbd22b33b34f4e64e9f90b052da05"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/coloros-support-wrapper.jar",
+      "bytes": 168050,
+      "sha256": "b16a3c48a43360748b54536acb338da0999bac2667575fcf4d944356d2d6ee71"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/enable",
+      "bytes": 309,
+      "sha256": "ba7518734cbcd574455de0fa7b950d1e98d2e8cbc24f89efb81720c5ab0b72ff"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/feature_config.json",
+      "bytes": 71772,
+      "sha256": "a8a6056ed442184a279892b103fe8d0fc28489a7eded7609e81d04dce633312a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/framework.jar",
+      "bytes": 33671496,
+      "sha256": "dff73d378032b12f9fc73e53e383ba5da4eb5d274877952469a5e1cedee1bd95"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/isolate_anc_snpe",
+      "bytes": 67,
+      "sha256": "df6c71acc6d3cb8b4130979c72bc75a1027f6dc2ce417a89c25c2d9bb5fda530"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/fresh_oem_bootstrap/oplus-framework.jar",
+      "bytes": 514530,
+      "sha256": "d5ad64d79e33a2bf26314e81a632092abdf2806a7f2382596c115e4dbe8c3c71"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/lib2DSlender.so",
+      "bytes": 7884240,
+      "sha256": "1ae10566581fb8561e4b104ed4e834660617c55bc82e3d00d8900eca354ab898"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAPSClient-jni.qti.so",
+      "bytes": 396976,
+      "sha256": "38fba5af5886ae3d212752c8da88020429c146544aaa14a35858a6a3336367e3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAlgoInterface.so",
+      "bytes": 8992976,
+      "sha256": "aeea5953699e06773de4c68f5f51b312fb3d7f4d14c6755299d777ccab1bdecc"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAlgoProcess.so",
+      "bytes": 659856,
+      "sha256": "64079c9ef92be5c169f186069728682ccbc9321eb43a7425d48746c123d63c5a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncFilter_jni.so",
+      "bytes": 79912,
+      "sha256": "11411d49ac001f0bf7b39b7ddcaf9650095ef55c1e598162c49fcae831c2c1e0"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncHumBokeh-jni.qti.so",
+      "bytes": 264120,
+      "sha256": "f6280704ff246f60a6f8046b6fd0f01bc333e5159bfb684e924a6a9d48321b84"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncHumBokeh.so",
+      "bytes": 2910576,
+      "sha256": "472d2d541b366f6472df730a3aa892963150b5b969db1e46c8ad83429c00058c"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncHumBokehPost.so",
+      "bytes": 2910576,
+      "sha256": "1d02a64d9bc58d675aa3a2266f99d145ebaaddb02fb1234117ff5af15616deb9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncHumVideoBase.so",
+      "bytes": 67592,
+      "sha256": "b8478bf02158143fce84bb1a48d09c8bd7bf75a939480c0bde6292e896376c82"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAncHumanVideo-jni.qti.so",
+      "bytes": 264048,
+      "sha256": "972bff46c3ab1b1b62ecd8bbb6dfa970ea4ed336eb259d8c6d3a11af18935427"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libApsFaceBeautyPreviewJni.so",
+      "bytes": 486432,
+      "sha256": "c14c713631e54dfdc47f0d5738198254491ccc50f1d190fb13a613c3fd6f5e5e"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libApsTiltShifPreviewJni.so",
+      "bytes": 10000,
+      "sha256": "45dd0d8d91234a2238b6c01457280ada52bd8545d3f403ee2dcda64fbb68576d"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAvatarEngineRender.so",
+      "bytes": 2918760,
+      "sha256": "272a8641db6b38a8d2fe7256ac493502b9b0025501a53f72c46b3cf4f6c1cd1a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libAvatarEngineRenderNative.so",
+      "bytes": 2931320,
+      "sha256": "fd7f276bf0d62197f6cc280e57f537dc8395fe555f474019f67ee1b3cd63bdce"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libCOppLceTonemapAPI.so",
+      "bytes": 42688,
+      "sha256": "cac9ec06749f54eb5a148bc333bb9fdfcbae945511830b110106dbe9657515c5"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libDeVIS.so",
+      "bytes": 75384,
+      "sha256": "c48c7fa16256473b25c86de4013243682ff3ae2febeef0725f0bfc45df4748c6"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libEIS.so",
+      "bytes": 284408,
+      "sha256": "069bdfeb25700fe659d8ec2d94781789939b544070194226044722c8c28efea9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libFaceBeautyCap.so",
+      "bytes": 2485216,
+      "sha256": "2e537cdf30e138e7d97787c5b26ef458b00398b88e82646c8b5f4735d36e70a5"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libFaceBeautyPre.so",
+      "bytes": 8028280,
+      "sha256": "ac3b4cea52055202bc49534e5384f18b1d4f6f7ecfb3a0e937fd7658395217d9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libFormatConverter.so",
+      "bytes": 350416,
+      "sha256": "a2617f751b66be8ffe4b9f5bbc34863956b41e85f5a31925632250da5cffaed9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libGradienterNativeLib.so",
+      "bytes": 9992,
+      "sha256": "9610b19f2ea73e4a105479256edc4a49c7ef42b2a77b11c0b3ced3a48cbdd4e4"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libNativeWinBuffExchange.so",
+      "bytes": 11368,
+      "sha256": "d4d65ce74df112692ee57e8ac5d12351473cd396e7df615ca539f9204f543565"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libNvStreamingSdkCore.so",
+      "bytes": 9592912,
+      "sha256": "c96d63e9061f207ed376197a0228293dfa410a656f6316c1c593700d74db7e8d"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libOGLManager.so",
+      "bytes": 38448,
+      "sha256": "0d8d2f45c879823fb1abfb7a0a742627401919a1c0cad1d2f4528c34fd25a4fd"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libOpenCL.so",
+      "bytes": 115112,
+      "sha256": "e31334eef9202b9c569c053b2afc110ff488a53f17eb300fc140915c337c18b8"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libOpenCL_system.so",
+      "bytes": 165520,
+      "sha256": "150da4e2b9b219aa2692cef5666c945a4895350454496adb8aaacd891260a536"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libOppoSloganForHalJni.so",
+      "bytes": 9928,
+      "sha256": "596cd4c50fdcc5585adae7ab945146684f766a65a1665025c30c92319a05e935"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libOppoSloganJni.so",
+      "bytes": 9928,
+      "sha256": "fb9b6f2fbff1dae3b8bc8900b58569a6ae67b8aa1ec3747c1ae58a247797cc05"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libPerfectlyClearCrux.so",
+      "bytes": 831696,
+      "sha256": "c6ace698e4cba65dd38c3537d77c158c41bf842bb252374896f4871d8b4f1603"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libPerfectlyClearCruxOpt.so",
+      "bytes": 1388528,
+      "sha256": "c8320bcd4e3232cba80582349ebfd8cdc35ad99adc0dac2a10b5a14d8f83921b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libPolarrRender.so",
+      "bytes": 9077152,
+      "sha256": "1e9a86f88b40f06c78a248e3b16ccda6cf65ca30c63289a1a073fd24e09b509c"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libRedeyeReduce.so",
+      "bytes": 1170776,
+      "sha256": "fbe0940d8b8509ab9661782c3af8e55a19767927d67db760325d688f091dc115"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libSNPE.so",
+      "bytes": 7919568,
+      "sha256": "96c21bf93895afb1ba62416c4b7341439aeec679bfd81567bf8464ec5b5758fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libTiltShiftPre.so",
+      "bytes": 792664,
+      "sha256": "099e9a2e412e5412bfcf576a049e708a5c4940bb890bb51e96377ca2ccef9667"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libTrafficMode.so",
+      "bytes": 67584,
+      "sha256": "44bd7b13c15d3a00f35a968ee86ee48d54c53fc354697d719d52959cb34d241b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDBayerHDR.so",
+      "bytes": 530512,
+      "sha256": "3e3b1defd7de45a07a8bca175f2ebccb619318779ee5b8d66ccd68a2fff33a1b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDBlurless.so",
+      "bytes": 2126072,
+      "sha256": "86b1670cfb6e873469074f14b82ed7fdd7901f714f5ad9d3b714e08bd09fa505"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDBlurlessAPI_v2.so",
+      "bytes": 2126072,
+      "sha256": "86b1670cfb6e873469074f14b82ed7fdd7901f714f5ad9d3b714e08bd09fa505"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDDualCameraBlurlessAPI.so",
+      "bytes": 1749048,
+      "sha256": "86eff18d07fcc3c664df7f1db20e50f9fd54c4d5d40a2c233c68c2f400316376"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDExternal.so",
+      "bytes": 489680,
+      "sha256": "73bb7c3d7d95ae7de15c35c6843e28126a1b904a54f542d483447182bd5477ee"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDEyeEnhance.so",
+      "bytes": 620760,
+      "sha256": "d471052092eee537dfcba78a2f8feb4c7358e49938fb939f5b0565c690a27076"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDPostureDetection.so",
+      "bytes": 373624,
+      "sha256": "9283f8ae808a12afdb07859fd4b1980ca9c66eb9918001b51e4931a44e617c25"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDSuperPhotoAPI.so",
+      "bytes": 2406112,
+      "sha256": "75ba82c6e0b8c1eca64475546b9554f9b72e13d55d846c0f69b9520f1f9596a2"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libVDUpScale.so",
+      "bytes": 1280216,
+      "sha256": "95a3570a0423673c930dd21649c0ef3f7605768c58099d8cf5b36e6a9bb2311c"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libWaterMark.so",
+      "bytes": 1525960,
+      "sha256": "c81326ff25fb166af291bba26573d8db5e2ca13bbba56e2c13d7d7ff52f21dff"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libWaterMode.so",
+      "bytes": 124928,
+      "sha256": "f8a036702d02e31e2bf271457a79279f71ec14a87ee72da3bd9a866fc6167886"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libXDocProcess.so",
+      "bytes": 4475512,
+      "sha256": "407641df1dcc3b7ab6a2c4eb72fc88c2dcd04418e52b3f9809c5baef2060c3d1"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libXDocProcessSDK.so",
+      "bytes": 4917712,
+      "sha256": "645268dec51fc4a2205d6dea0c522cdc77d084a80e3b68dea6171457fe9e41d0"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libYTCommon.so",
+      "bytes": 145264,
+      "sha256": "cf86c5c44e178734790a782ad5c28da0c1e61e84cc30c3b8d6c43ae3305f6d5a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libYuvUtil.so",
+      "bytes": 63640,
+      "sha256": "c62c27f6f6f1e606bf89d268fdf8174482496b18e65342ee0d445457c3109bdc"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/lib_rectify.so",
+      "bytes": 948504,
+      "sha256": "77db9a7bfdd3e8c1829c95d80b8d37bb8a27da2dead806893208eac0902a923f"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libancbase_rt_bokeh.so",
+      "bytes": 12154024,
+      "sha256": "146849c76ffb46fcfe0af5cac25fe32973de5d2d649837a10dcca362ca9c961d"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libapsexif.so",
+      "bytes": 226440,
+      "sha256": "9fd964a747b6ba40a03e17c998b6b92ace0e2d519976655e7b533a028614688d"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libapsjpeg.so",
+      "bytes": 356912,
+      "sha256": "1f6a06d27bec6afb858db91468a969a0940f12560b1ac01d94edf384975113d0"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_beautyshot.so",
+      "bytes": 6709424,
+      "sha256": "f55ac015f510040516fbfe2e79768851d9790799d19214ac77badc2ebb51f7a3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_distortion_correction.so",
+      "bytes": 1685696,
+      "sha256": "4a15a767656818045dc4114ef23b7ed2eac401506e61b5c0e598acb2a540a34c"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_dualcam_bokeh_api.so",
+      "bytes": 231504,
+      "sha256": "775a1d3c4de15d1f790ff6a037b4944f2992ebf25bb12d2405facfe23b0fae8d"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_dualcam_refocus_left.so",
+      "bytes": 21429824,
+      "sha256": "7ba0966005687153da19c7844d41ac8506f6e787720f391c28e25986812c199e"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_dualcam_refocus_preview.so",
+      "bytes": 2517504,
+      "sha256": "c026164e20b1cb6b0e25bb44ef90a331045713d7db038910f3ea86dab4cb24a3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_dualcam_refocus_right.so",
+      "bytes": 21429824,
+      "sha256": "9511da58d196b52016b4fe5b11014fbf7837509d3f5f748cc2b6d881ced107be"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_gpuvideobokeh_advanced.so",
+      "bytes": 198736,
+      "sha256": "91dc1959a29d9c12389c608bcb0d1f526fc81321b8171f59d36f065590f303ba"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_hdr_couple_api.so",
+      "bytes": 264272,
+      "sha256": "d66df1231c41cc0aaa0ca9ab8a15a866012e89c7307c5c191908870360b9be48"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_hdr_denoise_api.so",
+      "bytes": 1190032,
+      "sha256": "78892ebdea5852d040a7018b300201d3a0323111b9033428e3b1e07788d4a228"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_high_dynamic_range.so",
+      "bytes": 3717672,
+      "sha256": "a0b8b700a1bfe6c2130a4d8aa8a0975ddeda2ee7070ae738ce3e7b12bad01a3f"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_high_dynamic_range_couple.so",
+      "bytes": 3758768,
+      "sha256": "e31852780638c21ca11753bbfbc47ce4c46976e0caa9fc527f2308ea7c435175"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_lensstaindetection.so",
+      "bytes": 1743064,
+      "sha256": "73c9e116ca361518a051e31ae7aabef993716aada1aefbb5dfe96d893d1abe53"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_low_light_hdr.so",
+      "bytes": 4022408,
+      "sha256": "8af74d9c5f9d8e150ff130075274ba950f9818c446d834d3bd48eabfd94e9d3b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_panorama_burstcapture.so",
+      "bytes": 395208,
+      "sha256": "4c8d7279b9029605ee9cd4902cc8f12f8f3be7c032bef06672a519f9281bbf3e"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_portrait_super_night_raw.so",
+      "bytes": 28657800,
+      "sha256": "f8d974b92f152347fc9574c91d2c7f69cd33c794293a3870857f9ef98770f4a7"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_scbokeh_image.so",
+      "bytes": 12253976,
+      "sha256": "b4ddfd8e3444b876f4360d4f9a7c3169014874555db5db01710975a86c4d3d59"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_scbokeh_video.so",
+      "bytes": 12819296,
+      "sha256": "d306086bc4eec8ff3fb1c26f1218045d050c399b57b5d3ddb4054fbd5ebab486"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_smart_denoise.so",
+      "bytes": 87952,
+      "sha256": "29d92fe94e1f59662ad9ae6b8fba21bac38c948a1edfc85f617b3d7d320e86e8"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_super_night_raw.so",
+      "bytes": 20236912,
+      "sha256": "89178e572063dd10ed0d85c215228cbda8e3192c482b60a70f98052ba3f79caa"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libarcsoft_wideselfie.so",
+      "bytes": 2750456,
+      "sha256": "ca4482710678b3f80a74d5dccd813dccaef0af0b84ca97706d056407565e6485"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libbsproxy.so",
+      "bytes": 41616,
+      "sha256": "b0203e4ba19aa0189d881d98ed108a742c9d1c7309b7435a22d8f957cc7aca85"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libc++_shared.so",
+      "bytes": 1058904,
+      "sha256": "9bb2227fd5bf39cef1bc697bbeef40cdc32d9567ac2fb285e8e96ed013e3d463"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libcdsprpc.so",
+      "bytes": 256272,
+      "sha256": "28684f049ba0910846e54e5dc7a15aaa70e5c3dd42293e7a444c2a342505ac88"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libcommon.so",
+      "bytes": 301480,
+      "sha256": "91c01573b5bd7e69283d8d0bd7aa133540ec48c693d69a50abb3c5fa23d4c845"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libcvface_api.so",
+      "bytes": 16815968,
+      "sha256": "54e16e53449f60cf1f0427459d66613fb88c404795d7dad2143052eaa3ea15f4"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libgralloc.qti.so",
+      "bytes": 33712,
+      "sha256": "4556d428d0b87c52948d79d903e7a07571cb790f6e6c686fe9e05b2a8918fd00"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libion.so",
+      "bytes": 11208,
+      "sha256": "acc4ae0cbb0d981c3ae5e80697edf730787cad1f57b428f5e61227623cad2284"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libjni_burstpmk.so",
+      "bytes": 22536,
+      "sha256": "ec017537b6836fe3348fe9011ae050a25c66326ea47406612fcf3f44eeeec7fc"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libjni_wideselfie.so",
+      "bytes": 26688,
+      "sha256": "94b9b0a416e5816df2310309f7deeff7af159703ac05d9d2c331102cc97e7fb1"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/liblicense-checker-jni.so",
+      "bytes": 215120,
+      "sha256": "27effe3325cfe5dcefa091a2772376d5b24979970bbcadf1d12a545ac5df7a44"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libmpbase.so",
+      "bytes": 5184,
+      "sha256": "21b59e9753a86a03c5d7412b08266deadb945fc489fb6b8b1dd4362cb94e4fa3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libpreview_show.so",
+      "bytes": 206928,
+      "sha256": "f11bb91b01847ca38b713b7906316dd3b05fa1c3f36c86356503a6934fd0590a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libqdMetaData.so",
+      "bytes": 29064,
+      "sha256": "e258a0e5d652c575d6e4564f8ba1356bf26b341267d15412f6dc185d9562d13a"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libsingle_camera_bokeh_native.so",
+      "bytes": 1186096,
+      "sha256": "52b4b1124a6b2f3c966ab65348d12a75b57fec5fb0198a61de6beaeb1bb69a1e"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libsnpe_loader.so",
+      "bytes": 47232,
+      "sha256": "33268cc7f16f2604eb6317a083b287a6d87c49eedae7e0c66af8040c2997ffe3"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libst_sticker.so",
+      "bytes": 7891408,
+      "sha256": "ebbab74acf6c05f67830abea2029240dd559def4a1f60d4fb3f0400b6b03c2c6"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libst_sticker_jni.so",
+      "bytes": 280576,
+      "sha256": "3ca1cf97a6da4a0680a13a6d5a7305c2725f96f3ce92d3fa8eda058e2663817b"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libstblur_api.so",
+      "bytes": 19899376,
+      "sha256": "6bb2603d11962663099bb6bc180f975ce0f3cde46448ce1e1e54a242d41ac9ac"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libstdc++.so",
+      "bytes": 19448,
+      "sha256": "29c58572938014de1a9140fb724dd65c352ee8e9930b29e8d39f387343730ccd"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libstface_fd_api.so",
+      "bytes": 13187544,
+      "sha256": "7037cb4455c5e8bc08e86069eed40dde1a4cc5d18e8184caf78cc8f3e0595eef"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libsymphony-cpu.so",
+      "bytes": 563320,
+      "sha256": "42af709f7e21aae6611142feed95abbc4a8a1bf0791208a1b9648a53c162f8fb"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libtouchless_a3d.so",
+      "bytes": 5254592,
+      "sha256": "c907df4a55e598cb9050004781bfbb0c0b4759c1cb5e6020b4652e34d3caec52"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libtouchless_a3d_jni.so",
+      "bytes": 383152,
+      "sha256": "501cf99b6f8a115e7ff2a66d6d97c0251e2e0cd2e9a2b6b2f89637a66eeda7a9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libtriplecam_image_optical_zoom.so",
+      "bytes": 3041896,
+      "sha256": "44858edb910647bb49d7347b36d2d0477a33110dbc9162e844e9f83a31a85226"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/libwatermark_photo.so",
+      "bytes": 297032,
+      "sha256": "50e63b8bd5ac422cf0bff7501c2bb9cecad55a46afece36eb4899e36256cf154"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/vendor.qti.hardware.camera.postproc@1.0.so",
+      "bytes": 215136,
+      "sha256": "4208115fe7e718ad2ad367d994c82e47f68250592b0a52b0c96c6aa84d8e28e9"
+    },
+    {
+      "path": "system/priv-app/OppoCamera/lib/arm64/vendor.qti.hardware.dsp@1.0.so",
+      "bytes": 149912,
+      "sha256": "4d3a7422285d52437e871c9ace60f880ad34be749915dd523a4fb902e73ad35e"
+    },
+    {
+      "path": "vendor_rfsa_runtime/libapps_mem_heap.so",
+      "bytes": 50248,
+      "sha256": "bb722da5c9293b9ff1736332a5d0fab66907844023aaa4b95d5e26a22df916de"
+    },
+    {
+      "path": "vendor_rfsa_runtime/libdspCV_skel.so",
+      "bytes": 33320,
+      "sha256": "008040d7773c6f7c0b0bae36dc6658b8f60a6f5833a13736f2dbac10039735de"
+    },
+    {
+      "path": "vendor_rfsa_runtime/libfastcvadsp.so",
+      "bytes": 1489308,
+      "sha256": "e6d57c195330cfd061570e7f07720b5b9d4cdef15053b9a8760e185eb6b6bf08"
+    },
+    {
+      "path": "verify-hal-profile.sh",
+      "bytes": 831,
+      "sha256": "ad73470991e90d5164d95bb8af19f647246916aeb0c43feadb8fa585958065f9"
+    }
+  ]
+}

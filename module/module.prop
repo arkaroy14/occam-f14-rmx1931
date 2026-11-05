@@ -1,0 +1,6 @@
+id=occam_f14_fresh
+name=OcCam F14 compatibility candidate (DISABLED)
+version=0.7.0-rc1
+versionCode=7
+author=Arka Roy Chowdhury
+description=Experimental five-profile KSU/Magisk package. Requires OcCam Fresh 0.113. Unbooted profiles remain unqualified. https://github.com/arkaroy14/occam-f14-rmx1931 Manual HAL Action only.

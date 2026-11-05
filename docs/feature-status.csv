@@ -1,0 +1,50 @@
+feature,status,evidence_scope,remaining_limit,checkpoint
+Rear Photo 1x,Functional pass,New files decoded and user checked,Natural colour/detail not stock-calibrated,2026-11-05; retained113
+Rear ultra-wide / telephoto Photo,Functional pass,Distinct views and saves; native SAT stack restored,Not every light-dependent handover traced,retained F14 stack
+Photo zoom through 20×,Functional pass,5×/10×/20× and random 8×/16× clean after stock frame-copy fix,Digital zoom; not 20× optical or all-scene detail proof,hook0.31 onward
+64M save / stripe repair,Functional pass,"White tube light / warm, close / far four-shot quiet pass",Native full-RDI execution under low gain remains unproven,0.53/0.54; retained
+64M AI preview,Functional pass,Original preview effect and saved capture confirmed,Saved enhancement strength not separately measured,0.90
+Front Photo full-size / ratios,Functional pass,Full 4608×3456 at 4:3 and cropped ratios save; beauty retained,Not every HDR/beauty/ratio combination independently traced,0.81–0.83
+Front Night full YUV / ratios,Functional pass,All four preview/save/crop checks passed,RAW remains 2304×1728 binned; 16MP output is not native 16MP RAW proof,0.96–0.98
+Rear ordinary Night,Functional pass,Ownership/detach boundary fixed; quiet desk/dim/warm checks,All ratios/lenses and stockquality not certified,0.104 retained
+Rear UltraDark,Functional pass,Original tuning OEM selector restored; three lighting levels normal,Not stockparity or authenticated stock darksight engine,selector3eb098 retained
+Front Night brightness,Functional within tested light,Moderately dim V1 brightens; screen light helps dark selfies,Near-black in near-zero light; no front Ultra Dark branch proved,0.61 onward
+Rear Tripod Night,Functional pass,Stationary countdown/processing saved new file,Long-duration/all-scenes quality not measured,2026-11-02
+Rear Portrait blur,Functional / review,Real person and object/hand checks show blur,Segmentation edges and object consistency need review,user tests; retained
+Front Portrait blur,Functional / intermittent issue,Saved minimum/maximum blur difference passed,Rare first-entry frozen preview; resume may recover,0.59 onward
+Rear video bokeh,Functional pass,"Saved person clip blur/playback, transitions passed",Objects/segmentation quality need user review,0.56;0.112/0.113
+Front video bokeh,Functional pass,Visible saved face-background blur,Not every resolution/ratio/object scenario tested,0.56
+Photo beauty front,Functional pass,Eye/slim preview and saves across four ratios,Every individual slider not objectively measured,0.79+
+Night beauty front,Functional pass,Bigger-eye preview/save and all four ratios,Other sliders/lighting combinations need review,0.83 retained
+Portrait beauty,User-observed pass,Bigger-eye effect reported,Not full slider/ratio matrix,user report
+Video AI beauty,User-observed pass,Available AI beauty effect reported,No per-slider parity claim; UI exposes fewer controls,user report
+Rear Photo AI / ratios,Functional pass,"Live change and saves at 4:3, 1:1, 16:9 and Full",Not every recognized scene or saved enhancement strength measured,0.70+
+Rear HDR ON / Auto,Functional pass,Captures save; Auto hint triggers on bright-window scene,Scene-dependent; no complete native execution matrix,2026-11-02
+Front Auto HDR,Scene-specific visual pass,Named Auto-active/off pair decoded; highlight difference visible,Not every scene/ratio or exact-pair SDK call traced,2026-11-02 16:47
+Expert main/UW/tele,Functional pass,Distinct views and saves; main RAW DNG+JPEG verified,RAW not verified on every lens,2026-11-02
+Expert manual WB,Functional pass,2000K/8000K saved colour difference and Auto reset on three lenses,Not a calibrated colour-temperature test,0.74/0.75
+Expert ISO/shutter/EV/focus,Functional / user pass,"Manual capture, EV preview and AF/MF confirmed",Exposure ladder not exhaustive; neutral EV is 0,2026-11-02
+Expert zoom / RAW UI,Expected original behavior observed,RAW hides zoom; zoom returns up to 5× with RAW off,No claim Expert supports Photo’s 20× range,2026-11-02
+Rear 1080p30 / 4K30,Functional saves,"Clips save, play and decode in tested configurations",Perfect pacing and long-duration thermals not certified,retained
+Front1080p30,Functional pass,Plain and grayscale clips save/play,Other front resolutions not claimed,2026-11-02
+Rear 1080p60 / 4K60,Saves; timing OPEN,Encoded files inspected; finite performance leases help in tested cases,Sustained perfect 60fps not established; approximately 57fps cases and gaps observed,2026-11-04
+Slow Motion 240,Functional save/play,Preview and clips work,Independent physical 240fps accuracy not universally certified,0.95 tests
+Slow Motion 480,Functional save/play; timing OPEN,Clips decode; batch-sized gaps measured,Frame losses remain; do not claim perfect 480fps,2026-11-04
+Slow Motion 960 option,Processed burst works,Short stock-style processed burst saves and plays,Not native 960fps sensor readout proof; interpolation/timing review remains,2026-11-04
+Time-lapse rear/front,Functional + measured pass,Retained95 rear: 22.649s → 68 frames / 2.2667s / exact 30fps; front and ordinary-video regression pass,Default speed only; hours-long tests absent,0.94/0.95
+UltraSteady EIS,Functional / quality review,Records and saves; sensor routing and transitions tested,Visual stabilization effectiveness not quantified,retained113 transitions
+Ultra-wide video,Functional within tested 1080p30,Selecting 0.6× before recording retained the wide view; later in-record zoom user pass,4K/60fps lens availability has stock restrictions; all handovers untraced,2026-11-02
+Rear flash / video torch,Functional pass,Actual flash EXIF plus user check; torch toggle during recording,Not all lenses or HDR interactions,0.73/0.75
+Front screen illumination,Functional pass,Photo/Night display lights and improves selfie,Flash metadata alone not processing proof,user tests
+Photo / video colour filters,Functional pass,Saved grayscale verified; rear/front save/play,All filter choices not exhaustively tested,0.73/0.75
+Panorama rear,Functional pass,New panorama saves and opens,Stitching seams / difficult scenes need review,2026-11-02
+Time-lapse front,Functional pass,Accelerated save/play and later timing regression,Default speed; no manual-speed UI feature claimed,0.94/0.95
+Ultra Macro,Functional pass,Close printed subject was clear and saved,Does not imply dedicated macro hardware; uses verified camera path,0.15+; latercheck
+Text Scanner / AI text hint,Functional crop pass,Yellow rectangle crop/straightening saves,"Document image capture, not an OCR/text-copy promise",2026-11-02
+Gallery thumbnail,Functional pass,Opens the viewer / Google Photos route,Other gallery apps not qualified,0.13+
+Watermark / orientation,User pass,Two orientations saved a watermark at the bottom,Every mode/orientation pair not tested,2026-11-02
+Photo timer,Functional pass,3-second countdown and save,Other intervals/front not blanket tested,0.73
+UI layout / rotation/settings,Functional pass,"Four Photo ratios, Expert, Video, landscape/settings taps and save",Other DPI/font scales need review,0.73/0.75
+Startup shutter / sound,Functional pass; rare stall review,Prompt shutter and sound returned; media-codec recovery helped,Rare Photo capture stall not certified fixed,0.54+
+Bokeh/EIS→Night exits,Reproduced fault fixed in scope,Shared runtime112 passed repeated transitions and outputs; quiet113 save passed,Not proof every rare crash is fixed,0.113
+ROM/global media coexistence,Tested phone pass,Twitter playback recovered; codec/provider labels preserved,Other ROMs/media apps need regression,retained

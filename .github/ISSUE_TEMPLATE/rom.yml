@@ -1,0 +1,24 @@
+name: ROM profile request
+description: Request support for another RMX1931 ROM dependency profile
+title: "[ROM] "
+labels: [compatibility]
+body:
+  - type: textarea
+    id: rom
+    attributes:
+      label: Exact ROM, build date, Android SDK and source/download links
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Device, kernel, firmware base, root manager and LSPosed
+    validations:
+      required: true
+  - type: textarea
+    id: refusal
+    attributes:
+      label: Profile refusal or failed activation output
+      description: Redact private identifiers. Do not remove hash checks or swap drivers.
+    validations:
+      required: true

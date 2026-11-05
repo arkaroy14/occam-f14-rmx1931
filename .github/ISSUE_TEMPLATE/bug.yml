@@ -1,0 +1,35 @@
+name: Camera bug
+description: Report a reproducible camera problem
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Module and hook versions
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Device, ROM name/date/SDK, kernel, root manager and LSPosed versions
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, frequency and settings
+      description: Include lens, mode, ratio, lighting, zoom, HDR/AI/EIS/bokeh and video resolution/FPS.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected result and actual saved-output or preview symptom
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Short redacted log or relevant error
+      description: Remove serials, addresses, account details and EXIF GPS. Media attachments are optional.
