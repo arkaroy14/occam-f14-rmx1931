@@ -1,4 +1,4 @@
-> Cross-root candidate note: the camera/hook0.124 results below are retained v0.8.0 evidence. The new v0.8.1 root package has host tests and a read-only helper API check, not a completed device boot test. See COMPATIBILITY and RELEASE_QUALIFICATION.
+> v0.8.1-rc1: camera/hook0.124 evidence below is retained; the exact new root ZIP also passed owner fresh-install/restart/camera checks on Cyborg A16/KernelSU Next. One earlier unreproduced logo hang remains unexplained. Other profiles and Magisk are install-eligible but not device-tested. See COMPATIBILITY and RELEASE_QUALIFICATION.
 
 # Mode and quality status
 
@@ -6,7 +6,7 @@ Updated 2026-11-06. Results concern the development phone. Functional passes do 
 
 | Feature | Status | Evidence/scope | Remaining limit | Checkpoint |
 |---|---|---|---|---|
-| Automatic startup / notification | final rc1 fresh/follow-up boot pass | Early mounts, eight permissions, F14 identity, provider/selector, ten cameras, hook/scope all passed; user reports reboot tests passed | Final rc1 first fresh boot/runtime pass after user scope setup; subsequent configured-scope boot fully active with all health checks passed; other profiles/managers refused | 2026-11-06 |
+| Automatic startup / notification | final rc1 fresh/follow-up boot pass | Early mounts, eight permissions, F14 identity, provider/selector, ten cameras, hook/scope all passed; user reports reboot tests passed | Final rc1 first fresh boot/runtime pass after user scope setup; subsequent configured-scope boot fully active with all health checks passed; v0.8.1 owner fresh-install/restart checks passed; other profiles/managers eligible but device-unverified | 2026-11-06 |
 | Early first-install saves | Open intermittent report | User saw 1–2 black thumbnails/missing files, then later saves passed | No matching retained capture log; cause not established | rc4 fresh-install report |
 | Rear Photo 1x | Functional pass | New files decoded and user checked | Natural colour/detail not stock-calibrated | 2026-11-05; retained113 |
 | Rear ultra-wide / telephoto Photo | Functional pass | Distinct views and saves; native SAT stack restored | Not every light-dependent handover traced | retained F14 stack |
