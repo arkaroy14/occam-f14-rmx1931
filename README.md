@@ -4,6 +4,18 @@ Original realme UI 2.0 F.14 OppoCamera for RMX1931 custom ROMs, using systemless
 
 **v0.8.1-rc1 is an experimental cross-root pre-release.** Pair the root-module ZIP with **OcCam Fresh 0.124**. Install, enable the hook for OppoCamera, reboot and open Camera. There is no Action step, second confirmation or hook-app superuser grant.
 
+## Downloads and setup
+
+Use the matching ZIP and hook APK from [Releases](https://github.com/arkaroy14/occam-f14-rmx1931/releases). GitHub's automatic source ZIP is not installable. Do not install a newer OppoCamera APK over F.14.
+
+- [Install and update](docs/INSTALL.md)
+- [Compatibility](docs/COMPATIBILITY.md)
+- [Feature status and quality limits](docs/FEATURE_STATUS.md)
+- [Recovery and removal](docs/RECOVERY.md)
+- [Release qualification](docs/RELEASE_QUALIFICATION.md)
+- [Build notes](docs/BUILD.md), [provenance](docs/PROVENANCE.md), [credits](CREDITS.md)
+- [Report bugs or request ROM support](CONTRIBUTING.md)
+
 ## Features at a glance
 
 **Tested on the development realme X2 Pro: Cyborg Android 16 + KernelSU Next, hook 0.124.** Earlier mode checks are retained across releases; the latest root ZIP received fresh-install/restart/camera checks. This is not a fresh retest of every row on every ROM.
@@ -50,17 +62,6 @@ All five exact Android 14–17 dependency tuples are eligible on KernelSU and Ma
 
 The original signed camera APK and donor camera ELF files are unchanged. Our Java/native hooks and provider adapters change runtime compatibility behavior; this is not an unchanged stock OS or a guarantee of stock image quality.
 
-## Downloads and setup
-
-Use the matching ZIP and hook APK from [Releases](https://github.com/arkaroy14/occam-f14-rmx1931/releases). GitHub's automatic source ZIP is not installable. Do not install a newer OppoCamera APK over F.14.
-
-- [Install and update](docs/INSTALL.md)
-- [Compatibility](docs/COMPATIBILITY.md)
-- [Feature status and quality limits](docs/FEATURE_STATUS.md)
-- [Recovery and removal](docs/RECOVERY.md)
-- [Release qualification](docs/RELEASE_QUALIFICATION.md)
-- [Build notes](docs/BUILD.md), [provenance](docs/PROVENANCE.md), [credits](CREDITS.md)
-- [Report bugs or request ROM support](CONTRIBUTING.md)
 
 ## What changed
 
