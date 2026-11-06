@@ -79,4 +79,4 @@ Portrait and Expert intentionally offer only standard/4:3; no Frame picker was f
 
 ## Current packaging limits
 
-The measured Cyborg A16/KernelSU profile is the only enabled target. Magisk and other reference profiles are refused. The earlier optional camera-performance helper is absent; previous performance-vote tests do not certify this package.
+All five exact dependency tuples and KernelSU/Magisk installation paths are eligible, subject to install-time and boot checks. Only the measured Cyborg A16/KernelSU Next phone has device coverage; other combinations remain device-unverified. The earlier optional camera-performance helper is absent; previous performance-vote tests do not certify this package.
