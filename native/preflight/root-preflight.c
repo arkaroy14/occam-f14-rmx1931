@@ -1,5 +1,6 @@
 #include <dlfcn.h>
 #include <errno.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -47,17 +48,27 @@ static const struct permission_query policy_queries[]={
  {"u:r:priv_app:s0","u:object_r:adsprpcd_file:s0","file","read"},
  {"u:r:hal_camera_default:s0","u:object_r:vendor_camera_data_file:s0","sock_file","write"}
 };
-/* Query only: no policy file parsing, loading, setenforce or root-manager IPC. */
-static int policy_allowed(int include_dsp) {
- void *lib=dlopen("/system/lib64/libselinux.so",RTLD_NOW|RTLD_LOCAL);if(!lib){fprintf(stderr,"dlopen: %s\n",dlerror());return 32;}
+/* Query only: no policy file parsing, loading, setenforce or root-manager IPC.
+   OC_SELINUX_LIB overrides the library path for host C fixtures only; unset it
+   is untouched production behavior. */
+static void *selinux_lib(void) {
+#ifdef OCCAM_HOST_FIXTURES
+ const char *path=getenv("OC_SELINUX_LIB");
+ return dlopen(path&&path[0]?path:"/system/lib64/libselinux.so",RTLD_NOW|RTLD_LOCAL);
+#else
+ return dlopen("/system/lib64/libselinux.so",RTLD_NOW|RTLD_LOCAL);
+#endif
+}
+/* mask bits follow policy_queries[]. Read-back: 0 allow, 31 a completed
+   denial, 32 the query or the enforcing state could not be established. */
+static int policy_allowed_mask(unsigned mask) {
+ void *lib=selinux_lib();if(!lib){fprintf(stderr,"dlopen: %s\n",dlerror());return 32;}
  int (*check)(const char*,const char*,const char*,const char*,void*)=dlsym(lib,"selinux_check_access");
-
  int (*enforcing)(void)=dlsym(lib,"security_getenforce");
  if(!check||!enforcing||enforcing()!=1){dlclose(lib);return 32;}
- size_t start=include_dsp==2?8:0;
- size_t count=include_dsp==1?8:1;
  int rc=0;
- for(size_t i=start;i<start+count;i++){
+ for(size_t i=0;i<sizeof(policy_queries)/sizeof(policy_queries[0]);i++){
+  if((mask&(1u<<i))==0)continue;
   const struct permission_query *q=&policy_queries[i];
   errno=0;
   if(check(q->source,q->target,q->klass,q->permission,0)!=0){
@@ -70,15 +81,64 @@ static int policy_allowed(int include_dsp) {
  if(enforcing()!=1)rc=32;
  dlclose(lib);return rc;
 }
+static int policy_allowed(int include_dsp) {
+ if(include_dsp==2)return policy_allowed_mask(1u<<8);
+ if(include_dsp==1)return policy_allowed_mask(0xFFu);
+ return policy_allowed_mask(1u);
+}
+/* One allow-line group. Returns 1 when every query completed (allow or
+   EACCES/EPERM denial). An unexpected errno marks the group unverifiable
+   and the scan continues so later groups are still classified. */
+static int group_answerable(int (*check)(const char*,const char*,const char*,const char*,void*),size_t begin,size_t end) {
+ int ok=1;
+ for(size_t i=begin;i<end;i++){
+  const struct permission_query *q=&policy_queries[i];
+  errno=0;
+  if(check(q->source,q->target,q->klass,q->permission,0)!=0){
+   if(errno==EACCES||errno==EPERM)continue;
+   fprintf(stderr,"Unverifiable policy query: %s %s %s %s errno=%d\n",
+    q->source,q->target,q->klass,q->permission,errno);
+   ok=0;
+  }
+ }
+ return ok;
+}
+/* Install-time capability probe. Read-only: no policy load or grant.
+   Queries 0..7 are the packaged rule (exec, vendor_xdsp, adsprpcd).
+   Query 8 (power) is excluded. stdout is three lines, exec=/xdsp=/adsprpcd=,
+   each ok or bad. Exit:
+     0  probe ran and every required group completed (0 or 31)
+     33 probe ran, exec completed, at least one DSP group did not
+     32 probe failed (dlopen, missing API, not enforcing) OR exec itself
+        is unverifiable. 31 is never an exit code here: a denial is ok. */
+static int policy_capability(void) {
+ void *lib=selinux_lib();if(!lib){fprintf(stderr,"dlopen: %s\n",dlerror());return 32;}
+ int (*check)(const char*,const char*,const char*,const char*,void*)=dlsym(lib,"selinux_check_access");
+ int (*enforcing)(void)=dlsym(lib,"security_getenforce");
+ if(!check||!enforcing||enforcing()!=1){dlclose(lib);return 32;}
+ int exec_ok=group_answerable(check,0,1);
+ int xdsp_ok=group_answerable(check,1,5);
+ int ads_ok=group_answerable(check,5,8);
+ int still=enforcing()==1;
+ dlclose(lib);
+ if(!still){fprintf(stderr,"Not enforcing at capability check\n");return 32;}
+ printf("exec=%s\nxdsp=%s\nadsprpcd=%s\n",exec_ok?"ok":"bad",xdsp_ok?"ok":"bad",ads_ok?"ok":"bad");
+ if(!exec_ok)return 32;
+ if(xdsp_ok&&ads_ok)return 0;
+ return 33;
+}
 int main(int argc,char **argv){
  if(geteuid()!=0)return 2;
  if(argc==3&&!strcmp(argv[1],"lsposed"))return scope(argv[2]);
  if(argc==3&&!strcmp(argv[1],"policy-check")){
   if(!strcmp(argv[2],"core"))return policy_allowed(0);
   if(!strcmp(argv[2],"core-dsp"))return policy_allowed(1);
+  if(!strcmp(argv[2],"core-xdsp"))return policy_allowed_mask(0x1Fu);
+  if(!strcmp(argv[2],"core-adsprpcd"))return policy_allowed_mask(0xE1u);
   if(!strcmp(argv[2],"power"))return policy_allowed(2);
   return 2;
  }
+ if(argc==2&&!strcmp(argv[1],"policy-capability"))return policy_capability();
  if(argc==2&&!strcmp(argv[1],"exec-allowed"))return policy_allowed(0);
  return 2;
 }

@@ -1,3 +1,5 @@
+> Cross-root candidate note: the camera/hook0.124 results below are retained v0.8.0 evidence. The new v0.8.1 root package has host tests and a read-only helper API check, not a completed device boot test. See COMPATIBILITY and RELEASE_QUALIFICATION.
+
 # Mode and quality status
 
 Updated 2026-11-06. Results concern the development phone. Functional passes do not certify every scene, ratio or ROM. Private photos/videos are not release attachments.

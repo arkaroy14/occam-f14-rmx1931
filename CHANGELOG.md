@@ -1,3 +1,11 @@
+# v0.8.1-rc1 — 2026-11-06 (experimental pre-release)
+
+- Restore all five exact Android 14–17 dependency tuples and KernelSU/Magisk installer paths; unknown tuples still refuse.
+- Stage policy from a live read-only capability probe, with explicit full/partial/core qualification. Require writable Magisk preinit cache.
+- Preserve pre-overlay attestation in a current-boot witness so reporting works after F.14 overlays replace ROM libraries.
+- Retain hook0.124, original OEM camera bytes, early mount lifecycle and all working camera fixes.
+- Owner fresh-install/restart/camera checks passed on Cyborg A16/KSU. One earlier unreproduced logo hang remains unexplained; other ROMs and Magisk still need device testing.
+
 # v0.8.0-rc1 — 2026-11-06 (experimental pre-release)
 
 - Replace withdrawn Action/late activation with install-time preparation and early module mounts. No Action enrollment or per-boot manual activation.

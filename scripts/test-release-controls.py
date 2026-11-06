@@ -15,7 +15,22 @@ rows=[x.split() for x in (m/'early-mounts.tsv').read_text().splitlines() if x an
 assert len(rows)==11 and all(len(x)==5 for x in rows)
 assert {x[1] for x in rows if x[0]=='replace'}=={'f14_runtime/camera_config','f14_runtime/vendor64/camera'}
 assert not any((m/n).exists() for n in ['action.sh','auto-start.sh','f14-runtime.sh','access-runtime.sh','provider-runtime.sh','disable'])
-controller=(m/'post-fs-data.sh').read_text();assert 'a16_cyborg_live' in controller and 'oc_refuse' in controller
+controller=(m/'post-fs-data.sh').read_text();assert 'oc_refuse' in controller and 'oc_profile_check' in controller
+assert 'a16_cyborg_live = ' not in controller
+assert 'policy-preflight.sh" classify' in controller and 'OC_RULE_CLASS' in controller
+assert 'check=' in controller and 'missing=' in controller
+assert '.boot-witness' in controller and 'umask 077' in controller
+svc=(m/'service.sh').read_text()
+assert 'oc_profile_check' not in svc, 'reporter must not re-attest overlaid native-ROM paths'
+assert '.boot-witness' in svc and 'policy-preflight.sh" "$OC_POLICY_SCOPE"' in svc
+assert 'OC_W_SOURCE' in svc and svc.count('OC_W_SOURCE')>=3
+ids={x.split()[0] for x in (m/'rom-profiles.tsv').read_text().splitlines() if x and not x.startswith('#')}
+assert ids=={'a16_cyborg_live','a14_host_candidate','a15_host_candidate','a16_host_candidate','a17_host_candidate'},ids
+pre=(m/'policy-preflight.sh').read_text();assert 'full' in pre and 'core-xdsp' in pre and 'core-adsprpcd' in pre and 'measured)' not in pre and 'Unknown policy scope' in pre
+cust=(m/'customize.sh').read_text()
+assert 'policy-capability' in cust and 'chmod 0755 "$MODPATH/root-preflight"' in cust
+assert 'MAGISKTMP' in cust and 'preinit' in cust
+assert (m/'sepolicy-core.rule').exists() and 'execute_no_trans' in (m/'sepolicy-core.rule').read_text()
 for name in ['post-fs-data.sh','early-mounts.sh','service.sh']:
  active='\n'.join(l for l in (m/name).read_text().splitlines() if not l.lstrip().startswith('#'))
  assert 'ctl.' not in active and 'sepolicy patch' not in active and 'oc_policy apply' not in active

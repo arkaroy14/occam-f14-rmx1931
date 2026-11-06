@@ -2,9 +2,9 @@
 
 Original realme UI 2.0 F.14 OppoCamera for RMX1931 custom ROMs, using systemless dependencies and scoped LSPosed compatibility hooks. Maintained by **Arka Roy Chowdhury**.
 
-**v0.8.0-rc1 is an experimental release candidate.** Pair the root-module ZIP with **OcCam Fresh 0.124**. Install, enable the hook for OppoCamera, reboot and open Camera. There is no Action step, second confirmation or hook-app superuser grant.
+**v0.8.1-rc1 is an experimental cross-root pre-release.** Pair the root-module ZIP with **OcCam Fresh 0.124**. Install, enable the hook for OppoCamera, reboot and open Camera. There is no Action step, second confirmation or hook-app superuser grant.
 
-This candidate accepts only the measured **Cyborg-based Infinity-X 3.5 / Android 16 / KernelSU Next** dependency profile. Four other Android 14–17 profiles remain reference data; they are not enabled support. Magisk is refused pending qualification. Earlier broad compatibility drafts do not describe this package.
+All five exact Android 14–17 dependency tuples are eligible on KernelSU and Magisk paths, subject to live library/GPU and policy capability checks. Magisk also requires its writable pre-init rule cache. Full, partial and core policy states are explicit; partial/core states cannot report the runtime fully active. The exact new ZIP passed owner fresh-install/restart/camera checks on the measured Cyborg Android 16 / KernelSU Next phone. Other profiles and Magisk remain device-unverified.
 
 The original signed camera APK and donor camera ELF files are unchanged. Our Java/native hooks and provider adapters change runtime compatibility behavior; this is not an unchanged stock OS or a guarantee of stock image quality.
 
@@ -25,6 +25,10 @@ Use the matching ZIP and hook APK from [Releases](https://github.com/arkaroy14/o
 Early module preparation replaces the withdrawn late Action-based activation. Startup reports active, inactive or unconfirmed status, with specific hook/LSPosed scope instructions when needed. The notification is a startup snapshot.
 
 The test2 lifecycle booted with all ten cameras and the F.14 stack active. Replacement overlays preserve camera models inside the app namespace. Front Portrait now receives a 4608×3456 YUV stream and two saved upright JPEGs were verified at 3456×4608, instead of square 1728×1728 output. A 16MP file is not independent proof of sensor readout/detail resolution. Retained hook 0.124 passed cold reopen, Portrait ↔ Photo effects/saves and Front Night Full (2080×4608). See qualification notes for the final packaged candidate's test boundary.
+
+## Boot qualification
+
+The owner reports successful fresh-install and repeated restart/camera tests of this exact v0.8.1-rc1 ZIP on the measured Cyborg Android 16 / KernelSU Next phone. One earlier second-boot logo hang recovered after a TWRP reboot and did not recur in the later owner tests. Its cause remains unresolved; storage was suggested but not proven. No quantified stress count or other-ROM/Magisk device qualification is claimed.
 
 ## Known limits
 

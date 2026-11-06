@@ -1,0 +1,6 @@
+# Reference copy of the provider self-exec allow. The installer stages this
+# line from the packaged measured rule when policy-capability says the exec
+# query completed and both DSP groups did not. It is not a per-profile mode
+# and it is not full-camera eligibility. Existing types only; no
+# permissive/type/typeattribute/xperm/genfscon/star statements.
+allow hal_camera_default hal_camera_default_exec file execute_no_trans

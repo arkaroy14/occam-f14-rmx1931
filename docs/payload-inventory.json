@@ -1,5 +1,5 @@
 {
-  "scope": "v0.8.0-rc1 staged candidate, proprietary blobs only in release ZIP",
+  "scope": "0.8.1 cross-root HOST test candidate; not published or boot-tested",
   "files": [
     {
       "path": "LICENSES/Magisk-GPL-3.0.txt",
@@ -28,8 +28,8 @@
     },
     {
       "path": "RECOVERY.txt",
-      "bytes": 883,
-      "sha256": "c847da19cd84f2e9c2cb69578cc21941b213da3572311b95e9c660c95c8aedad"
+      "bytes": 1308,
+      "sha256": "496a1e53910db0cbb2c5c8278f0d40282df734391f239e767a185a1e62a78046"
     },
     {
       "path": "boot-guard.sh",
@@ -38,8 +38,8 @@
     },
     {
       "path": "customize.sh",
-      "bytes": 8725,
-      "sha256": "e1b1de6b3f5f7fbdf6a50c0f3db73175bf52764a5798562af0056879634b65d3"
+      "bytes": 14308,
+      "sha256": "50ae79a5816e679d3aa8ec7c976883497b2d0901d31936a83d67803a94f7a5c4"
     },
     {
       "path": "early-mounts.sh",
@@ -1488,8 +1488,8 @@
     },
     {
       "path": "module.prop",
-      "bytes": 302,
-      "sha256": "204b7008e4870670a9fd14efe61b154fd6e0d23b3786f531beb8d956a3046f18"
+      "bytes": 504,
+      "sha256": "240acaa5a1adeb719e06b3873eaefa7d246e5f13706ae39ea61b56d9029b4155"
     },
     {
       "path": "opencl_runtime/libOpenCL_adreno.so",
@@ -1498,13 +1498,13 @@
     },
     {
       "path": "policy-preflight.sh",
-      "bytes": 632,
-      "sha256": "86c1334fa600676eca0c9dcefb166da1ff5e9aeb0af3e30d84992271feb850c7"
+      "bytes": 3037,
+      "sha256": "e5d4f90eb3701fb710d707f30fcb471e9c68bb061df034a4cf391ca438482927"
     },
     {
       "path": "post-fs-data.sh",
-      "bytes": 3506,
-      "sha256": "c9bcf3db71e474d5dcee0d630cc4f7bd0baf2bc71774764de4040c6664353240"
+      "bytes": 6457,
+      "sha256": "708afa75480847bfc22824a408b4ba61ae874435251b51626e31e2ef339cf13e"
     },
     {
       "path": "rfsa_runtime/libarcsoft_hdrplus_hvx_5221_skel.so",
@@ -1518,8 +1518,8 @@
     },
     {
       "path": "rom-profiles.tsv",
-      "bytes": 1843,
-      "sha256": "788629015598ad648181801dedf2935e797b7c9cf329af2b5f1fc57f8daf6da7"
+      "bytes": 2263,
+      "sha256": "51c8d78d2ba23fc9d261576c867aba2c93b42b45106211d10952bb70f89a7834"
     },
     {
       "path": "root-policy.sh",
@@ -1528,18 +1528,23 @@
     },
     {
       "path": "root-preflight",
-      "bytes": 10248,
-      "sha256": "978f80838fe68ef0f7c5c176f17fb91ab602736c8f46c31e5d3f708d991b0af0"
+      "bytes": 12080,
+      "sha256": "a0aab895493386748f54c00efa89ed23bcef060cdf58dfc1c8ede6da6841efa7"
+    },
+    {
+      "path": "sepolicy-core.rule",
+      "bytes": 428,
+      "sha256": "6f2e8843ad7ebbfca406123c5b302c2c158e9c901e00951d7ab95c1f62c8f125"
     },
     {
       "path": "sepolicy.rule",
-      "bytes": 601,
-      "sha256": "fc93f06ec1f47c32a72179d3c90f77dab21b72b029f18466adf8d7853cc5a61d"
+      "bytes": 780,
+      "sha256": "5eebcb623114b2732abf1533347b01c868c5064f60bf5755f8a27f79c743ac21"
     },
     {
       "path": "service.sh",
-      "bytes": 10195,
-      "sha256": "5a4ba2b00ca6f1c469e31c777b50b40175ee7302c67b1a3334bad57911520d08"
+      "bytes": 13992,
+      "sha256": "9210da7b08b376cf2affb241de3c24baafb0a910c8133891465156979ab502d4"
     },
     {
       "path": "skip_mount",

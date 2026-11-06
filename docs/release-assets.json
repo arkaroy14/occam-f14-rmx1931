@@ -1,12 +1,29 @@
 {
-  "tag": "v0.8.0-rc1",
-  "module_version": "0.8.0-rc1",
-  "hook_version": "0.124-portrait-size-and-pool",
+  "status": "Experimental pre-release; owner fresh-install/restart/camera checks on Cyborg A16/KernelSU Next; other ROMs/Magisk device-unverified",
+  "module_version": "0.8.1-rc1-crossroot",
+  "hook_version": "0.124",
+  "hook_unchanged": true,
+  "source_base_commit": "57c08b48d933d6d3feaaf24344b6ebb745b3a82c",
+  "eligible_profiles": [
+    "a16_cyborg_live",
+    "a14_host_candidate",
+    "a15_host_candidate",
+    "a16_host_candidate",
+    "a17_host_candidate"
+  ],
+  "root_manager_paths": [
+    "ksu",
+    "magisk"
+  ],
+  "live_policy_probe": "full/partial/core requirements evaluated at install; partial/core never report active",
+  "host_matrix": "5 profiles x2 managers, actual scripts under labeled fixtures; compiled C fixtures; witness and failure regressions pass",
+  "new_helper_real_API": "measured Cyborg A16/KSU existing boot: all3capability groups ok; core-dsp readback0; no policy write",
+  "base_payload_entries_verified": 418,
   "files": [
     {
-      "name": "occam-f14-module-v0.8.0-rc1.zip",
-      "bytes": 435832276,
-      "sha256": "77b7ca1c5bd033daf7b38c21ee5836f6c3259e6c6413011a16bfb3aecf109109"
+      "name": "occam-f14-module-v0.8.1-rc1.zip",
+      "bytes": 435838815,
+      "sha256": "fc54fe1f2531b8872265ffb621e0e8acb362de6aff3fa3d90dc14f64e96606ed"
     },
     {
       "name": "occam-fresh-hook-v0.124.apk",
@@ -14,24 +31,5 @@
       "sha256": "138ff59f8dd7a852710d2c89ff86083ae5e130bc9684dc6e7e93614f4772585e"
     }
   ],
-  "enabled_profile": "a16_cyborg_live",
-  "root_manager": "KernelSU Next (measured3.3.0)",
-  "reference_profiles": "not enabled; installer refuses",
-  "magisk": "refused/unqualified",
-  "original_payload_files_verified": 418,
-  "test2_automatic_boot_observed": true,
-  "final_zip_fresh_install_reboot_tested": true,
-  "transition_trial": "effects survive switches; original face metadata observed",
-  "retained124_final_smoke": {
-    "status": "pass",
-    "portrait_photo_portrait_night_jpegs": "four fully decode3456x4608",
-    "frontNightFull": "2080x4608 fully decodes",
-    "effects_survive_switches": "user confirmed",
-    "observer_removed": true,
-    "test_marker_required": false
-  },
-  "publication": "GitHub experimental pre-release target: v0.8.0-rc1",
-  "fresh_boot_result": "runtime/Photo/filters pass; first startup unconfirmed because scope not yet set; live checks pass after user scope setup",
-  "subsequent_boot_status": "PASS: automatic active notification and all health checks with scope already configured",
-  "final_zip_configured_scope_reboot_tested": true
+  "boot_qualification": "The owner reports successful fresh-install and repeated restart/camera tests of this exact v0.8.1-rc1 ZIP on the measured Cyborg Android 16 / KernelSU Next phone. One earlier second-boot logo hang recovered after a TWRP reboot and did not recur in the later owner tests. Its cause remains unresolved; storage was suggested but not proven. No quantified stress count or other-ROM/Magisk device qualification is claimed."
 }

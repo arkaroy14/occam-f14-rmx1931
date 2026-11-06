@@ -8,6 +8,15 @@
 # finding: binder shell commands fail when stderr is an inherited root-only
 # file descriptor; they succeed through a pipe). The reporter distinguishes
 # unconfirmed soft states from genuinely inactive/foreign stacks.
+# The policy read-back scope comes from the boot controller's root-owned
+# current-boot witness (written after pre-mount native-ROM attestation, the
+# policy gate and the mount transaction all succeeded). The reporter NEVER
+# re-attests the native ROM from /vendor paths after the overlays have
+# mounted — those paths show the F.14 donor pair at this point — and never
+# sources/evals the witness: fixed key=value parsing only, accepted only with
+# matching boot id and unchanged table/rule hashes. A missing, stale,
+# tampered or class-invalid witness yields scope=unknown: the universal core
+# requirement is still read back, and the verdict is capped at unconfirmed.
 if [ -n "${ASH_STANDALONE:-}" ]; then
 	unset ASH_STANDALONE
 	exec /system/bin/sh "$0" "$@"
@@ -109,8 +118,64 @@ oc_health_main() {
 	. "$MODDIR/boot-guard.sh"
 	if oc_boot_guard_confirm; then OC_GUARD_OK=1; else echo 'Boot guard completion could not be confirmed.'; fi
 
+	# Witness consumption (read-only): the scope of THIS boot's staged rule as
+	# attested pre-mount by the controller. Never an activation authority.
+	OC_POLICY_SCOPE=unknown
+	OC_W_PROFILE=unknown
+	OC_W_MANAGER=unknown
+	OC_W_SOURCE=missing
+	OC_WITNESS="$MODDIR/.boot-witness"
+	if [ -f "$OC_WITNESS" ] && [ -s "$OC_WITNESS" ]; then
+		OC_W_BOOT=; OC_W_PROFILE=; OC_W_MANAGER=; OC_W_CLASS=
+		OC_W_CHECK=; OC_W_MISSING=; OC_W_TABLE=; OC_W_RULE=
+		while IFS='=' read -r wk wv; do
+			case "$wk" in
+				boot) OC_W_BOOT=$wv;; profile) OC_W_PROFILE=$wv;;
+				manager) OC_W_MANAGER=$wv;; rule_class) OC_W_CLASS=$wv;;
+				check) OC_W_CHECK=$wv;; missing) OC_W_MISSING=$wv;;
+				table) OC_W_TABLE=$wv;; rule) OC_W_RULE=$wv;;
+			esac
+		done < "$OC_WITNESS"
+		OC_CUR_BOOT=$(cat "$OC_BOOT_ID" 2>/dev/null)
+		OC_CUR_TABLE=$(sha256sum "$MODDIR/rom-profiles.tsv" 2>/dev/null | awk '{print $1}')
+		OC_CUR_RULE=$(sha256sum "$MODDIR/sepolicy.rule" 2>/dev/null | awk '{print $1}')
+		if [ "$OC_W_BOOT" = "$OC_CUR_BOOT" ] && [ -n "$OC_W_BOOT" ] &&
+			[ "$OC_W_TABLE" = "$OC_CUR_TABLE" ] && [ -n "$OC_CUR_TABLE" ] &&
+			[ "$OC_W_RULE" = "$OC_CUR_RULE" ] && [ -n "$OC_CUR_RULE" ]; then
+			OC_LIVE_CLASS=; OC_LIVE_CHECK=; OC_LIVE_MISSING=
+			OC_CLASS_RC=0
+			OC_CLASS_TXT=$(sh "$MODDIR/policy-preflight.sh" classify) || OC_CLASS_RC=$?
+			if [ "$OC_CLASS_RC" -eq 0 ]; then
+				while IFS='=' read -r ck cv; do
+					case "$ck" in
+						class) OC_LIVE_CLASS=$cv;;
+						check) OC_LIVE_CHECK=$cv;;
+						missing) OC_LIVE_MISSING=$cv;;
+					esac
+				done <<EOF
+$OC_CLASS_TXT
+EOF
+			fi
+			if [ "$OC_CLASS_RC" -eq 0 ] &&
+				[ "$OC_W_CLASS" = "$OC_LIVE_CLASS" ] &&
+				[ "$OC_W_CHECK" = "$OC_LIVE_CHECK" ] &&
+				[ "$OC_W_MISSING" = "$OC_LIVE_MISSING" ] &&
+				{ [ "$OC_LIVE_CLASS" = full ] || [ "$OC_LIVE_CLASS" = core ] || [ "$OC_LIVE_CLASS" = partial ]; }; then
+				OC_POLICY_SCOPE=$OC_LIVE_CHECK
+				OC_W_SOURCE=witness
+			else
+				OC_W_SOURCE=bad-class
+			fi
+		else
+			OC_W_SOURCE=stale-or-tampered
+		fi
+	fi
+	if [ "$OC_W_SOURCE" != witness ]; then
+		echo "Boot witness unavailable ($OC_W_SOURCE); policy scope unknown — running the universal core read-back only and capping the verdict at unconfirmed."
+		OC_POLICY_SCOPE=core
+	fi
 	OC_POLICY_OK=0
-	if sh "$MODDIR/policy-preflight.sh" measured; then OC_POLICY_OK=1; else echo 'Policy read-back failed or unverifiable.'; fi
+	if sh "$MODDIR/policy-preflight.sh" "$OC_POLICY_SCOPE"; then OC_POLICY_OK=1; else echo 'Policy read-back failed or unverifiable.'; fi
 
 	OC_MOUNTS_OK=0
 	if OC_SIMPLE_MOUNTINFO=${OC_SIMPLE_MOUNTINFO:-/proc/1/mountinfo} sh "$MODDIR/early-mounts.sh" verify; then
@@ -195,12 +260,21 @@ oc_health_main() {
 		[ "$OC_PROVIDER_IDENTITY_OK" = 1 ]; then
 		OC_EXTENDED_OK=1
 	fi
-	if [ "$OC_CORE_OK" = 1 ] && [ "$OC_EXTENDED_OK" = 1 ]; then
+	# full is the only class that may be reported active. core and partial mean
+	# at least one required grant was not expressible. That is a named gap,
+	# not a fully active camera.
+	if [ "$OC_W_SOURCE" = witness ] && [ "$OC_W_CLASS" != full ]; then
+		echo "Policy mode: $OC_W_CLASS (missing=$OC_W_MISSING). This is not full-camera eligibility; the missing grant stays unqualified."
+	fi
+	if [ "$OC_CORE_OK" = 1 ] && [ "$OC_EXTENDED_OK" = 1 ] && [ "$OC_W_SOURCE" = witness ] && [ "$OC_W_CLASS" = full ]; then
 		OC_VERDICT=active
 	elif [ "$OC_CORE_OK" = 1 ] || { [ "$OC_POLICY_OK" = 1 ] && [ "$OC_MOUNTS_OK" = 1 ] && [ "$OC_PROVIDER_OK" = 1 ] && [ "$OC_IDENTITY" = unreadable ]; }; then
 		OC_VERDICT=unconfirmed
 	else
 		OC_VERDICT=inactive
+	fi
+	if [ "$OC_W_SOURCE" != witness ] && [ "$OC_VERDICT" = unconfirmed ]; then
+		echo 'Verdict capped at unconfirmed: the policy scope could not be established from a valid current-boot witness.'
 	fi
 
 	{
@@ -208,6 +282,9 @@ oc_health_main() {
 		printf 'policy_ok=%s mounts_ok=%s provider_state=%s provider_pid=%s provider_exe=%s guard_ok=%s\n' \
 			"$OC_POLICY_OK" "$OC_MOUNTS_OK" "$OC_PROVIDER_STATE" \
 			"${OC_PROVIDER_PID:-none}" "${OC_PROVIDER_EXE:-none}" "$OC_GUARD_OK"
+		printf 'profile=%s policy_scope=%s rule_class=%s missing=%s scope_source=%s manager=%s\n' \
+			"$OC_W_PROFILE" "$OC_POLICY_SCOPE" "${OC_W_CLASS:-unknown}" \
+			"${OC_W_MISSING:-unknown}" "$OC_W_SOURCE" "$OC_W_MANAGER"
 		printf 'live_identity=%s identity_ok=%s hw_label_ok=%s selector_ok=%s (pid=%s) cameras10_ok=%s hook_ok=%s cache_ok=%s\n' \
 			"$OC_IDENTITY" "$OC_IDENTITY_OK" "$OC_HW_LABEL_OK" "$OC_SELECTOR_OK" \
 			"${OC_SELECTOR_PID:-none}" "$OC_CAMERAS_OK" "$OC_HOOK_OK" "$OC_CACHE_OK"
@@ -227,7 +304,7 @@ oc_health_main() {
 		active)
 			oc_notify active 'F.14 runtime is active. Open OppoCamera normally. This is a startup check, not a guarantee of every feature.' ;;
 		unconfirmed)
-			oc_notify unconfirmed 'Core checks passed but a status item failed (hook scope, private cache, provider identity or camera enumeration). See health.last.log. No repair was attempted.' ;;
+			oc_notify unconfirmed 'Core checks passed but a status item failed (hook scope, private cache, provider identity, camera enumeration, core-only policy mode or an unreadable boot witness). See health.last.log. No repair was attempted.' ;;
 		*)
 			oc_notify inactive 'F.14 runtime did not fully start; overlays may still be mounted, so the ROM camera is not guaranteed until you disable the module and reboot once. Check health.last.log; do not reboot repeatedly.' ;;
 	esac

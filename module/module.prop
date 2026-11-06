@@ -1,6 +1,6 @@
 id=occam_f14_fresh
 name=OcCam F14 - Stock OPPO Camera for realme X2 Pro
-version=0.8.0-rc1
-versionCode=8003
+version=0.8.1-rc1-crossroot
+versionCode=8101
 author=Arka Roy Chowdhury
-description=Experimental automatic F14 runtime. Measured Cyborg Android 16 + KernelSU Next only. Pair with OcCam Fresh 0.124 in LSPosed scoped to OppoCamera. No Action.
+description=Experimental automatic F14 runtime for the five attested dependency tuples on KernelSU Next and Magisk. Pair with OcCam Fresh 0.124 in LSPosed scoped to OppoCamera. No Action. Device-qualified only on the measured Cyborg A16 / KernelSU Next environment; other profiles and Magisk are install-eligible and still need controlled device qualification.

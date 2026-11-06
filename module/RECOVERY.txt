@@ -1,5 +1,6 @@
-OcCam F14 v0.8.0-rc1 (experimental)
-Install paired hook0.124, enable in LSPosed, select OppoCamera. Install root ZIP in KernelSU. Fresh installs are enabled; an existing disabled update stays disabled until you enable it deliberately. Reboot once and open OppoCamera. No Action or second confirmation.
-Only measured Cyborg Android16/KernelSUNext is accepted. Other profile rows are reference data, not enabled support.
-A startup notification reports active/inactive/unconfirmed and missing hook/scope instructions. It is not a continuous health monitor.
-If startup fails: disable the module. If Android cannot boot, use an already-working recovery that can access /data/adb and create /data/adb/modules/occam_f14_fresh/disable, then boot normally. Do not wipe data. The boot guard cannot protect an early root-manager policy-loader failure. Do not repeatedly reboot a failing setup.
+OcCam F14 v0.8.1-rc1-crossroot — test candidate, NOT published
+Pair with the unchanged OcCam Fresh0.124. Five exact A14-A17 tuples and KSU/Magisk manager paths are eligible, subject to live dependency/policy capability checks. Other environments remain unverified on device.
+Migration: disable the current camera module and reboot to the native ROM stack BEFORE installing. The installer cannot attest native ROM hashes through an active F14 overlay. Install through the manager, deliberately enable a preserved-disabled update, then reboot. No Action. Keep photos/app data.
+Only a full rule and all runtime/hook checks can report active. Core/partial policy modes remain unconfirmed and are not full-camera qualification. Read docs/COMPATIBILITY and RECOVERY in the candidate source.
+KSU recovery: a working /data/adb recovery route can disable module scripts/rule loading on later boots. Magisk has a preinit cached rule aggregate; a disable marker alone does not establish cache removal. Use version-specific manager guidance. Never delete an aggregate containing other modules' policies indiscriminately. Do not wipe data.
+Do not repeatedly reboot a failing candidate. This package has host tests and a read-only helper API pass on the measured phone; the new complete ZIP has NOT had a boot test yet.
